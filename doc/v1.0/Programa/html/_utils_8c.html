@@ -1,0 +1,1070 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabalho Prático G14: Referência ao ficheiro Utils.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Trabalho Prático G14<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Trabalho Prático LESI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_utils_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro Utils.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Funções utilitárias do programa.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_constantes_8h_source.html">Constantes.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_estrutura_dados_8h_source.html">EstruturaDados.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_controlo_erros_8h_source.html">ControloErros.h</a>&quot;</code><br />
+<code>#include &quot;../GestorDadosIO/IODadosAPI.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a95a5a4c798fe90f4da46f5ddf0156afd" id="r_a95a5a4c798fe90f4da46f5ddf0156afd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#a95a5a4c798fe90f4da46f5ddf0156afd">CustomSleep</a> (int segundos)</td></tr>
+<tr class="memdesc:a95a5a4c798fe90f4da46f5ddf0156afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uma função que para o programa durante n segundos.  <br /></td></tr>
+<tr class="separator:a95a5a4c798fe90f4da46f5ddf0156afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a0084944b9583f7ae76a6020fbf0bd" id="r_a74a0084944b9583f7ae76a6020fbf0bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#a74a0084944b9583f7ae76a6020fbf0bd">LerTecla</a> ()</td></tr>
+<tr class="memdesc:a74a0084944b9583f7ae76a6020fbf0bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uma função que permite ler um carater.  <br /></td></tr>
+<tr class="separator:a74a0084944b9583f7ae76a6020fbf0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007dcb1e0b52973e50955f53ad7fcd2e" id="r_a007dcb1e0b52973e50955f53ad7fcd2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#a007dcb1e0b52973e50955f53ad7fcd2e">LimparEcra</a> ()</td></tr>
+<tr class="memdesc:a007dcb1e0b52973e50955f53ad7fcd2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limpa o ecrã do terminal.  <br /></td></tr>
+<tr class="separator:a007dcb1e0b52973e50955f53ad7fcd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a537d893cf3eede64bd4e6edcae78d978" id="r_a537d893cf3eede64bd4e6edcae78d978"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#a537d893cf3eede64bd4e6edcae78d978">EscreverComCor</a> (const char *cor, const char *formato,...)</td></tr>
+<tr class="memdesc:a537d893cf3eede64bd4e6edcae78d978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uma função que permite escrever no terminal numa cor definida por códigos ANSI.  <br /></td></tr>
+<tr class="separator:a537d893cf3eede64bd4e6edcae78d978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab24e0f13c8c0220f901c4f07a5431f1d" id="r_ab24e0f13c8c0220f901c4f07a5431f1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#ab24e0f13c8c0220f901c4f07a5431f1d">ApresentarAjuda</a> ()</td></tr>
+<tr class="memdesc:ab24e0f13c8c0220f901c4f07a5431f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apresenta o manual de ajuda ao utilizador.  <br /></td></tr>
+<tr class="separator:ab24e0f13c8c0220f901c4f07a5431f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9ca1ed1755d30a7b2b478cd1fbc7f64" id="r_aa9ca1ed1755d30a7b2b478cd1fbc7f64"><td class="memItemLeft" align="right" valign="top"><a id="aa9ca1ed1755d30a7b2b478cd1fbc7f64" name="aa9ca1ed1755d30a7b2b478cd1fbc7f64"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ApresentarErros</b> ()</td></tr>
+<tr class="memdesc:aa9ca1ed1755d30a7b2b478cd1fbc7f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apresenta os possíveis erros na execução do programa. <br /></td></tr>
+<tr class="separator:aa9ca1ed1755d30a7b2b478cd1fbc7f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29cca41027c5d466a400f4ef1fdb1402" id="r_a29cca41027c5d466a400f4ef1fdb1402"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#a29cca41027c5d466a400f4ef1fdb1402">TerminarProgramaComErro</a> (int codigoErro)</td></tr>
+<tr class="memdesc:a29cca41027c5d466a400f4ef1fdb1402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Termina o programa apresentando uma mensagem de erro e terminando com um código de erro.  <br /></td></tr>
+<tr class="separator:a29cca41027c5d466a400f4ef1fdb1402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17405dd1d20eff28271d5180fd352b58" id="r_a17405dd1d20eff28271d5180fd352b58"><td class="memItemLeft" align="right" valign="top"><a id="a17405dd1d20eff28271d5180fd352b58" name="a17405dd1d20eff28271d5180fd352b58"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PerguntarUtilizadorIniciarPrograma</b> ()</td></tr>
+<tr class="memdesc:a17405dd1d20eff28271d5180fd352b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pergunta ao utilizador se deseja iniciar o programa ou sair. <br /></td></tr>
+<tr class="separator:a17405dd1d20eff28271d5180fd352b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0016ed30f0186ff6fed73d35a8d8ed" id="r_a8d0016ed30f0186ff6fed73d35a8d8ed"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#a8d0016ed30f0186ff6fed73d35a8d8ed">ConverterStringParaDatetime</a> (const char *dateString)</td></tr>
+<tr class="memdesc:a8d0016ed30f0186ff6fed73d35a8d8ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converte uma data no formato texto <code>DD-MM-AAAA</code> para um objeto datetime.  <br /></td></tr>
+<tr class="separator:a8d0016ed30f0186ff6fed73d35a8d8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e2725f3574d97796840e0644781b36" id="r_ac6e2725f3574d97796840e0644781b36"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#ac6e2725f3574d97796840e0644781b36">ConverterDatetimeParaString</a> (time_t datetime)</td></tr>
+<tr class="memdesc:ac6e2725f3574d97796840e0644781b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converte um objeto datetime para uma data no formato texto <code>DD-MM-AAAA</code>.  <br /></td></tr>
+<tr class="separator:ac6e2725f3574d97796840e0644781b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47aa9d2ccdca4a70489a3c0e4c51e3b1" id="r_a47aa9d2ccdca4a70489a3c0e4c51e3b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#a47aa9d2ccdca4a70489a3c0e4c51e3b1">LibertarMemoria</a> (<a class="el" href="struct_paciente.html">Paciente</a> **pacientes, int *numPacientes, <a class="el" href="struct_dieta.html">Dieta</a> **dietas, int *numDietas, <a class="el" href="struct_plano.html">Plano</a> **planos, int *numPlanos)</td></tr>
+<tr class="memdesc:a47aa9d2ccdca4a70489a3c0e4c51e3b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liberta toda a memoria alocada aos pacientes, dietas e planos.  <br /></td></tr>
+<tr class="separator:a47aa9d2ccdca4a70489a3c0e4c51e3b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b479846ec3a02aaa81b2d0af8977bb5" id="r_a1b479846ec3a02aaa81b2d0af8977bb5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#a1b479846ec3a02aaa81b2d0af8977bb5">CompararPacientePorId</a> (const void *a, const void *b)</td></tr>
+<tr class="memdesc:a1b479846ec3a02aaa81b2d0af8977bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compara dois elementos do tipo <a class="el" href="struct_paciente.html">Paciente</a> por ID.  <br /></td></tr>
+<tr class="separator:a1b479846ec3a02aaa81b2d0af8977bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa101e330be6fbd1140cbc490401e2784" id="r_aa101e330be6fbd1140cbc490401e2784"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#aa101e330be6fbd1140cbc490401e2784">OrganizarPacientesPorId</a> (<a class="el" href="struct_paciente.html">Paciente</a> pacientes[], int tamanho)</td></tr>
+<tr class="memdesc:aa101e330be6fbd1140cbc490401e2784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Organiza um array de <a class="el" href="struct_paciente.html">Paciente</a> por ID usando o algoritmo de ordenação qsort.  <br /></td></tr>
+<tr class="separator:aa101e330be6fbd1140cbc490401e2784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a837a3dc04e1509cfa04d940e229db35d" id="r_a837a3dc04e1509cfa04d940e229db35d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#a837a3dc04e1509cfa04d940e229db35d">CompararDietaPorId</a> (const void *a, const void *b)</td></tr>
+<tr class="memdesc:a837a3dc04e1509cfa04d940e229db35d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compara dois elementos do tipo <a class="el" href="struct_dieta.html">Dieta</a> por ID do paciente associado.  <br /></td></tr>
+<tr class="separator:a837a3dc04e1509cfa04d940e229db35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36384601076a4104919113ecda681992" id="r_a36384601076a4104919113ecda681992"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#a36384601076a4104919113ecda681992">CompararDietaPorData</a> (const void *a, const void *b)</td></tr>
+<tr class="memdesc:a36384601076a4104919113ecda681992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compara dois elementos do tipo <a class="el" href="struct_dieta.html">Dieta</a> por data em ordem decrescente.  <br /></td></tr>
+<tr class="separator:a36384601076a4104919113ecda681992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf493fbc4cda875bec59f9282d51a72" id="r_a4bf493fbc4cda875bec59f9282d51a72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#a4bf493fbc4cda875bec59f9282d51a72">OrganizarDietasPorId</a> (<a class="el" href="struct_dieta.html">Dieta</a> dietas[], int tamanho)</td></tr>
+<tr class="memdesc:a4bf493fbc4cda875bec59f9282d51a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Organiza um array de <a class="el" href="struct_dieta.html">Dieta</a> por ID do paciente associado usando o algoritmo de ordenação qsort.  <br /></td></tr>
+<tr class="separator:a4bf493fbc4cda875bec59f9282d51a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbfff05a80fe7b28a4440b9f47e3395d" id="r_afbfff05a80fe7b28a4440b9f47e3395d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#afbfff05a80fe7b28a4440b9f47e3395d">CompararPlanoPorId</a> (const void *a, const void *b)</td></tr>
+<tr class="memdesc:afbfff05a80fe7b28a4440b9f47e3395d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compara dois elementos do tipo <a class="el" href="struct_plano.html">Plano</a> por ID do paciente associado.  <br /></td></tr>
+<tr class="separator:afbfff05a80fe7b28a4440b9f47e3395d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff393d81d4e793e760e89e2a633d9d53" id="r_aff393d81d4e793e760e89e2a633d9d53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#aff393d81d4e793e760e89e2a633d9d53">OrganizarPlanosPorId</a> (<a class="el" href="struct_plano.html">Plano</a> planos[], int tamanho)</td></tr>
+<tr class="memdesc:aff393d81d4e793e760e89e2a633d9d53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Organiza um array de <a class="el" href="struct_plano.html">Plano</a> por ID do paciente associado usando o algoritmo de ordenação qsort.  <br /></td></tr>
+<tr class="separator:aff393d81d4e793e760e89e2a633d9d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1001855114b2b21fc3971bcd064bc930" id="r_a1001855114b2b21fc3971bcd064bc930"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#a1001855114b2b21fc3971bcd064bc930">ValidarFormatoData</a> (const char *dataStr)</td></tr>
+<tr class="memdesc:a1001855114b2b21fc3971bcd064bc930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se uma string está no formato de data DD-MM-AAAA.  <br /></td></tr>
+<tr class="separator:a1001855114b2b21fc3971bcd064bc930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb289dc5e5f8424b92c172c9a310195c" id="r_abb289dc5e5f8424b92c172c9a310195c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#abb289dc5e5f8424b92c172c9a310195c">ProcessarFicheiro</a> (const char *nomeFicheiro, int tipoDadosFicheiro, int tipoFicheiro, void *dados, size_t tamanhoRegisto, int *numRegistos)</td></tr>
+<tr class="memdesc:abb289dc5e5f8424b92c172c9a310195c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processa um ficheiro, importando dados de acordo com o tipo de ficheiro e tipo de dados especificados.  <br /></td></tr>
+<tr class="separator:abb289dc5e5f8424b92c172c9a310195c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9bd25879ceca843296f26f0371bb847" id="r_ae9bd25879ceca843296f26f0371bb847"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#ae9bd25879ceca843296f26f0371bb847">ImportarEProcessarFicheiro</a> (const char *ficheiro, int tipoDados, int tipoFicheiro, void *dados, size_t tamanhoRegisto, int *numRegistos)</td></tr>
+<tr class="memdesc:ae9bd25879ceca843296f26f0371bb847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Importa e processa um ficheiro, apresentando informações e lidando com o resultado.  <br /></td></tr>
+<tr class="separator:ae9bd25879ceca843296f26f0371bb847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8324b1f23ec2145344106ff719495dca" id="r_a8324b1f23ec2145344106ff719495dca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#a8324b1f23ec2145344106ff719495dca">ConverterRefeicaoParaId</a> (char refeicao[TAMANHO_REFEICAO])</td></tr>
+<tr class="memdesc:a8324b1f23ec2145344106ff719495dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converte uma string de refeição para o ID (PEQUENO_ALMOCO_ID, ALMOCO_ID, JANTAR_ID).  <br /></td></tr>
+<tr class="separator:a8324b1f23ec2145344106ff719495dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e1b24a2e3e4ab16160c9a1437eb303" id="r_ad4e1b24a2e3e4ab16160c9a1437eb303"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#ad4e1b24a2e3e4ab16160c9a1437eb303">ConverterRefeicaoParaTexto</a> (int refeicao)</td></tr>
+<tr class="memdesc:ad4e1b24a2e3e4ab16160c9a1437eb303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converte uma string de refeição para o ID (PEQUENO_ALMOCO_ID, ALMOCO_ID, JANTAR_ID).  <br /></td></tr>
+<tr class="separator:ad4e1b24a2e3e4ab16160c9a1437eb303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58ce61b7d6347c6f6e230d471d006f45" id="r_a58ce61b7d6347c6f6e230d471d006f45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utils_8c.html#a58ce61b7d6347c6f6e230d471d006f45">GuardarDados</a> (<a class="el" href="struct_paciente.html">Paciente</a> pacientes[], int numPacientes, <a class="el" href="struct_dieta.html">Dieta</a> dietas[], int numDietas, <a class="el" href="struct_plano.html">Plano</a> planos[], int numPlanos)</td></tr>
+<tr class="memdesc:a58ce61b7d6347c6f6e230d471d006f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guarda os dados para os ficheiros binários.  <br /></td></tr>
+<tr class="separator:a58ce61b7d6347c6f6e230d471d006f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Funções utilitárias do programa. </p>
+<dl class="section author"><dt>Autor</dt><dd>Enrique George Rodrigues</dd></dl>
+<dl class="section date"><dt>Data</dt><dd>Criado: 18.11.2023 </dd>
+<dd>
+Modificado: 28.12.2023</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>© Enrique George Rodrigues, 2023. Todos os direitos reservados. </dd></dl>
+</div><h2 class="groupheader">Documentação das funções</h2>
+<a id="ab24e0f13c8c0220f901c4f07a5431f1d" name="ab24e0f13c8c0220f901c4f07a5431f1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab24e0f13c8c0220f901c4f07a5431f1d">&#9670;&#160;</a></span>ApresentarAjuda()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ApresentarAjuda </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Apresenta o manual de ajuda ao utilizador. </p>
+<p>Esta função demonstra como utilizar o programa. </p>
+
+</div>
+</div>
+<a id="a36384601076a4104919113ecda681992" name="a36384601076a4104919113ecda681992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36384601076a4104919113ecda681992">&#9670;&#160;</a></span>CompararDietaPorData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CompararDietaPorData </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compara dois elementos do tipo <a class="el" href="struct_dieta.html">Dieta</a> por data em ordem decrescente. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>- Um apontador para o primeiro elemento <a class="el" href="struct_dieta.html">Dieta</a>. </td></tr>
+    <tr><td class="paramname">b</td><td>- Um apontador para o segundo elemento <a class="el" href="struct_dieta.html">Dieta</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores retornados</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Um</td><td>número negativo se a data de 'a' é mais recente que a data de 'b', um número positivo se a data de 'a' é mais antiga que a data de 'b', e 0 se as datas são iguais. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a837a3dc04e1509cfa04d940e229db35d" name="a837a3dc04e1509cfa04d940e229db35d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a837a3dc04e1509cfa04d940e229db35d">&#9670;&#160;</a></span>CompararDietaPorId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CompararDietaPorId </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compara dois elementos do tipo <a class="el" href="struct_dieta.html">Dieta</a> por ID do paciente associado. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>- Apontador para o primeiro elemento <a class="el" href="struct_dieta.html">Dieta</a>. </td></tr>
+    <tr><td class="paramname">b</td><td>- Apontador para o segundo elemento <a class="el" href="struct_dieta.html">Dieta</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Um número negativo se o ID do paciente associado de 'a' é menor que o ID do paciente associado de 'b', um número positivo se o ID do paciente associado de 'a' é maior que o ID do paciente associado de 'b' e 0 se os IDs do paciente associado são iguais. </dd></dl>
+
+</div>
+</div>
+<a id="a1b479846ec3a02aaa81b2d0af8977bb5" name="a1b479846ec3a02aaa81b2d0af8977bb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b479846ec3a02aaa81b2d0af8977bb5">&#9670;&#160;</a></span>CompararPacientePorId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CompararPacientePorId </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compara dois elementos do tipo <a class="el" href="struct_paciente.html">Paciente</a> por ID. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>- Apontador para o primeiro elemento <a class="el" href="struct_paciente.html">Paciente</a>. </td></tr>
+    <tr><td class="paramname">b</td><td>- Apontador para o segundo elemento <a class="el" href="struct_paciente.html">Paciente</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Um número negativo se o ID de 'a' é menor que o ID de 'b', um número positivo se o ID de 'a' é maior que o ID de 'b' e 0 se os IDs são iguais. </dd></dl>
+
+</div>
+</div>
+<a id="afbfff05a80fe7b28a4440b9f47e3395d" name="afbfff05a80fe7b28a4440b9f47e3395d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbfff05a80fe7b28a4440b9f47e3395d">&#9670;&#160;</a></span>CompararPlanoPorId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CompararPlanoPorId </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compara dois elementos do tipo <a class="el" href="struct_plano.html">Plano</a> por ID do paciente associado. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>- Apontador para o primeiro elemento <a class="el" href="struct_plano.html">Plano</a>. </td></tr>
+    <tr><td class="paramname">b</td><td>- Apontador para o segundo elemento <a class="el" href="struct_plano.html">Plano</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Um número negativo se o ID do paciente associado de 'a' é menor que o ID do paciente associado de 'b', um número positivo se o ID do paciente associado de 'a' é maior que o ID do paciente associado de 'b' e 0 se os IDs do paciente associado são iguais. </dd></dl>
+
+</div>
+</div>
+<a id="ac6e2725f3574d97796840e0644781b36" name="ac6e2725f3574d97796840e0644781b36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6e2725f3574d97796840e0644781b36">&#9670;&#160;</a></span>ConverterDatetimeParaString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * ConverterDatetimeParaString </td>
+          <td>(</td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>datetime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converte um objeto datetime para uma data no formato texto <code>DD-MM-AAAA</code>. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">datetime</td><td>- O objeto datetime. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores retornados</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-</td><td>A string formatada "DD-MM-AAAA". </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8324b1f23ec2145344106ff719495dca" name="a8324b1f23ec2145344106ff719495dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8324b1f23ec2145344106ff719495dca">&#9670;&#160;</a></span>ConverterRefeicaoParaId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConverterRefeicaoParaId </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>refeicao</em>[TAMANHO_REFEICAO]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converte uma string de refeição para o ID (PEQUENO_ALMOCO_ID, ALMOCO_ID, JANTAR_ID). </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">refeicao</td><td>- A string da refeição. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores retornados</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-</td><td>O ID da refeição ou ERRO_REFEICAO_ID (-1) em caso de erro. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad4e1b24a2e3e4ab16160c9a1437eb303" name="ad4e1b24a2e3e4ab16160c9a1437eb303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e1b24a2e3e4ab16160c9a1437eb303">&#9670;&#160;</a></span>ConverterRefeicaoParaTexto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * ConverterRefeicaoParaTexto </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>refeicao</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converte uma string de refeição para o ID (PEQUENO_ALMOCO_ID, ALMOCO_ID, JANTAR_ID). </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">refeicao</td><td>- O ID da refeição. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores retornados</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-</td><td>A string da refeição. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8d0016ed30f0186ff6fed73d35a8d8ed" name="a8d0016ed30f0186ff6fed73d35a8d8ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d0016ed30f0186ff6fed73d35a8d8ed">&#9670;&#160;</a></span>ConverterStringParaDatetime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t ConverterStringParaDatetime </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dateString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converte uma data no formato texto <code>DD-MM-AAAA</code> para um objeto datetime. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dateString</td><td>- A data em formato texto. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores retornados</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-</td><td>O objeto datetime. </td></tr>
+    <tr><td class="paramname">-</td><td>14 - Erro na conversão (ERRO_CONVERSAO_TEXTO_DATETIME). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a95a5a4c798fe90f4da46f5ddf0156afd" name="a95a5a4c798fe90f4da46f5ddf0156afd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95a5a4c798fe90f4da46f5ddf0156afd">&#9670;&#160;</a></span>CustomSleep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CustomSleep </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>segundos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uma função que para o programa durante n segundos. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segundos</td><td>- O número de segundos que o programa deve parar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Nota</dt><dd>- A função usa o "Sleep()" para Windows e "sleep()" para sistemas Unix. </dd></dl>
+
+</div>
+</div>
+<a id="a537d893cf3eede64bd4e6edcae78d978" name="a537d893cf3eede64bd4e6edcae78d978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a537d893cf3eede64bd4e6edcae78d978">&#9670;&#160;</a></span>EscreverComCor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EscreverComCor </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>formato</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uma função que permite escrever no terminal numa cor definida por códigos ANSI. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cor</td><td>- O código ANSI ou modo pré-definido (ex. ANSI_INFO ou ANSI_ERROR). </td></tr>
+    <tr><td class="paramname">formato</td><td>- O texto a ser apresentado no terminal com suporte para parâmetros (ex. d). </td></tr>
+    <tr><td class="paramname">...</td><td>- Os parâmetros opcionais para apresentar valores de variáveis (ex. d).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Nota</dt><dd>- Esta função é uma função variádica que suporta <code>n</code> parâmetros adicionais para escrever valores de variáveis.</dd></dl>
+<p>Exemplo de uso: <code>EscreverComCor(ANSI_INFO, "Isto e uma mensagem de info! d, &amp;variavelTipoInt);</code> </p>
+
+</div>
+</div>
+<a id="a58ce61b7d6347c6f6e230d471d006f45" name="a58ce61b7d6347c6f6e230d471d006f45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58ce61b7d6347c6f6e230d471d006f45">&#9670;&#160;</a></span>GuardarDados()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GuardarDados </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_paciente.html">Paciente</a>&#160;</td>
+          <td class="paramname"><em>pacientes</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numPacientes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_dieta.html">Dieta</a>&#160;</td>
+          <td class="paramname"><em>dietas</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numDietas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_plano.html">Plano</a>&#160;</td>
+          <td class="paramname"><em>planos</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numPlanos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Guarda os dados para os ficheiros binários. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pacientes</td><td>Array de pacientes a serem guardados. </td></tr>
+    <tr><td class="paramname">numPacientes</td><td>Número de elementos no array de pacientes. </td></tr>
+    <tr><td class="paramname">dietas</td><td>Array de dietas a serem guardadas. </td></tr>
+    <tr><td class="paramname">numDietas</td><td>Número de elementos no array de dietas. </td></tr>
+    <tr><td class="paramname">planos</td><td>Array de planos a serem guardados. </td></tr>
+    <tr><td class="paramname">numPlanos</td><td>Número de elementos no array de planos. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae9bd25879ceca843296f26f0371bb847" name="ae9bd25879ceca843296f26f0371bb847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9bd25879ceca843296f26f0371bb847">&#9670;&#160;</a></span>ImportarEProcessarFicheiro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImportarEProcessarFicheiro </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ficheiro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tipoDados</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tipoFicheiro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dados</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tamanhoRegisto</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>numRegistos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Importa e processa um ficheiro, apresentando informações e lidando com o resultado. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ficheiro</td><td>- O nome do ficheiro a ser importado. </td></tr>
+    <tr><td class="paramname">tipoDados</td><td>- O tipo de dados a ser importado (TIPO_DADOS_PACIENTES, TIPO_DADOS_DIETAS, TIPO_DADOS_PLANOS). </td></tr>
+    <tr><td class="paramname">tipoFicheiro</td><td>- O tipo de ficheiro a ser importado (TIPO_FICHEIRO_TXT, TIPO_FICHEIRO_BIN, TIPO_FICHEIRO_TAB). </td></tr>
+    <tr><td class="paramname">dados</td><td>- Um apontador para a estrutura de dados onde os dados serão guardados. </td></tr>
+    <tr><td class="paramname">tamanhoRegisto</td><td>- O tamanho de cada registo dos dados. </td></tr>
+    <tr><td class="paramname">numRegistos</td><td>- Um apontador para a variável que vai guardar o número de registos importados.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Nota</dt><dd>Esta função é utilizada para simplificar o processo de importação, apresentação de informações e manipulação do resultado.</dd></dl>
+<dl class="retval"><dt>Valores retornados</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-</td><td>0 se o programa correu sem erros (SUCESSO). </td></tr>
+    <tr><td class="paramname">-</td><td>24 se o ficheiro introduzido é NULLO (ERRO_FICHEIRO_NULLO). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a74a0084944b9583f7ae76a6020fbf0bd" name="a74a0084944b9583f7ae76a6020fbf0bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a0084944b9583f7ae76a6020fbf0bd">&#9670;&#160;</a></span>LerTecla()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LerTecla </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uma função que permite ler um carater. </p>
+<dl class="section note"><dt>Nota</dt><dd>- A função usa o "_getch()" para Windows e um processo especial para sistemas Unix. </dd></dl>
+
+</div>
+</div>
+<a id="a47aa9d2ccdca4a70489a3c0e4c51e3b1" name="a47aa9d2ccdca4a70489a3c0e4c51e3b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47aa9d2ccdca4a70489a3c0e4c51e3b1">&#9670;&#160;</a></span>LibertarMemoria()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LibertarMemoria </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_paciente.html">Paciente</a> **&#160;</td>
+          <td class="paramname"><em>pacientes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>numPacientes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_dieta.html">Dieta</a> **&#160;</td>
+          <td class="paramname"><em>dietas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>numDietas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_plano.html">Plano</a> **&#160;</td>
+          <td class="paramname"><em>planos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>numPlanos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Liberta toda a memoria alocada aos pacientes, dietas e planos. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pacientes</td><td>- Array pacientes. </td></tr>
+    <tr><td class="paramname">numPacientes</td><td>- Apontador para o número de pacientes. </td></tr>
+    <tr><td class="paramname">dietas</td><td>- Array dietas. </td></tr>
+    <tr><td class="paramname">numDietas</td><td>- Apontador para o número de dietas. </td></tr>
+    <tr><td class="paramname">planos</td><td>- Array planos. </td></tr>
+    <tr><td class="paramname">numPlanos</td><td>- Apontador para o número de planos.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Nota</dt><dd>- Esta função não está a ser utilizada neste momento devido à migração para arrays de tamanho constante. Mas numa implentação futura, pode-se alocar a memória dinamicamente, colocando os dados no heap em vez do stack. </dd></dl>
+
+</div>
+</div>
+<a id="a007dcb1e0b52973e50955f53ad7fcd2e" name="a007dcb1e0b52973e50955f53ad7fcd2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a007dcb1e0b52973e50955f53ad7fcd2e">&#9670;&#160;</a></span>LimparEcra()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LimparEcra </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Limpa o ecrã do terminal. </p>
+<p>Esta função utiliza a função 'system()' para chamar o comando adequado para limpar o ecrã do terminal. Suporta sistemas Windows e Unix.</p>
+<dl class="section note"><dt>Nota</dt><dd>A função suporta sistemas Windows (utiliza "cls") e sistemas Unix (utiliza "clear"). </dd></dl>
+
+</div>
+</div>
+<a id="a4bf493fbc4cda875bec59f9282d51a72" name="a4bf493fbc4cda875bec59f9282d51a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf493fbc4cda875bec59f9282d51a72">&#9670;&#160;</a></span>OrganizarDietasPorId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OrganizarDietasPorId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_dieta.html">Dieta</a>&#160;</td>
+          <td class="paramname"><em>dietas</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tamanho</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Organiza um array de <a class="el" href="struct_dieta.html">Dieta</a> por ID do paciente associado usando o algoritmo de ordenação qsort. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dietas</td><td>- Array de <a class="el" href="struct_dieta.html">Dieta</a>. </td></tr>
+    <tr><td class="paramname">tamanho</td><td>- Número de elementos no array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa101e330be6fbd1140cbc490401e2784" name="aa101e330be6fbd1140cbc490401e2784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa101e330be6fbd1140cbc490401e2784">&#9670;&#160;</a></span>OrganizarPacientesPorId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OrganizarPacientesPorId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_paciente.html">Paciente</a>&#160;</td>
+          <td class="paramname"><em>pacientes</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tamanho</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Organiza um array de <a class="el" href="struct_paciente.html">Paciente</a> por ID usando o algoritmo de ordenação qsort. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pacientes</td><td>- Array de <a class="el" href="struct_paciente.html">Paciente</a>. </td></tr>
+    <tr><td class="paramname">tamanho</td><td>- Número de elementos no array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aff393d81d4e793e760e89e2a633d9d53" name="aff393d81d4e793e760e89e2a633d9d53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff393d81d4e793e760e89e2a633d9d53">&#9670;&#160;</a></span>OrganizarPlanosPorId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OrganizarPlanosPorId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_plano.html">Plano</a>&#160;</td>
+          <td class="paramname"><em>planos</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tamanho</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Organiza um array de <a class="el" href="struct_plano.html">Plano</a> por ID do paciente associado usando o algoritmo de ordenação qsort. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">planos</td><td>- Array de <a class="el" href="struct_plano.html">Plano</a>. </td></tr>
+    <tr><td class="paramname">tamanho</td><td>- Número de elementos no array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abb289dc5e5f8424b92c172c9a310195c" name="abb289dc5e5f8424b92c172c9a310195c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb289dc5e5f8424b92c172c9a310195c">&#9670;&#160;</a></span>ProcessarFicheiro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ProcessarFicheiro </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>nomeFicheiro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tipoDadosFicheiro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tipoFicheiro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dados</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tamanhoRegisto</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>numRegistos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Processa um ficheiro, importando dados de acordo com o tipo de ficheiro e tipo de dados especificados. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nomeFicheiro</td><td>- O nome do ficheiro a ser processado. </td></tr>
+    <tr><td class="paramname">tipoDadosFicheiro</td><td>- O tipo de dados a ser importado (TIPO_DADOS_PACIENTES, TIPO_DADOS_DIETAS, TIPO_DADOS_PLANOS). </td></tr>
+    <tr><td class="paramname">tipoFicheiro</td><td>- O tipo de ficheiro a ser processado (TIPO_FICHEIRO_TXT, TIPO_FICHEIRO_BIN, TIPO_FICHEIRO_TAB). </td></tr>
+    <tr><td class="paramname">dados</td><td>- Um apontador para a estrutura de dados onde os dados serão guardados. </td></tr>
+    <tr><td class="paramname">tamanhoRegisto</td><td>- O tamanho de cada registo dos dados. </td></tr>
+    <tr><td class="paramname">numRegistos</td><td>- Um apontador para a variável que vai guardar o número de registos importados.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Nota</dt><dd>Esta função é responsável por chamar funções específicas de importação de acordo com os tipos especificados.</dd></dl>
+<dl class="retval"><dt>Valores retornados</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultado</td><td>- O código de resultado da operação. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a29cca41027c5d466a400f4ef1fdb1402" name="a29cca41027c5d466a400f4ef1fdb1402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29cca41027c5d466a400f4ef1fdb1402">&#9670;&#160;</a></span>TerminarProgramaComErro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TerminarProgramaComErro </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>codigoErro</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Termina o programa apresentando uma mensagem de erro e terminando com um código de erro. </p>
+<p>Esta função imprime uma mensagem de erro no standard error (stderr) seguida pelo código de erro especificado. A seguir, termina o programa utilizando 'exit()' com o código de erro "codigoErro".</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">codigoErro</td><td>- O código de erro a ser apresentado e utilizado para encerrar o programa. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1001855114b2b21fc3971bcd064bc930" name="a1001855114b2b21fc3971bcd064bc930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1001855114b2b21fc3971bcd064bc930">&#9670;&#160;</a></span>ValidarFormatoData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ValidarFormatoData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dataStr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se uma string está no formato de data DD-MM-AAAA. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataStr</td><td>- String de data para verificação. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true se estiver no formato correto, false caso contrário. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_utils_8c.html">Utils.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

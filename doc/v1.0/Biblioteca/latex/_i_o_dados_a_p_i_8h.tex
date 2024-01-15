@@ -1,0 +1,205 @@
+\doxysection{Referência ao ficheiro IODados\+API.\+h}
+\hypertarget{_i_o_dados_a_p_i_8h}{}\label{_i_o_dados_a_p_i_8h}\index{IODadosAPI.h@{IODadosAPI.h}}
+
+
+Funções de importar e exportar dados dos ficheiros {\ttfamily \doxylink{_importar_dados_8c}{Importar\+Dados.\+c}} e {\ttfamily \doxylink{_exportar_dados_8c}{Exportar\+Dados.\+c}}.  
+
+
+{\ttfamily \#include "{}../\+LESI\+\_\+\+PI\+\_\+\+TP\+\_\+a28602/\+Constantes.\+h"{}}\newline
+{\ttfamily \#include "{}../\+LESI\+\_\+\+PI\+\_\+\+TP\+\_\+a28602/\+Estrutura\+Dados.\+h"{}}\newline
+{\ttfamily \#include "{}../\+LESI\+\_\+\+PI\+\_\+\+TP\+\_\+a28602/\+Utils.\+h"{}}\newline
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+IO\+\_\+\+DADOS\+\_\+\+API int \mbox{\hyperlink{_i_o_dados_a_p_i_8h_ae2a3c6e76e5175874ca0ed12bb66c72f}{Exportar\+Dados\+Fich\+Binario}} (const char \texorpdfstring{$\ast$}{*}nome\+Ficheiro, void \texorpdfstring{$\ast$}{*}dados, int tamanho, size\+\_\+t tamanho\+Elemento)
+\begin{DoxyCompactList}\small\item\em Exporta os dados para o ficheiro binário. \end{DoxyCompactList}\item 
+IO\+\_\+\+DADOS\+\_\+\+API int \mbox{\hyperlink{_i_o_dados_a_p_i_8h_abc9846b659607b75dbbd3f696065f8c4}{Importar\+Dados\+Fich\+Binario}} (const char \texorpdfstring{$\ast$}{*}nome\+Ficheiro, void \texorpdfstring{$\ast$}{*}dados, size\+\_\+t tamanho\+Registo, int \texorpdfstring{$\ast$}{*}num\+Registos)
+\begin{DoxyCompactList}\small\item\em Importa os dados a partir do ficheiro binário. \end{DoxyCompactList}\item 
+IO\+\_\+\+DADOS\+\_\+\+API int \mbox{\hyperlink{_i_o_dados_a_p_i_8h_a814de11c559bbe566ba5192ef376dcac}{Importar\+Pacientes\+Fich\+Texto}} (FILE \texorpdfstring{$\ast$}{*}file, const char \texorpdfstring{$\ast$}{*}nome\+Ficheiro, char \texorpdfstring{$\ast$}{*}formato\+Ficheiro, Paciente pacientes\mbox{[}TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]}, int \texorpdfstring{$\ast$}{*}num\+Pacientes)
+\begin{DoxyCompactList}\small\item\em Importa dados de pacientes de um ficheiro de texto e adiciona-\/os aos dados guardados, ignorando os recordes duplicados. \end{DoxyCompactList}\item 
+IO\+\_\+\+DADOS\+\_\+\+API int \mbox{\hyperlink{_i_o_dados_a_p_i_8h_ad513952c7685c0a802dbc6cae71ddec8}{Importar\+Dietas\+Fich\+Texto}} (FILE \texorpdfstring{$\ast$}{*}file, const char \texorpdfstring{$\ast$}{*}nome\+Ficheiro, char \texorpdfstring{$\ast$}{*}formato\+Ficheiro, Dieta dietas\mbox{[}TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]}, int \texorpdfstring{$\ast$}{*}num\+Dietas)
+\begin{DoxyCompactList}\small\item\em Importa dados de dietas de um ficheiro de texto e adiciona-\/os aos dados guardados, ignorando os recordes duplicados. \end{DoxyCompactList}\item 
+IO\+\_\+\+DADOS\+\_\+\+API int \mbox{\hyperlink{_i_o_dados_a_p_i_8h_a155af24a77b9388554ae8b5bb0e3cdfc}{Importar\+Planos\+Fich\+Texto}} (FILE \texorpdfstring{$\ast$}{*}file, const char \texorpdfstring{$\ast$}{*}nome\+Ficheiro, char \texorpdfstring{$\ast$}{*}formato\+Ficheiro, Plano planos\mbox{[}TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]}, int \texorpdfstring{$\ast$}{*}num\+Planos)
+\begin{DoxyCompactList}\small\item\em Importa dados de planos de um ficheiro de texto e adiciona-\/os aos dados guardados, ignorando os recordes duplicados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Funções de importar e exportar dados dos ficheiros {\ttfamily \doxylink{_importar_dados_8c}{Importar\+Dados.\+c}} e {\ttfamily \doxylink{_exportar_dados_8c}{Exportar\+Dados.\+c}}. 
+
+\texorpdfstring{$\sim$}{\string~} \begin{DoxyAuthor}{Autor}
+Enrique George Rodrigues 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+23.\+12.\+2023 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+© Enrique George Rodrigues, 2023. All right reserved. 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{_i_o_dados_a_p_i_8h_ae2a3c6e76e5175874ca0ed12bb66c72f}\label{_i_o_dados_a_p_i_8h_ae2a3c6e76e5175874ca0ed12bb66c72f} 
+\index{IODadosAPI.h@{IODadosAPI.h}!ExportarDadosFichBinario@{ExportarDadosFichBinario}}
+\index{ExportarDadosFichBinario@{ExportarDadosFichBinario}!IODadosAPI.h@{IODadosAPI.h}}
+\doxysubsubsection{\texorpdfstring{ExportarDadosFichBinario()}{ExportarDadosFichBinario()}}
+{\footnotesize\ttfamily IO\+\_\+\+DADOS\+\_\+\+API int Exportar\+Dados\+Fich\+Binario (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro,  }\item[{void \texorpdfstring{$\ast$}{*}}]{dados,  }\item[{int}]{tamanho,  }\item[{size\+\_\+t}]{tamanho\+Elemento }\end{DoxyParamCaption})}
+
+
+
+Exporta os dados para o ficheiro binário. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+Ficheiro} & -\/ O nome do ficheiro binário. \\
+\hline
+{\em dados} & -\/ Os dados na memória. \\
+\hline
+{\em tamanho} & -\/ O número de elementos na memória. \\
+\hline
+{\em tamanho\+Elemento} & -\/ O tamanho de cada elemento no array.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em 0} & -\/ Sucesso na execução (SUCESSO). \\
+\hline
+{\em 12} & -\/ Erro ao abrir ficheiro (ERRO\+\_\+\+ABRIR\+\_\+\+FICHEIRO). \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_i_o_dados_a_p_i_8h_abc9846b659607b75dbbd3f696065f8c4}\label{_i_o_dados_a_p_i_8h_abc9846b659607b75dbbd3f696065f8c4} 
+\index{IODadosAPI.h@{IODadosAPI.h}!ImportarDadosFichBinario@{ImportarDadosFichBinario}}
+\index{ImportarDadosFichBinario@{ImportarDadosFichBinario}!IODadosAPI.h@{IODadosAPI.h}}
+\doxysubsubsection{\texorpdfstring{ImportarDadosFichBinario()}{ImportarDadosFichBinario()}}
+{\footnotesize\ttfamily IO\+\_\+\+DADOS\+\_\+\+API int Importar\+Dados\+Fich\+Binario (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro,  }\item[{void \texorpdfstring{$\ast$}{*}}]{dados,  }\item[{size\+\_\+t}]{tamanho\+Registo,  }\item[{int \texorpdfstring{$\ast$}{*}}]{num\+Registos }\end{DoxyParamCaption})}
+
+
+
+Importa os dados a partir do ficheiro binário. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+Ficheiro} & -\/ O nome do ficheiro binário. \\
+\hline
+{\em dados} & -\/ O array de dados a ser importado. \\
+\hline
+{\em tamanho\+Registo} & -\/ O tamanho de cada registro em bytes. \\
+\hline
+{\em num\+Registos} & -\/ Um apontador para a variável que guarda o número de registros.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em 0} & -\/ Sucesso na execução (SUCESSO). \\
+\hline
+{\em 12} & -\/ Erro ao abrir o ficheiro (ERRO\+\_\+\+ABRIR\+\_\+\+FICHEIRO). \\
+\hline
+{\em 13} & -\/ Erro, tamanho máximo excedido. (ERRO\+\_\+\+TAMANHO\+\_\+\+EXCEDIDO). \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_i_o_dados_a_p_i_8h_ad513952c7685c0a802dbc6cae71ddec8}\label{_i_o_dados_a_p_i_8h_ad513952c7685c0a802dbc6cae71ddec8} 
+\index{IODadosAPI.h@{IODadosAPI.h}!ImportarDietasFichTexto@{ImportarDietasFichTexto}}
+\index{ImportarDietasFichTexto@{ImportarDietasFichTexto}!IODadosAPI.h@{IODadosAPI.h}}
+\doxysubsubsection{\texorpdfstring{ImportarDietasFichTexto()}{ImportarDietasFichTexto()}}
+{\footnotesize\ttfamily IO\+\_\+\+DADOS\+\_\+\+API int Importar\+Dietas\+Fich\+Texto (\begin{DoxyParamCaption}\item[{FILE \texorpdfstring{$\ast$}{*}}]{file,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro,  }\item[{char \texorpdfstring{$\ast$}{*}}]{formato\+Ficheiro,  }\item[{Dieta}]{dietas\mbox{[}\+TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{num\+Dietas }\end{DoxyParamCaption})}
+
+
+
+Importa dados de dietas de um ficheiro de texto e adiciona-\/os aos dados guardados, ignorando os recordes duplicados. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em file} & -\/ Apontador do tipo FILE\texorpdfstring{$\ast$}{*} do ficheiro. Caso não tenha, pode mandar NULL. \\
+\hline
+{\em nome\+Ficheiro} & -\/ O nome do ficheiro de texto. \\
+\hline
+{\em formato} & -\/ O formato dos dados do ficheiro de texto (FORMATO\+\_\+\+DIETAS\+\_\+\+TXT ou FORMATO\+\_\+\+DIETAS\+\_\+\+TAB). \\
+\hline
+{\em dietas} & -\/ O array de dietas. \\
+\hline
+{\em num\+Dietas} & -\/ Um apontador para a variável que guarda o número de dietas.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Só é preciso mandar o nome do ficheiro ou o apontador FILE\texorpdfstring{$\ast$}{*}.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em 0} & -\/ Sucesso na execução (SUCESSO). \\
+\hline
+{\em 10} & -\/ Erro formato ficheiro (ERRO\+\_\+\+FORMATO\+\_\+\+INVALIDO). \\
+\hline
+{\em 12} & -\/ Erro ao abrir o ficheiro (ERRO\+\_\+\+ABRIR\+\_\+\+FICHEIRO). \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_i_o_dados_a_p_i_8h_a814de11c559bbe566ba5192ef376dcac}\label{_i_o_dados_a_p_i_8h_a814de11c559bbe566ba5192ef376dcac} 
+\index{IODadosAPI.h@{IODadosAPI.h}!ImportarPacientesFichTexto@{ImportarPacientesFichTexto}}
+\index{ImportarPacientesFichTexto@{ImportarPacientesFichTexto}!IODadosAPI.h@{IODadosAPI.h}}
+\doxysubsubsection{\texorpdfstring{ImportarPacientesFichTexto()}{ImportarPacientesFichTexto()}}
+{\footnotesize\ttfamily IO\+\_\+\+DADOS\+\_\+\+API int Importar\+Pacientes\+Fich\+Texto (\begin{DoxyParamCaption}\item[{FILE \texorpdfstring{$\ast$}{*}}]{file,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro,  }\item[{char \texorpdfstring{$\ast$}{*}}]{formato\+Ficheiro,  }\item[{Paciente}]{pacientes\mbox{[}\+TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{num\+Pacientes }\end{DoxyParamCaption})}
+
+
+
+Importa dados de pacientes de um ficheiro de texto e adiciona-\/os aos dados guardados, ignorando os recordes duplicados. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em file} & -\/ Apontador do tipo FILE\texorpdfstring{$\ast$}{*} do ficheiro. Caso não tenha, pode mandar NULL. \\
+\hline
+{\em nome\+Ficheiro} & -\/ O nome do ficheiro de texto. \\
+\hline
+{\em formato} & -\/ O formato dos dados do ficheiro de texto (FORMATO\+\_\+\+PACIENTES\+\_\+\+TXT ou FORMATO\+\_\+\+PACIENTES\+\_\+\+TAB). \\
+\hline
+{\em pacientes} & -\/ O array de pacientes. \\
+\hline
+{\em num\+Pacientes} & -\/ Um apontador para a variável que guarda o número de pacientes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Só é preciso mandar o nome do ficheiro ou o apontador FILE\texorpdfstring{$\ast$}{*}.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em 0} & -\/ Sucesso na execução (SUCESSO). \\
+\hline
+{\em 10} & -\/ Erro formato ficheiro (ERRO\+\_\+\+FORMATO\+\_\+\+INVALIDO). \\
+\hline
+{\em 12} & -\/ Erro ao abrir o ficheiro (ERRO\+\_\+\+ABRIR\+\_\+\+FICHEIRO). \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_i_o_dados_a_p_i_8h_a155af24a77b9388554ae8b5bb0e3cdfc}\label{_i_o_dados_a_p_i_8h_a155af24a77b9388554ae8b5bb0e3cdfc} 
+\index{IODadosAPI.h@{IODadosAPI.h}!ImportarPlanosFichTexto@{ImportarPlanosFichTexto}}
+\index{ImportarPlanosFichTexto@{ImportarPlanosFichTexto}!IODadosAPI.h@{IODadosAPI.h}}
+\doxysubsubsection{\texorpdfstring{ImportarPlanosFichTexto()}{ImportarPlanosFichTexto()}}
+{\footnotesize\ttfamily IO\+\_\+\+DADOS\+\_\+\+API int Importar\+Planos\+Fich\+Texto (\begin{DoxyParamCaption}\item[{FILE \texorpdfstring{$\ast$}{*}}]{file,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro,  }\item[{char \texorpdfstring{$\ast$}{*}}]{formato\+Ficheiro,  }\item[{Plano}]{planos\mbox{[}\+TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{num\+Planos }\end{DoxyParamCaption})}
+
+
+
+Importa dados de planos de um ficheiro de texto e adiciona-\/os aos dados guardados, ignorando os recordes duplicados. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em file} & -\/ Apontador do tipo FILE\texorpdfstring{$\ast$}{*} do ficheiro. Caso não tenha, pode mandar NULL. \\
+\hline
+{\em nome\+Ficheiro} & -\/ O nome do ficheiro de texto. \\
+\hline
+{\em planos} & -\/ O array de planos. \\
+\hline
+{\em num\+Planos} & -\/ Um apontador para a variável que guarda o número de planos.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Só é preciso mandar o nome do ficheiro ou o apontador FILE\texorpdfstring{$\ast$}{*}.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em 0} & -\/ Sucesso na execução (SUCESSO). \\
+\hline
+{\em 8} & -\/ Ficheiro vazio (ERRO\+\_\+\+FICHEIRO\+\_\+\+VAZIO). \\
+\hline
+{\em 9} & -\/ Erro na leitura do ficheiro (ERRO\+\_\+\+LEITURA\+\_\+\+FICHEIRO). \\
+\hline
+{\em 12} & -\/ Erro ao abrir o ficheiro (ERRO\+\_\+\+ABRIR\+\_\+\+FICHEIRO). \\
+\hline
+{\em 13} & -\/ Erro, tamanho máximo excedido. (ERRO\+\_\+\+TAMANHO\+\_\+\+EXCEDIDO). \\
+\hline
+\end{DoxyRetVals}

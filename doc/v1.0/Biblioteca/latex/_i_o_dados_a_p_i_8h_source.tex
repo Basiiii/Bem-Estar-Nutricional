@@ -1,0 +1,37 @@
+\doxysection{IODados\+API.\+h}
+\hypertarget{_i_o_dados_a_p_i_8h_source}{}\label{_i_o_dados_a_p_i_8h_source}\mbox{\hyperlink{_i_o_dados_a_p_i_8h}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ IO\_DADOS\_API\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ IO\_DADOS\_API\_H}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}../LESI\_PI\_TP\_a28602/Constantes.h"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}../LESI\_PI\_TP\_a28602/EstruturaDados.h"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}../LESI\_PI\_TP\_a28602/Utils.h"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ Verificar\ se\ está\ a\ ser\ compilado\ no\ Windows}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#ifdef\ \_WIN32}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ Definir\ anotações\ de\ importar\ e\ exportar}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#ifdef\ IO\_DADOS\_EXPORTS}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ IO\_DADOS\_API\ \_\_declspec(dllexport)}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ IO\_DADOS\_API\ \_\_declspec(dllimport)}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ Se\ não\ for\ Windows\ (Linux)}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ IO\_DADOS\_API\ }\textcolor{comment}{//\ Definir\ macro\ como\ macro\ vazio}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00042\ IO\_DADOS\_API\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_i_o_dados_a_p_i_8h_ae2a3c6e76e5175874ca0ed12bb66c72f}{ExportarDadosFichBinario}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nomeFicheiro,\ \textcolor{keywordtype}{void}*\ dados,\ \textcolor{keywordtype}{int}\ tamanho,\ \textcolor{keywordtype}{size\_t}\ tamanhoElemento);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00056\ IO\_DADOS\_API\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_i_o_dados_a_p_i_8h_abc9846b659607b75dbbd3f696065f8c4}{ImportarDadosFichBinario}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nomeFicheiro,\ \textcolor{keywordtype}{void}*\ dados,\ \textcolor{keywordtype}{size\_t}\ tamanhoRegisto,\ \textcolor{keywordtype}{int}*\ numRegistos);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00074\ IO\_DADOS\_API\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_i_o_dados_a_p_i_8h_a814de11c559bbe566ba5192ef376dcac}{ImportarPacientesFichTexto}}(FILE*\ file,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nomeFicheiro,\ \textcolor{keywordtype}{char}*\ formatoFicheiro,\ Paciente\ pacientes[TAMANHO\_MAX\_ARRAY],\ \textcolor{keywordtype}{int}*\ numPacientes);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00092\ IO\_DADOS\_API\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_i_o_dados_a_p_i_8h_ad513952c7685c0a802dbc6cae71ddec8}{ImportarDietasFichTexto}}(FILE*\ file,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nomeFicheiro,\ \textcolor{keywordtype}{char}*\ formatoFicheiro,\ Dieta\ dietas[TAMANHO\_MAX\_ARRAY],\ \textcolor{keywordtype}{int}*\ numDietas);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00111\ IO\_DADOS\_API\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_i_o_dados_a_p_i_8h_a155af24a77b9388554ae8b5bb0e3cdfc}{ImportarPlanosFichTexto}}(FILE*\ file,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nomeFicheiro,\ \textcolor{keywordtype}{char}*\ formatoFicheiro,\ Plano\ planos[TAMANHO\_MAX\_ARRAY],\ \textcolor{keywordtype}{int}*\ numPlanos);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ IO\_DADOS\_API\_H}}
+
+\end{DoxyCode}

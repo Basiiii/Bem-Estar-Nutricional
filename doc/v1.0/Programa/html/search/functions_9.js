@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['pacientesforaplano_0',['pacientesforaplano',['../_menu_8c.html#a7a17334318c8624209439a168ffc2fcc',1,'PacientesForaPlano(Paciente *pacientes, Dieta *dietas, Plano *planos):&#160;Menu.c'],['../_menu_8h.html#a7a17334318c8624209439a168ffc2fcc',1,'PacientesForaPlano(Paciente *pacientes, Dieta *dietas, Plano *planos):&#160;Menu.c']]],
+  ['pacientesultrapassaramcalorias_1',['pacientesultrapassaramcalorias',['../_menu_8c.html#a5720e4461545ca4a5d11352d4d893c83',1,'PacientesUltrapassaramCalorias(Dieta *dietas, int numDietas, int numPacientes):&#160;Menu.c'],['../_menu_8h.html#a5720e4461545ca4a5d11352d4d893c83',1,'PacientesUltrapassaramCalorias(Dieta *dietas, int numDietas, int numPacientes):&#160;Menu.c']]],
+  ['perguntarutilizadoriniciarprograma_2',['perguntarutilizadoriniciarprograma',['../_utils_8c.html#a17405dd1d20eff28271d5180fd352b58',1,'PerguntarUtilizadorIniciarPrograma():&#160;Utils.c'],['../_utils_8h.html#a17405dd1d20eff28271d5180fd352b58',1,'PerguntarUtilizadorIniciarPrograma():&#160;Utils.c']]],
+  ['processarficheiro_3',['processarficheiro',['../_utils_8c.html#abb289dc5e5f8424b92c172c9a310195c',1,'ProcessarFicheiro(const char *nomeFicheiro, int tipoDadosFicheiro, int tipoFicheiro, void *dados, size_t tamanhoRegisto, int *numRegistos):&#160;Utils.c'],['../_utils_8h.html#abb289dc5e5f8424b92c172c9a310195c',1,'ProcessarFicheiro(const char *nomeFicheiro, int tipoDadosFicheiro, int tipoFicheiro, void *dados, size_t tamanhoRegisto, int *numRegistos):&#160;Utils.c']]]
+];

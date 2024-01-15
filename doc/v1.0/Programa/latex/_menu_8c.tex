@@ -1,0 +1,236 @@
+\doxysection{Referência ao ficheiro Menu.\+c}
+\hypertarget{_menu_8c}{}\label{_menu_8c}\index{Menu.c@{Menu.c}}
+
+
+Implementação das funções relacionadas ao menu de opções do programa.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include "{}Constantes.\+h"{}}\newline
+{\ttfamily \#include "{}Utils.\+h"{}}\newline
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_menu_8c_a8d839573bfc7f53a709ec5fa8c0897a9}{Apresentar\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Apresenta o menu de opções para interação com o programa. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_menu_8c_a44312c68e088bcb9cec8d95d09a8d7d4}{Ler\+Data}} (char \texorpdfstring{$\ast$}{*}data, const char \texorpdfstring{$\ast$}{*}proposito)
+\begin{DoxyCompactList}\small\item\em Lê uma string do utilizador para a data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_menu_8c_a5720e4461545ca4a5d11352d4d893c83}{Pacientes\+Ultrapassaram\+Calorias}} (\mbox{\hyperlink{struct_dieta}{Dieta}} \texorpdfstring{$\ast$}{*}dietas, int num\+Dietas, int num\+Pacientes)
+\begin{DoxyCompactList}\small\item\em Função para executar a funcionalidade 2 -\/ Pacientes que ultrapassam um dado limite de calorias entre determinadas datas. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_menu_8c_a7a17334318c8624209439a168ffc2fcc}{Pacientes\+Fora\+Plano}} (\mbox{\hyperlink{struct_paciente}{Paciente}} \texorpdfstring{$\ast$}{*}pacientes, \mbox{\hyperlink{struct_dieta}{Dieta}} \texorpdfstring{$\ast$}{*}dietas, \mbox{\hyperlink{struct_plano}{Plano}} \texorpdfstring{$\ast$}{*}planos)
+\begin{DoxyCompactList}\small\item\em Função que executa a funcionalidade 3 -\/ apresentar pacientes com dietas fora do seu plano. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_menu_8c_a823480db6a0963ac2dd94b37f75508b9}{Listar\+Plano\+Nutricional}} (\mbox{\hyperlink{struct_plano}{Plano}} planos\mbox{[}$\,$\mbox{]}, int num\+Planos)
+\begin{DoxyCompactList}\small\item\em Lista o plano nutricional de um paciente para determinada refeição ao longo de um determinado período. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_menu_8c_a4731274e01898952305f2d5253903859}{Listar\+Medias\+Calorias\+Por\+Refeicao}} (\mbox{\hyperlink{struct_paciente}{Paciente}} pacientes\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{struct_dieta}{Dieta}} dietas\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Lista médias de calorias por refeição para um intervalo de datas específico. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_menu_8c_a86a02016347e6f55ac79f685da8dd666}{Gerar\+Tabela\+Refeicoes}} (\mbox{\hyperlink{struct_paciente}{Paciente}} pacientes\mbox{[}$\,$\mbox{]}, int num\+Pacientes, \mbox{\hyperlink{struct_plano}{Plano}} planos\mbox{[}$\,$\mbox{]}, int num\+Planos, \mbox{\hyperlink{struct_dieta}{Dieta}} dietas\mbox{[}$\,$\mbox{]}, int num\+Dietas)
+\begin{DoxyCompactList}\small\item\em Gera a tabela de refeições. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Implementação das funções relacionadas ao menu de opções do programa. 
+
+\begin{DoxyAuthor}{Autor}
+Enrique George Rodrigues
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+Criado\+: 18.\+11.\+2023 
+
+Modificado\+: 28.\+12.\+2023
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+© Enrique George Rodrigues, 2023. Todos os direitos reservados. 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{_menu_8c_a8d839573bfc7f53a709ec5fa8c0897a9}\label{_menu_8c_a8d839573bfc7f53a709ec5fa8c0897a9} 
+\index{Menu.c@{Menu.c}!ApresentarMenu@{ApresentarMenu}}
+\index{ApresentarMenu@{ApresentarMenu}!Menu.c@{Menu.c}}
+\doxysubsubsection{\texorpdfstring{ApresentarMenu()}{ApresentarMenu()}}
+{\footnotesize\ttfamily void Apresentar\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Apresenta o menu de opções para interação com o programa. 
+
+Esta função imprime no ecrã as opções disponíveis para interação com o programa. O utilizador é solicitado a escolher uma das opções apresentadas.
+
+\begin{DoxyNote}{Nota}
+As opções incluem carregar dados, verificar pacientes com calorias ultrapassadas, verificar pacientes com calorias fora do intervalo, obter o plano nutricional de um paciente para uma refeição específica, calcular médias de calorias consumidas por refeição por cada paciente, e apresentar uma tabela das refeições planeadas e realizadas para todos os pacientes. As opções \textquotesingle{}q\textquotesingle{} e \textquotesingle{}f\textquotesingle{} fecham o programa.
+\end{DoxyNote}
+\begin{DoxyWarning}{Aviso}
+A função não lida com a leitura da escolha do utilizador e não verifica a validade da escolha inserida. Apenas apresenta o menu no stdout. 
+\end{DoxyWarning}
+\Hypertarget{_menu_8c_a86a02016347e6f55ac79f685da8dd666}\label{_menu_8c_a86a02016347e6f55ac79f685da8dd666} 
+\index{Menu.c@{Menu.c}!GerarTabelaRefeicoes@{GerarTabelaRefeicoes}}
+\index{GerarTabelaRefeicoes@{GerarTabelaRefeicoes}!Menu.c@{Menu.c}}
+\doxysubsubsection{\texorpdfstring{GerarTabelaRefeicoes()}{GerarTabelaRefeicoes()}}
+{\footnotesize\ttfamily int Gerar\+Tabela\+Refeicoes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_paciente}{Paciente}}}]{pacientes\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Pacientes,  }\item[{\mbox{\hyperlink{struct_plano}{Plano}}}]{planos\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Planos,  }\item[{\mbox{\hyperlink{struct_dieta}{Dieta}}}]{dietas\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Dietas }\end{DoxyParamCaption})}
+
+
+
+Gera a tabela de refeições. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em pacientes} & -\/ Array de pacientes. \\
+\hline
+{\em num\+Pacientes} & -\/ Número de pacientes. \\
+\hline
+{\em planos} & -\/ Array de planos. \\
+\hline
+{\em num\+Planos} & -\/ Número de planos. \\
+\hline
+{\em dietas} & -\/ Array de dietas. \\
+\hline
+{\em num\+Dietas} & -\/ Número de dietas. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em -\/} & 0 se correr com sucesso. \\
+\hline
+{\em -\/} & 26 se não foi possível encontrar um paciente. \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_menu_8c_a44312c68e088bcb9cec8d95d09a8d7d4}\label{_menu_8c_a44312c68e088bcb9cec8d95d09a8d7d4} 
+\index{Menu.c@{Menu.c}!LerData@{LerData}}
+\index{LerData@{LerData}!Menu.c@{Menu.c}}
+\doxysubsubsection{\texorpdfstring{LerData()}{LerData()}}
+{\footnotesize\ttfamily bool Ler\+Data (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{data,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{proposito }\end{DoxyParamCaption})}
+
+
+
+Lê uma string do utilizador para a data. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em data} & -\/ A variável onde se quer guardar a data. \\
+\hline
+{\em proposito} & -\/ O objetivo da leitura (p. ex., "{}inicial"{} ou "{}final"{}). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em -\/} & Verdadeiro se correu sem erros, Falso se correu com erros. \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_menu_8c_a4731274e01898952305f2d5253903859}\label{_menu_8c_a4731274e01898952305f2d5253903859} 
+\index{Menu.c@{Menu.c}!ListarMediasCaloriasPorRefeicao@{ListarMediasCaloriasPorRefeicao}}
+\index{ListarMediasCaloriasPorRefeicao@{ListarMediasCaloriasPorRefeicao}!Menu.c@{Menu.c}}
+\doxysubsubsection{\texorpdfstring{ListarMediasCaloriasPorRefeicao()}{ListarMediasCaloriasPorRefeicao()}}
+{\footnotesize\ttfamily int Listar\+Medias\+Calorias\+Por\+Refeicao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_paciente}{Paciente}}}]{pacientes\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{struct_dieta}{Dieta}}}]{dietas\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Lista médias de calorias por refeição para um intervalo de datas específico. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em pacientes} & -\/ O array de pacientes. \\
+\hline
+{\em dietas} & -\/ O array de todas as dietas. \\
+\hline
+{\em resultados} & -\/ O array de resultados. \\
+\hline
+{\em num\+Resultados} & -\/ O número de resultados. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em -\/} & 0 se correr com sucesso. \\
+\hline
+{\em -\/} & 20 se houver um erro com a leitura de datas. \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_menu_8c_a823480db6a0963ac2dd94b37f75508b9}\label{_menu_8c_a823480db6a0963ac2dd94b37f75508b9} 
+\index{Menu.c@{Menu.c}!ListarPlanoNutricional@{ListarPlanoNutricional}}
+\index{ListarPlanoNutricional@{ListarPlanoNutricional}!Menu.c@{Menu.c}}
+\doxysubsubsection{\texorpdfstring{ListarPlanoNutricional()}{ListarPlanoNutricional()}}
+{\footnotesize\ttfamily int Listar\+Plano\+Nutricional (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_plano}{Plano}}}]{planos\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Planos }\end{DoxyParamCaption})}
+
+
+
+Lista o plano nutricional de um paciente para determinada refeição ao longo de um determinado período. 
+
+Função que executa a funcionalidade 4 -\/ Listar o plano nutricional de um paciente para determinada refeição ao longo de um determinado período.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em planos} & -\/ O array de planos nutricionais. \\
+\hline
+{\em num\+Planos} & -\/ O número de planos nutricionais no array. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em -\/} & 0 se correr com sucesso. \\
+\hline
+{\em -\/} & 20 se houver um erro com a leitura de datas (ERRO\+\_\+\+LEITURA\+\_\+\+DATA). \\
+\hline
+{\em -\/} & 22 se não for possível ler o ID do paciente (ERRO\+\_\+\+LEITURA\+\_\+\+ID\+\_\+\+PACIENTE). \\
+\hline
+{\em -\/} & 23 se não for possível ler o tipo de refeição (ERRO\+\_\+\+LEITURA\+\_\+\+TIPO\+\_\+\+REFEICAO). \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_menu_8c_a7a17334318c8624209439a168ffc2fcc}\label{_menu_8c_a7a17334318c8624209439a168ffc2fcc} 
+\index{Menu.c@{Menu.c}!PacientesForaPlano@{PacientesForaPlano}}
+\index{PacientesForaPlano@{PacientesForaPlano}!Menu.c@{Menu.c}}
+\doxysubsubsection{\texorpdfstring{PacientesForaPlano()}{PacientesForaPlano()}}
+{\footnotesize\ttfamily int Pacientes\+Fora\+Plano (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_paciente}{Paciente}} \texorpdfstring{$\ast$}{*}}]{pacientes,  }\item[{\mbox{\hyperlink{struct_dieta}{Dieta}} \texorpdfstring{$\ast$}{*}}]{dietas,  }\item[{\mbox{\hyperlink{struct_plano}{Plano}} \texorpdfstring{$\ast$}{*}}]{planos }\end{DoxyParamCaption})}
+
+
+
+Função que executa a funcionalidade 3 -\/ apresentar pacientes com dietas fora do seu plano. 
+
+Método que executa a funcionalidade 3 -\/ apresentar pacientes com dietas fora do seu plano.
+
+
+\begin{DoxyParams}[1]{Parâmetros}
+\mbox{\texttt{ in}}  & {\em pacientes} & -\/ O array de pacientes. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dietas} & -\/ O array de dietas. \\
+\hline
+\mbox{\texttt{ in}}  & {\em planos} & -\/ O array de planos. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em 0} & se correr com sucesso. \\
+\hline
+{\em 20} & se houver um erro com a leitura de datas (ERRO\+\_\+\+LEITURA\+\_\+\+DATA). \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_menu_8c_a5720e4461545ca4a5d11352d4d893c83}\label{_menu_8c_a5720e4461545ca4a5d11352d4d893c83} 
+\index{Menu.c@{Menu.c}!PacientesUltrapassaramCalorias@{PacientesUltrapassaramCalorias}}
+\index{PacientesUltrapassaramCalorias@{PacientesUltrapassaramCalorias}!Menu.c@{Menu.c}}
+\doxysubsubsection{\texorpdfstring{PacientesUltrapassaramCalorias()}{PacientesUltrapassaramCalorias()}}
+{\footnotesize\ttfamily int Pacientes\+Ultrapassaram\+Calorias (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_dieta}{Dieta}} \texorpdfstring{$\ast$}{*}}]{dietas,  }\item[{int}]{num\+Dietas,  }\item[{int}]{num\+Pacientes }\end{DoxyParamCaption})}
+
+
+
+Função para executar a funcionalidade 2 -\/ Pacientes que ultrapassam um dado limite de calorias entre determinadas datas. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em dietas} & -\/ O array de dietas. \\
+\hline
+{\em num\+Dietas} & -\/ O número de dietas. \\
+\hline
+{\em num\+Pacientes} & -\/ O número de pacientes. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em -\/} & 0 se o programa correu sem erros (SUCESSO). \\
+\hline
+{\em -\/} & 6 se houve um erro na alocação de memória (ERRO\+\_\+\+ALOCAR\+\_\+\+MEMORIA). \\
+\hline
+{\em -\/} & 20 se houve erro na leitura da data (ERRO\+\_\+\+LEITURA\+\_\+\+DATA). \\
+\hline
+{\em -\/} & 21 se houve erro na leitura do limite de calorias (ERRO\+\_\+\+LEITURA\+\_\+\+LIMITE\+\_\+\+CALORIAS). \\
+\hline
+\end{DoxyRetVals}

@@ -1,0 +1,662 @@
+\chapter{Trabalho Prático G14}
+\hypertarget{index}{}\label{index}\index{Trabalho Prático G14@{Trabalho Prático G14}}
+\label{index_md__c_1_2_users_2user_2_documents_2_git_hub_2d-14_2_r_e_a_d_m_e}%
+\Hypertarget{index_md__c_1_2_users_2user_2_documents_2_git_hub_2d-14_2_r_e_a_d_m_e}%
+ \href{https://classroom.github.com/a/23IsPMfV}{\texttt{ }}\hypertarget{index_autotoc_md0}{}\doxysection{\texorpdfstring{Trabalho Prático}{Trabalho Prático}}\label{index_autotoc_md0}
+\hypertarget{index_autotoc_md1}{}\doxysubsection{\texorpdfstring{Descrição}{Descrição}}\label{index_autotoc_md1}
+Licenciatura em Engenharia de Sistemas Informáticos 2023-\/24
+
+Laboratórios de Informática e Programação Imperativa
+
+O programa visa apoiar o bem-\/estar e cuidados nutricionais, abordando o problema do comportamento alimentar saudável. Funcionalidades incluem carregamento de dados de pacientes, dietas e planos nutricionais, apresentação de estatísticas de calorias, listagem de pacientes com comportamento fora do plano nutricional e análises diversas. Desenvolvido com base em métodos rigorosos de análise de problemas e as melhores práticas de programação imperativa em C.
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md3}{}\doxysubsection{\texorpdfstring{Índice}{Índice}}\label{index_autotoc_md3}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }\\\cline{1-2}
+\endhead
+1   &Grupo    \\\cline{1-2}
+2   &Hierarquia Ficheiros    \\\cline{1-2}
+3   &Compilação    \\\cline{1-2}
+4   &Como Executar o Programa Bem Estar    \\\cline{1-2}
+5   &Estado Atual dos Testes    \\\cline{1-2}
+6   &Exemplos Testes    \\\cline{1-2}
+7   &Documentação La\+TeX    \\\cline{1-2}
+8   &Changelog e Versões   \\\cline{1-2}
+\end{longtabu}
+
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md5}{}\doxysubsection{\texorpdfstring{Grupo}{Grupo}}\label{index_autotoc_md5}
+O grupo deste trabalho é o grupo {\itshape nº14}.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Número   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Nome    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Número   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Nome    }\\\cline{1-2}
+\endhead
+28602   &Enrique George Rodrigues    \\\cline{1-2}
+27965   &Andre   \\\cline{1-2}
+\end{longtabu}
+
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md7}{}\doxysubsection{\texorpdfstring{Hierarquia de Ficheiros}{Hierarquia de Ficheiros}}\label{index_autotoc_md7}
+
+\begin{DoxyItemize}
+\item {\bfseries{assets/}}
+\begin{DoxyItemize}
+\item Pasta para imagens.
+\end{DoxyItemize}
+\item {\bfseries{build/}}
+\begin{DoxyItemize}
+\item Pasta criada quando compila o programa.
+\end{DoxyItemize}
+\item {\bfseries{doc/}}
+\begin{DoxyItemize}
+\item Documentação do código.
+\begin{DoxyItemize}
+\item {\bfseries{v0.\+1/}}
+\begin{DoxyItemize}
+\item {\bfseries{html/}}
+\begin{DoxyItemize}
+\item Site para documentação da versão 0.\+1.
+\end{DoxyItemize}
+\item {\bfseries{latex/}}
+\begin{DoxyItemize}
+\item Ficheiros Latex e documentação em PDF da versão 0.\+1.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{v1.\+0/}}
+\begin{DoxyItemize}
+\item {\bfseries{Biblioteca/}}
+\begin{DoxyItemize}
+\item {\bfseries{html/}}
+\begin{DoxyItemize}
+\item Site para documentação da biblioteca da versão 1.\+0.
+\end{DoxyItemize}
+\item {\bfseries{latex/}}
+\begin{DoxyItemize}
+\item Ficheiros Latex e documentação em PDF da biblioteca da versão 1.\+0.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{Programa/}}
+\begin{DoxyItemize}
+\item {\bfseries{html/}}
+\begin{DoxyItemize}
+\item Site para documentação do programa da versão 1.\+0.
+\end{DoxyItemize}
+\item {\bfseries{latex/}}
+\begin{DoxyItemize}
+\item Ficheiros Latex e documentação em PDF do programa da versão 1.\+0.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{examples/}}
+\begin{DoxyItemize}
+\item Pasta que contém ficheiros de dados de exemplo para testar o programa.
+\end{DoxyItemize}
+\item {\bfseries{src/}}
+\begin{DoxyItemize}
+\item Código-\/fonte.
+\begin{DoxyItemize}
+\item {\bfseries{Gestor\+Dados\+IO/}}
+\begin{DoxyItemize}
+\item Biblioteca para importar e exportar dados.
+\end{DoxyItemize}
+\item {\bfseries{LESI\+\_\+\+PI\+\_\+\+TP\+\_\+a28602/}}
+\begin{DoxyItemize}
+\item Código-\/fonte principal do programa.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{README.\+md}}
+\begin{DoxyItemize}
+\item Ficheiro README do projeto.
+\end{DoxyItemize}
+\item {\bfseries{Makefile}}
+\begin{DoxyItemize}
+\item Ficheiro para construir e compilar o projeto para Linux (Windows é compilado através do VS IDE).
+\end{DoxyItemize}
+\item \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}.gitignore\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}
+\begin{DoxyItemize}
+\item Ficheiro de configuração Git para especificar os ficheiros e pastas para ignorar.
+\end{DoxyItemize}
+\item \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}.gitattributes\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}
+\begin{DoxyItemize}
+\item Ficheiro de configuração Git para especificar atributos para caminhos.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md9}{}\doxysubsection{\texorpdfstring{Compilação}{Compilação}}\label{index_autotoc_md9}
+\hypertarget{index_autotoc_md10}{}\doxysubsubsection{\texorpdfstring{Usando Visual Studio IDE no Windows}{Usando Visual Studio IDE no Windows}}\label{index_autotoc_md10}
+
+\begin{DoxyEnumerate}
+\item Abra o projeto {\ttfamily src/\+Gestor\+Dados\+IO.\+sln} no Visual Studio IDE.
+\item Compile o projeto para gerar a biblioteca.
+\item Os ficheiros compilados serão colocados em {\ttfamily build/lib}.
+\item Abra o projeto {\ttfamily src/\+LESI\+\_\+\+PI\+\_\+\+TP\+\_\+a28602.\+sln} no Visual Studio IDE.
+\item Compile o projeto para gerar o programa.
+\item Os ficheiros compilados, incluindo a DLL, serão colocados em {\ttfamily build/prog}.
+\end{DoxyEnumerate}\hypertarget{index_autotoc_md11}{}\doxysubsubsection{\texorpdfstring{Usando Make\+File no Linux}{Usando MakeFile no Linux}}\label{index_autotoc_md11}
+Certifique-\/se de ter o {\ttfamily make} instalado no seu sistema e execute o seguinte comando no terminal\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make}
+
+\end{DoxyCode}
+
+
+Isto irá automaticamente compilar a biblioteca e o programa e depois colocará os ficheiros resultantes nos diretórios {\ttfamily build/lib} e {\ttfamily build/prog}, respectivamente.
+
+{\bfseries{Se deseja limpar todos os ficheiros compilados, pode executar o seguinte comando\+:}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make\ clean}
+
+\end{DoxyCode}
+ Isto apagará todo o conteúdo da pasta {\ttfamily build}.
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md13}{}\doxysubsection{\texorpdfstring{Como Executar o Programa Bem Estar}{Como Executar o Programa Bem Estar}}\label{index_autotoc_md13}
+O programa Bem Estar oferece diversas opções para importar dados e executar operações. Abaixo estão as opções disponíveis\+:
+
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Importar Dados com Ficheiros\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily -\/p \texorpdfstring{$<$}{<}ficheiro.\+x\texorpdfstring{$>$}{>}}\+: Importa dados de pacientes de um ficheiro de texto ou binário.
+\item {\ttfamily -\/d \texorpdfstring{$<$}{<}ficheiro.\+x\texorpdfstring{$>$}{>}}\+: Importa dados de dietas de um ficheiro de texto ou binário.
+\item {\ttfamily -\/l \texorpdfstring{$<$}{<}ficheiro.\+x\texorpdfstring{$>$}{>}}\+: Importa dados de planos de um ficheiro de texto ou binário.
+\item {\ttfamily -\/tab}\+: Indica que o ficheiro está formatado com separação por tabulações.
+\item {\ttfamily -\/bin}\+: Indica que o ficheiro é do tipo binário.
+\end{DoxyItemize}
+\item {\bfseries{Apagar Dados Guardados\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily -\/apagarbd}\+: Apaga a base de dados (ficheiros binários).
+\end{DoxyItemize}
+\item {\bfseries{Ver Ajuda Através do Programa\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily -\/ajuda}\+: Mostra como utilizar o programa.
+\end{DoxyItemize}
+\item {\bfseries{Ver Possíveis Erros do Programa\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily -\/ajuda erros}\+: Mostra os possíveis erros do programa.
+\end{DoxyItemize}
+\end{DoxyEnumerate}\hypertarget{index_autotoc_md14}{}\doxysubsubsection{\texorpdfstring{Exemplos de Utilização\+:}{Exemplos de Utilização:}}\label{index_autotoc_md14}
+Dentro da pasta "{}examples"{} foram adicionados ficheiros de formato de texto, tab e binário. Estes ficheiros podem ser utilizados para testar o programa com dados.
+
+
+\begin{DoxyItemize}
+\item Importar dados de pacientes de um ficheiro de texto normal\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./bemestar\ -\/p\ ex1.txt}
+
+\end{DoxyCode}
+
+\item Importar dados de dietas com separação por tabulações\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./bemestar\ -\/d\ ex2.txt\ -\/tab}
+
+\end{DoxyCode}
+
+\item Importar dados de planos no formato binário\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./bemestar\ -\/l\ ex3.bin\ -\/bin}
+
+\end{DoxyCode}
+
+\item Apagar a base de dados\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./bemestar\ -\/apagarbd}
+
+\end{DoxyCode}
+
+\end{DoxyItemize}
+
+Lembre-\/se de ajustar os nomes dos ficheiros e as opções conforme necessário para a sua utilização específica.
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md16}{}\doxysubsection{\texorpdfstring{Estado Atual dos Testes}{Estado Atual dos Testes}}\label{index_autotoc_md16}
+Os testes de funcionalidades atualmente estão num estado de {\bfseries{SUCESSO}} (ou {\bfseries{FALHA}}). Abaixo, são apresentados os resultados dos testes realizados\+:\hypertarget{index_autotoc_md17}{}\doxysubsubsection{\texorpdfstring{Teste de Compilação}{Teste de Compilação}}\label{index_autotoc_md17}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Ambiente   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Status    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Ambiente   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Status    }\\\cline{1-2}
+\endhead
+Windows   &SUCESSO    \\\cline{1-2}
+Linux   &SUCESSO   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{index_autotoc_md18}{}\doxysubsubsection{\texorpdfstring{Teste de Importação de Dados}{Teste de Importação de Dados}}\label{index_autotoc_md18}
+\hypertarget{index_autotoc_md19}{}\doxyparagraph{\texorpdfstring{Importação de Pacientes}{Importação de Pacientes}}\label{index_autotoc_md19}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Ambiente   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Status    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Ambiente   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Status    }\\\cline{1-3}
+\endhead
+Texto   &Windows   &SUCESSO    \\\cline{1-3}
+Binário   &Windows   &SUCESSO    \\\cline{1-3}
+Tabulação   &Windows   &SUCESSO    \\\cline{1-3}
+Texto   &Linux   &SUCESSO    \\\cline{1-3}
+Binário   &Linux   &SUCESSO    \\\cline{1-3}
+Tabulação   &Linux   &SUCESSO   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{index_autotoc_md20}{}\doxyparagraph{\texorpdfstring{Importação de Dietas}{Importação de Dietas}}\label{index_autotoc_md20}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Ambiente   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Status    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Ambiente   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Status    }\\\cline{1-3}
+\endhead
+Texto   &Windows   &SUCESSO    \\\cline{1-3}
+Binário   &Windows   &SUCESSO    \\\cline{1-3}
+Tabulação   &Windows   &SUCESSO    \\\cline{1-3}
+Texto   &Linux   &SUCESSO    \\\cline{1-3}
+Binário   &Linux   &SUCESSO    \\\cline{1-3}
+Tabulação   &Linux   &SUCESSO   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{index_autotoc_md21}{}\doxyparagraph{\texorpdfstring{Importação de Planos}{Importação de Planos}}\label{index_autotoc_md21}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Ambiente   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Status    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Ambiente   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Status    }\\\cline{1-3}
+\endhead
+Texto   &Windows   &SUCESSO    \\\cline{1-3}
+Binário   &Windows   &SUCESSO    \\\cline{1-3}
+Tabulação   &Windows   &SUCESSO    \\\cline{1-3}
+Texto   &Linux   &SUCESSO    \\\cline{1-3}
+Binário   &Linux   &SUCESSO    \\\cline{1-3}
+Tabulação   &Linux   &SUCESSO   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{index_autotoc_md22}{}\doxysubsubsection{\texorpdfstring{Parâmetros e Menu}{Parâmetros e Menu}}\label{index_autotoc_md22}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Funcionalidade   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Status    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Funcionalidade   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Status    }\\\cline{1-2}
+\endhead
+Menu Ajuda   &SUCESSO    \\\cline{1-2}
+Menu Erros   &SUCESSO    \\\cline{1-2}
+Apagar Base Dados   &SUCESSO    \\\cline{1-2}
+Funcionalidade 1   &SUCESSO    \\\cline{1-2}
+Funcionalidade 2   &SUCESSO    \\\cline{1-2}
+Funcionalidade 3   &SUCESSO    \\\cline{1-2}
+Funcionalidade 4   &SUCESSO    \\\cline{1-2}
+Funcionalidade 5   &SUCESSO    \\\cline{1-2}
+Funcionalidade 6   &SUCESSO   \\\cline{1-2}
+\end{longtabu}
+
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md24}{}\doxysubsection{\texorpdfstring{Exemplos Detalhados de Testes}{Exemplos Detalhados de Testes}}\label{index_autotoc_md24}
+A seguir, são apresentados detalhes específicos de alguns dos testes realizados, incluindo exemplos e expectativas.\hypertarget{index_autotoc_md25}{}\doxysubsubsection{\texorpdfstring{Teste de compilação da biblioteca/programa -\/ Windows}{Teste de compilação da biblioteca/programa - Windows}}\label{index_autotoc_md25}
+{\bfseries{Compilação da biblioteca IO}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Build\ started\ at\ 16:42...}
+\DoxyCodeLine{1>-\/-\/-\/-\/-\/-\/\ Build\ started:\ Project:\ GestorDadosIO,\ Configuration:\ Debug\ x64\ -\/-\/-\/-\/-\/-\/}
+\DoxyCodeLine{1>LINK\ :\ C:\(\backslash\)Users\(\backslash\)user\(\backslash\)Documents\(\backslash\)GitHub\(\backslash\)d-\/14\(\backslash\)src\(\backslash\)..\(\backslash\)build\(\backslash\)lib\(\backslash\)GestorDadosIO.dll\ not\ found\ or\ not\ built\ by\ the\ last\ incremental\ link;\ performing\ full\ link}
+\DoxyCodeLine{1>\ \ \ Creating\ library\ C:\(\backslash\)Users\(\backslash\)user\(\backslash\)Documents\(\backslash\)GitHub\(\backslash\)d-\/14\(\backslash\)src\(\backslash\)..\(\backslash\)build\(\backslash\)lib\(\backslash\)GestorDadosIO.lib\ and\ \textcolor{keywordtype}{object}\ C:\(\backslash\)Users\(\backslash\)user\(\backslash\)Documents\(\backslash\)GitHub\(\backslash\)d-\/14\(\backslash\)src\(\backslash\)..\(\backslash\)build\(\backslash\)lib\(\backslash\)GestorDadosIO.exp}
+\DoxyCodeLine{1>GestorDadosIO.vcxproj\ -\/>\ C:\(\backslash\)Users\(\backslash\)user\(\backslash\)Documents\(\backslash\)GitHub\(\backslash\)d-\/14\(\backslash\)build\(\backslash\)lib\(\backslash\)GestorDadosIO.dll}
+\DoxyCodeLine{1>Done\ building\ project\ \textcolor{stringliteral}{"{}GestorDadosIO.vcxproj"{}}.}
+\DoxyCodeLine{==========\ Build:\ 1\ succeeded,\ 0\ failed,\ 0\ up-\/to-\/date,\ 0\ skipped\ ==========}
+\DoxyCodeLine{==========\ Build\ completed\ at\ 16:42\ and\ took\ 00.821\ seconds\ ==========}
+
+\end{DoxyCode}
+
+
+{\bfseries{Compilação do programa\+:}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Build\ started\ at\ 16:42...}
+\DoxyCodeLine{1>-\/-\/-\/-\/-\/-\/\ Build\ started:\ Project:\ LESI\_PI\_TP\_a28602,\ Configuration:\ Debug\ x64\ -\/-\/-\/-\/-\/-\/}
+\DoxyCodeLine{1>Debug.c}
+\DoxyCodeLine{1>\mbox{\hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}}.c}
+\DoxyCodeLine{1>Menu.c}
+\DoxyCodeLine{1>OperacoesFicheiros.c}
+\DoxyCodeLine{1>Utils.c}
+\DoxyCodeLine{1>OperacoesIniciais.c}
+\DoxyCodeLine{1>Generating\ Code...}
+\DoxyCodeLine{1>LESI\_PI\_TP\_a28602.vcxproj\ -\/>\ C:\(\backslash\)Users\(\backslash\)user\(\backslash\)Documents\(\backslash\)GitHub\(\backslash\)d-\/14\(\backslash\)build\(\backslash\)prog\(\backslash\)bemestar.exe}
+\DoxyCodeLine{1>C:\(\backslash\)Users\(\backslash\)user\(\backslash\)Documents\(\backslash\)GitHub\(\backslash\)d-\/14\(\backslash\)src\(\backslash\)..\(\backslash\)build\(\backslash\)lib\(\backslash\)GestorDadosIO.dll}
+\DoxyCodeLine{1>1\ File(s)\ copied}
+\DoxyCodeLine{1>Done\ building\ project\ \textcolor{stringliteral}{"{}LESI\_PI\_TP\_a28602.vcxproj"{}}.}
+\DoxyCodeLine{==========\ Build:\ 1\ succeeded,\ 0\ failed,\ 0\ up-\/to-\/date,\ 0\ skipped\ ==========}
+\DoxyCodeLine{==========\ Build\ completed\ at\ 16:42\ and\ took\ 03.845\ seconds\ ==========}
+
+\end{DoxyCode}
+
+
+{\bfseries{Resultado\+:}} {\itshape Sucesso.} A biblioteca {\ttfamily .dll} e o programa {\ttfamily .exe} foram gerados com sucesso.\hypertarget{index_autotoc_md26}{}\doxysubsubsection{\texorpdfstring{Teste de compilação da biblioteca/programa -\/ Linux}{Teste de compilação da biblioteca/programa - Linux}}\label{index_autotoc_md26}
+{\bfseries{Utilizando o makefile\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{user@DESKTOP-\/2TL1NH1:\string~/d-\/14\$\ make}
+\DoxyCodeLine{mkdir\ -\/p\ build}
+\DoxyCodeLine{gcc\ -\/shared\ -\/o\ libGestorDadosIO.so\ src/GestorDadosIO/ExportarDados.o\ src/GestorDadosIO/ImportarDados.o}
+\DoxyCodeLine{gcc\ -\/Wall\ -\/Wextra\ -\/Wno-\/unknown-\/pragmas\ -\/o\ BemEstar\ src/LESI\_PI\_TP\_a28602/Debug.o\ src/LESI\_PI\_TP\_a28602/main.o\ src/LESI\_PI\_TP\_a28602/Menu.o\ src/LESI\_PI\_TP\_a28602/OperacoesFicheiros.o\ src/LESI\_PI\_TP\_a28602/OperacoesIniciais.o\ src/LESI\_PI\_TP\_a28602/Utils.o\ libGestorDadosIO.so\ -\/Isrc/GestorDadosIO\ -\/L.\ -\/lGestorDadosIO\ -\/Wl,-\/rpath,'\$ORIGIN'}
+\DoxyCodeLine{mv\ BemEstar\ libGestorDadosIO.so\ build}
+
+\end{DoxyCode}
+
+
+{\bfseries{Resultado\+:}} {\itshape Sucesso.} A biblioteca {\ttfamily .so} e o programa foram gerados com sucesso.\hypertarget{index_autotoc_md27}{}\doxysubsubsection{\texorpdfstring{Teste do parâmetro $<$tt$>$ajuda$<$/tt$>$ -\/ Detalhes}{Teste do parâmetro <tt>ajuda</tt> - Detalhes}}\label{index_autotoc_md27}
+
+\begin{DoxyItemize}
+\item {\bfseries{Comando de Teste\+:}} {\ttfamily ./bemestar -\/ajuda}
+\item {\bfseries{Esperado\+:}} Apresentação do menu de ajuda do programa Bem Estar.
+\item {\bfseries{Resultado\+:}} {\itshape Sucesso.} 
+\end{DoxyItemize}\hypertarget{index_autotoc_md28}{}\doxysubsubsection{\texorpdfstring{Importação de Pacientes de Ficheiro Texto}{Importação de Pacientes de Ficheiro Texto}}\label{index_autotoc_md28}
+
+\begin{DoxyItemize}
+\item {\bfseries{Teste efetuado\+:}} Ficheiro de texto\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{0001;Paula;123456789}
+\DoxyCodeLine{0002;Joao;987654321}
+\DoxyCodeLine{0003;Maria;111223344}
+\DoxyCodeLine{0004;Carlos;555566667}
+\DoxyCodeLine{0005;Ana;888777666}
+\DoxyCodeLine{0006;Pedro;999888777}
+\DoxyCodeLine{0007;Luisa;444555666}
+\DoxyCodeLine{0008;Miguel;333444555}
+\DoxyCodeLine{0009;Isabel;222333444}
+\DoxyCodeLine{0010;Ricardo;111222333}
+
+\end{DoxyCode}
+
+
+Comando de Teste\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./bemestar.exe\ -\/p\ pacientes.txt}
+
+\end{DoxyCode}
+
+\item {\bfseries{Esperado\+:}} Importação bem-\/sucedida dos dados dos pacientes a partir de um ficheiro de texto no ambiente Windows.
+\item {\bfseries{Resultado\+:}} {\itshape Sucesso.} 
+\end{DoxyItemize}\hypertarget{index_autotoc_md29}{}\doxysubsubsection{\texorpdfstring{Importação de Dietas de Ficheiro Tab}{Importação de Dietas de Ficheiro Tab}}\label{index_autotoc_md29}
+
+\begin{DoxyItemize}
+\item {\bfseries{Teste efetuado\+:}} Ficheiro de texto separado por tab\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{0001\ \ \ \ 01-\/01-\/2023\ \ pequeno\ almoco\ \ pao\ 100\ cal}
+\DoxyCodeLine{0001\ \ \ \ 01-\/01-\/2023\ \ pequeno\ almoco\ \ banana\ \ 120\ cal}
+\DoxyCodeLine{0001\ \ \ \ 02-\/01-\/2023\ \ pequeno\ almoco\ \ pao\ 100\ cal}
+\DoxyCodeLine{0001\ \ \ \ 02-\/01-\/2023\ \ pequeno\ almoco\ \ maca\ \ \ \ 180\ cal}
+\DoxyCodeLine{0003\ \ \ \ 14-\/02-\/2023\ \ almoco\ \ sopa\ \ \ \ 120\ cal}
+\DoxyCodeLine{0004\ \ \ \ 15-\/03-\/2023\ \ almoco\ \ salada\ \ 300\ cal}
+\DoxyCodeLine{0003\ \ \ \ 20-\/04-\/2023\ \ pequeno\ almoco\ \ cereais\ 150\ cal}
+\DoxyCodeLine{0002\ \ \ \ 23-\/05-\/2023\ \ jantar\ \ prato\ de\ carne\ \ 1200\ cal}
+\DoxyCodeLine{0005\ \ \ \ 10-\/06-\/2023\ \ jantar\ \ peixe\ grelhado\ \ 500\ cal}
+\DoxyCodeLine{0002\ \ \ \ 02-\/08-\/2023\ \ almoco\ \ frango\ \ 800\ cal}
+\DoxyCodeLine{0006\ \ \ \ 03-\/09-\/2023\ \ pequeno\ almoco\ \ iogurte\ 80\ cal}
+\DoxyCodeLine{0007\ \ \ \ 12-\/10-\/2023\ \ jantar\ \ pizza\ \ \ 900\ cal}
+\DoxyCodeLine{0008\ \ \ \ 25-\/11-\/2023\ \ almoco\ \ sanduiche\ \ \ 350\ cal}
+\DoxyCodeLine{0009\ \ \ \ 05-\/12-\/2023\ \ jantar\ \ hamburguer\ \ 700\ cal}
+\DoxyCodeLine{0010\ \ \ \ 15-\/01-\/2024\ \ pequeno\ almoco\ \ muffin\ \ 200\ cal}
+
+\end{DoxyCode}
+
+
+Comando de Teste\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./bemestar\ -\/d\ dietas\_tab.txt\ -\/tab}
+
+\end{DoxyCode}
+
+\item {\bfseries{Esperado\+:}} Importação bem-\/sucedida dos dados das dietas a partir de um ficheiro de texto separado por tabs no ambiente Linux.
+\item {\bfseries{Resultado\+:}} {\itshape Sucesso.} 
+\end{DoxyItemize}\hypertarget{index_autotoc_md30}{}\doxysubsubsection{\texorpdfstring{Importação de Planos de Ficheiro Binário}{Importação de Planos de Ficheiro Binário}}\label{index_autotoc_md30}
+
+\begin{DoxyItemize}
+\item {\bfseries{Teste efetuado\+:}} Comando de Teste\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./bemestar.exe\ -\/l\ planos\_bin.txt\ -\/bin}
+
+\end{DoxyCode}
+
+\item {\bfseries{Esperado\+:}} Importação bem-\/sucedida dos dados dos planos a partir de um ficheiro binário no ambiente Windows.
+\item {\bfseries{Resultado\+:}} {\itshape Sucesso.} 
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md32}{}\doxysubsection{\texorpdfstring{Documentação La\+TeX}{Documentação LaTeX}}\label{index_autotoc_md32}
+Foi pedido a utilização de um ficheiro {\ttfamily .bib} com o La\+TeX para adicionar as referências bibliográficas consultadas ao longo do desenvolvimento do trabalho.
+
+Para isto, foi necessário adicionar o seguinte ao ficheiro La\+TeX principal {\ttfamily refman.\+tex}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\%\ Bibliography}
+\DoxyCodeLine{\(\backslash\)newpage}
+\DoxyCodeLine{\(\backslash\)phantomsection}
+\DoxyCodeLine{\(\backslash\)addcontentsline\{toc\}\{chapter\}\{\(\backslash\)bibname\}}
+\DoxyCodeLine{\(\backslash\)bibliographystyle\{unsrt\}}
+\DoxyCodeLine{\(\backslash\)nocite\{*\}}
+\DoxyCodeLine{\(\backslash\)bibliography\{references\}}
+
+\end{DoxyCode}
+
+
+E adicionar um ficheiro {\ttfamily references.\+bib}\`{} que contém os dados da bibliografia\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{@book\{KernighanC89,}
+\DoxyCodeLine{\ \ author\ \ \ \ =\ \{Brian\ W.\ Kernighan\ and\ Dennis\ M.\ Ritchie\},}
+\DoxyCodeLine{\ \ title\ \ \ \ \ =\ \{The\ C\ Programming\ Language\},}
+\DoxyCodeLine{\ \ year\ \ \ \ \ \ =\ \{1988\},}
+\DoxyCodeLine{\ \ publisher\ =\ \{Prentice\ Hall\},}
+\DoxyCodeLine{\ \ address\ \ \ =\ \{Englewood\ Cliffs,\ NJ\},}
+\DoxyCodeLine{\ \ isbn\ \ \ \ \ \ =\ \{978-\/0131103627\},}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{@online\{CProgrammingTutorial,}
+\DoxyCodeLine{\ \ author\ \ \ \ =\ \{GeeksforGeeks\},}
+\DoxyCodeLine{\ \ title\ \ \ \ \ =\ \{C\ Programming\ Language\},}
+\DoxyCodeLine{\ \ year\ \ \ \ \ \ =\ \{2022\},}
+\DoxyCodeLine{\ \ url\ \ \ \ \ \ \ =\ \{https://www.geeksforgeeks.org/c-\/programming-\/language/\},}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{@online\{LearnC,}
+\DoxyCodeLine{\ \ author\ \ \ \ =\ \{Learn-\/C.org\},}
+\DoxyCodeLine{\ \ title\ \ \ \ \ =\ \{Learn\ C\ -\/\ Free\ Interactive\ C\ Tutorial\},}
+\DoxyCodeLine{\ \ year\ \ \ \ \ \ =\ \{2023\},}
+\DoxyCodeLine{\ \ url\ \ \ \ \ \ \ =\ \{https://www.learn-\/c.org/\},}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{@online\{TutorialsPoint,}
+\DoxyCodeLine{\ \ author\ \ \ \ =\ \{tutorialspoint.com\},}
+\DoxyCodeLine{\ \ title\ \ \ \ \ =\ \{Learn\ C\ Programming\},}
+\DoxyCodeLine{\ \ year\ \ \ \ \ \ =\ \{2023\},}
+\DoxyCodeLine{\ \ url\ \ \ \ \ \ \ =\ \{https://www.tutorialspoint.com\},}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{@online\{ChatGPT,}
+\DoxyCodeLine{\ \ author\ \ \ \ =\ \{OpenAI\},}
+\DoxyCodeLine{\ \ title\ \ \ \ \ =\ \{ChatGPT\},}
+\DoxyCodeLine{\ \ year\ \ \ \ \ \ =\ \{2023\},}
+\DoxyCodeLine{\ \ url\ \ \ \ \ \ \ =\ \{https://www.chat.openai.com\},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Também é pedido "{}algum contexto para a definição de um grafo para representar alguma informação (exemplo\+: a hierarquia entre pastas do sistema de ficheiros)"{} dentro do ficheiro Tex. Por isso, com a dependência {\ttfamily dirtree}, adicionei o tree da hierarquia das pastas do projeto\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\%\ Hierarquia\ de\ Ficheiros}
+\DoxyCodeLine{\ \ \(\backslash\)dirtree\{\%}
+\DoxyCodeLine{\ \ .1\ /.}
+\DoxyCodeLine{\ \ .2\ assets/.}
+\DoxyCodeLine{\ \ .3\ (imagens).}
+\DoxyCodeLine{\ \ .2\ build/.}
+\DoxyCodeLine{\ \ .2\ doc/.}
+\DoxyCodeLine{\ \ .3\ v0.1/.}
+\DoxyCodeLine{\ \ .4\ html/.}
+\DoxyCodeLine{\ \ .5\ (website).}
+\DoxyCodeLine{\ \ .4\ latex/.}
+\DoxyCodeLine{\ \ .5\ (ficheiros\ Latex\ e\ PDF).}
+\DoxyCodeLine{\ \ .3\ v1.0/.}
+\DoxyCodeLine{\ \ .4\ Biblioteca/.}
+\DoxyCodeLine{\ \ .5\ html/.}
+\DoxyCodeLine{\ \ .6\ (website).}
+\DoxyCodeLine{\ \ .5\ latex/.}
+\DoxyCodeLine{\ \ .6\ (ficheiros\ Latex\ e\ PDF).}
+\DoxyCodeLine{\ \ .4\ Programa/.}
+\DoxyCodeLine{\ \ .5\ html/.}
+\DoxyCodeLine{\ \ .6\ (website).}
+\DoxyCodeLine{\ \ .5\ latex/.}
+\DoxyCodeLine{\ \ .6\ (ficheiros\ Latex\ e\ PDF).}
+\DoxyCodeLine{\ \ .2\ examples/.}
+\DoxyCodeLine{\ \ .3\ (ficheiros\ de\ exemplo).}
+\DoxyCodeLine{\ \ .2\ src/.}
+\DoxyCodeLine{\ \ .3\ GestorDadosIO/.}
+\DoxyCodeLine{\ \ .4\ (código\ da\ biblioteca).}
+\DoxyCodeLine{\ \ .3\ LESI\(\backslash\)\_PI\(\backslash\)\_TP\(\backslash\)\_a28602/.}
+\DoxyCodeLine{\ \ .4\ (código-\/fonte\ principal).}
+\DoxyCodeLine{\ \ .2\ README.md.}
+\DoxyCodeLine{\ \ .2\ Makefile.}
+\DoxyCodeLine{\ \ .2\ .gitignore.}
+\DoxyCodeLine{\ \ .2\ .gitattributes.}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Foi necessário adicionar a dependência {\ttfamily dirtree} ao ficheiro\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\(\backslash\)usepackage\{dirtree\}}
+
+\end{DoxyCode}
+
+
+A parte final do ficheiro {\ttfamily .tex} ficou assim\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\%-\/-\/-\/\ End\ generated\ contents\ -\/-\/-\/}
+\DoxyCodeLine{\%\ Hierarquia\ de\ Ficheiros}
+\DoxyCodeLine{\ \ \(\backslash\)backmatter}
+\DoxyCodeLine{\ \ \(\backslash\)newpage}
+\DoxyCodeLine{\ \ \(\backslash\)section*\{Hierarquia\ de\ Ficheiros\}}
+\DoxyCodeLine{\%\ Hierarquia\ de\ Ficheiros}
+\DoxyCodeLine{\ \ \(\backslash\)dirtree\{\%}
+\DoxyCodeLine{\ \ .1\ /.}
+\DoxyCodeLine{\ \ .2\ assets/.}
+\DoxyCodeLine{\ \ .3\ (imagens).}
+\DoxyCodeLine{\ \ .2\ build/.}
+\DoxyCodeLine{\ \ .2\ doc/.}
+\DoxyCodeLine{\ \ .3\ v0.1/.}
+\DoxyCodeLine{\ \ .4\ html/.}
+\DoxyCodeLine{\ \ .5\ (website).}
+\DoxyCodeLine{\ \ .4\ latex/.}
+\DoxyCodeLine{\ \ .5\ (ficheiros\ Latex\ e\ PDF).}
+\DoxyCodeLine{\ \ .3\ v1.0/.}
+\DoxyCodeLine{\ \ .4\ Biblioteca/.}
+\DoxyCodeLine{\ \ .5\ html/.}
+\DoxyCodeLine{\ \ .6\ (website).}
+\DoxyCodeLine{\ \ .5\ latex/.}
+\DoxyCodeLine{\ \ .6\ (ficheiros\ Latex\ e\ PDF).}
+\DoxyCodeLine{\ \ .4\ Programa/.}
+\DoxyCodeLine{\ \ .5\ html/.}
+\DoxyCodeLine{\ \ .6\ (website).}
+\DoxyCodeLine{\ \ .5\ latex/.}
+\DoxyCodeLine{\ \ .6\ (ficheiros\ Latex\ e\ PDF).}
+\DoxyCodeLine{\ \ .2\ examples/.}
+\DoxyCodeLine{\ \ .3\ (ficheiros\ de\ exemplo).}
+\DoxyCodeLine{\ \ .2\ src/.}
+\DoxyCodeLine{\ \ .3\ GestorDadosIO/.}
+\DoxyCodeLine{\ \ .4\ (código\ da\ biblioteca).}
+\DoxyCodeLine{\ \ .3\ LESI\(\backslash\)\_PI\(\backslash\)\_TP\(\backslash\)\_a28602/.}
+\DoxyCodeLine{\ \ .4\ (código-\/fonte\ principal).}
+\DoxyCodeLine{\ \ .2\ README.md.}
+\DoxyCodeLine{\ \ .2\ Makefile.}
+\DoxyCodeLine{\ \ .2\ .gitignore.}
+\DoxyCodeLine{\ \ .2\ .gitattributes.}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\%\ Bibliography}
+\DoxyCodeLine{\ \ \(\backslash\)phantomsection}
+\DoxyCodeLine{\ \ \(\backslash\)addcontentsline\{toc\}\{chapter\}\{\(\backslash\)bibname\}}
+\DoxyCodeLine{\ \ \(\backslash\)bibliographystyle\{unsrt\}}
+\DoxyCodeLine{\ \ \(\backslash\)nocite\{*\}}
+\DoxyCodeLine{\ \ \(\backslash\)bibliography\{references\}}
+\DoxyCodeLine{\%\ Index}
+\DoxyCodeLine{\ \ \(\backslash\)newpage}
+\DoxyCodeLine{\ \ \(\backslash\)phantomsection}
+\DoxyCodeLine{\ \ \(\backslash\)clearemptydoublepage}
+\DoxyCodeLine{\ \ \(\backslash\)addcontentsline\{toc\}\{chapter\}\{\(\backslash\)indexname\}}
+\DoxyCodeLine{\ \ \(\backslash\)printindex}
+\DoxyCodeLine{\%\ Required\ for\ some\ languages\ (in\ combination\ with\ latexdocumentpre\ from\ the\ header)}
+\DoxyCodeLine{\(\backslash\)end\{document\}}
+
+\end{DoxyCode}
+
+
+Para compilar o Tex utilizei os seguintes comandos\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{pdflatex\ refman}
+\DoxyCodeLine{bibtex\ refman}
+\DoxyCodeLine{pdflatex\ refman}
+\DoxyCodeLine{pdflatex\ refman}
+
+\end{DoxyCode}
+
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md34}{}\doxysubsection{\texorpdfstring{Utilização do Repositório}{Utilização do Repositório}}\label{index_autotoc_md34}
+Este repositório foi organizado considerando os exemplos abordados nas aulas de Laboratórios de Informática. Aqui estão alguns pontos importantes do repositório\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{README.\+md\+:}} Utilizamos o Markdown para fazer uma apresentação clara e detalhada do conteúdo do repositório, incluindo uma breve descrição do projeto, instruções de instalação e uso, e outros detalhes relevantes.
+\item \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}.gitignore\+:\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Configuramos o ficheiro {\ttfamily .gitignore} para excluir tipos de ficheiros não desejados no repositório.
+\item {\bfseries{Atualizações Locais e Remotas\+:}} Utilizamos os comandos Git apropriados para atualizar o código localmente e, de seguida, sincronizamos as alterações no repositório remoto no Git\+Hub. Documentamos todas as alterações significativas para manter um histórico claro.
+\item {\bfseries{Divisão de Tarefas\+:}} Todas as tarefas foram criadas pelo Enrique Rodrigues no Github como {\itshape Issues} para serem realizadas. Os membros interessados em assumir uma tarefa podiam-\/se designar como {\itshape Assignees}.
+\item {\bfseries{Branches\+:}} Utilizamos branches de forma adequada para garantir a segurança das versões estáveis da solução. Cada funcionalidade ou correção de bug foi desenvolvida no seu próprio branch antes de ser colocada na branch principal.
+\item {\bfseries{Pull Requests\+:}} Adotamos o uso de pull requests para documentar e revisar adequadamente as alterações propostas por cada membro da equipa. Isso proporciona uma visão clara das modificações introduzidas em relação à versão anterior.
+\item {\bfseries{Documentação\+:}} O ficheiro README.\+md serve como documentação central do projeto, incluindo a divisão de tarefas, os principais comandos utilizados e uma conclusão geral do trabalho realizado.
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md36}{}\doxysubsection{\texorpdfstring{Changelog e Versões}{Changelog e Versões}}\label{index_autotoc_md36}
+Para as últimas alterações e versões, consulte a seção \href{https://github.com/LabInf24/d-14/releases}{\texttt{ Releases}}. 

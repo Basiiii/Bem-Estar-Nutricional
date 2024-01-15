@@ -1,0 +1,144 @@
+\doxysection{Referência ao ficheiro Debug.\+c}
+\hypertarget{_debug_8c}{}\label{_debug_8c}\index{Debug.c@{Debug.c}}
+
+
+Funções que apresentam informações durante o modo debug.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}Constantes.\+h"{}}\newline
+{\ttfamily \#include "{}Estrutura\+Dados.\+h"{}}\newline
+{\ttfamily \#include "{}Utils.\+h"{}}\newline
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_debug_8c_aed0f889b6f84e1900b448901c8b975ad}{Debug\+Mostrar\+Ficheiros\+Utilizador}} (char \texorpdfstring{$\ast$}{*}ficheiro\+Pacientes, char \texorpdfstring{$\ast$}{*}ficheiro\+Dietas, char \texorpdfstring{$\ast$}{*}ficheiro\+Planos, int pacientes\+Tipo, int dietas\+Tipo, int planos\+Tipo)
+\begin{DoxyCompactList}\small\item\em Apresenta os nomes e tipos de ficheiros que o utilizador deseja importar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_debug_8c_a85ff5ec072c08fec791d869356080da6}{Debug\+Mostrar\+Pacientes}} (\mbox{\hyperlink{struct_paciente}{Paciente}} pacientes\mbox{[}TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]}, int num\+Pacientes)
+\begin{DoxyCompactList}\small\item\em Apresenta os dados dos pacientes na memória para debugging. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_debug_8c_a1099fafb25e2beb819f43bc16422c651}{Debug\+Mostrar\+Dietas}} (\mbox{\hyperlink{struct_dieta}{Dieta}} dietas\mbox{[}TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]}, int num\+Dietas)
+\begin{DoxyCompactList}\small\item\em Apresenta os dados das dietas na memória para debugging. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_debug_8c_a914733bfffef90ea9d583d1a6f4bd458}{Debug\+Mostrar\+Planos}} (\mbox{\hyperlink{struct_plano}{Plano}} planos\mbox{[}TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]}, int num\+Planos)
+\begin{DoxyCompactList}\small\item\em Apresenta os dados dos planos na memória para debugging. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_debug_8c_af6a4bac64552174a32d55d5851534c15}{Debug\+Mostrar\+Dados\+Memoria}} (\mbox{\hyperlink{struct_paciente}{Paciente}} pacientes\mbox{[}TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]}, int num\+Pacientes, \mbox{\hyperlink{struct_dieta}{Dieta}} dietas\mbox{[}TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]}, int num\+Dietas, \mbox{\hyperlink{struct_plano}{Plano}} planos\mbox{[}TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]}, int num\+Planos)
+\begin{DoxyCompactList}\small\item\em Apresenta os dados na memória para debugging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Funções que apresentam informações durante o modo debug. 
+
+\begin{DoxyAuthor}{Autor}
+Enrique George Rodrigues
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+Criado\+: 16.\+11.\+2023 
+
+Modificado\+: 28.\+12.\+2023
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+© Enrique George Rodrigues, 2023. All right reserved. 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{_debug_8c_af6a4bac64552174a32d55d5851534c15}\label{_debug_8c_af6a4bac64552174a32d55d5851534c15} 
+\index{Debug.c@{Debug.c}!DebugMostrarDadosMemoria@{DebugMostrarDadosMemoria}}
+\index{DebugMostrarDadosMemoria@{DebugMostrarDadosMemoria}!Debug.c@{Debug.c}}
+\doxysubsubsection{\texorpdfstring{DebugMostrarDadosMemoria()}{DebugMostrarDadosMemoria()}}
+{\footnotesize\ttfamily void Debug\+Mostrar\+Dados\+Memoria (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_paciente}{Paciente}}}]{pacientes\mbox{[}\+TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]},  }\item[{int}]{num\+Pacientes,  }\item[{\mbox{\hyperlink{struct_dieta}{Dieta}}}]{dietas\mbox{[}\+TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]},  }\item[{int}]{num\+Dietas,  }\item[{\mbox{\hyperlink{struct_plano}{Plano}}}]{planos\mbox{[}\+TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]},  }\item[{int}]{num\+Planos }\end{DoxyParamCaption})}
+
+
+
+Apresenta os dados na memória para debugging. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em pacientes} & -\/ Array de pacientes. \\
+\hline
+{\em num\+Pacientes} & -\/ Número de pacientes. \\
+\hline
+{\em dietas} & -\/ Array de dietas. \\
+\hline
+{\em num\+Dietas} & -\/ Número de dietas. \\
+\hline
+{\em planos} & -\/ Array de planos. \\
+\hline
+{\em num\+Planos} & -\/ Número de planos. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8c_a1099fafb25e2beb819f43bc16422c651}\label{_debug_8c_a1099fafb25e2beb819f43bc16422c651} 
+\index{Debug.c@{Debug.c}!DebugMostrarDietas@{DebugMostrarDietas}}
+\index{DebugMostrarDietas@{DebugMostrarDietas}!Debug.c@{Debug.c}}
+\doxysubsubsection{\texorpdfstring{DebugMostrarDietas()}{DebugMostrarDietas()}}
+{\footnotesize\ttfamily void Debug\+Mostrar\+Dietas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_dieta}{Dieta}}}]{dietas\mbox{[}\+TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]},  }\item[{int}]{num\+Dietas }\end{DoxyParamCaption})}
+
+
+
+Apresenta os dados das dietas na memória para debugging. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em dietas} & -\/ Array de dietas. \\
+\hline
+{\em num\+Dietas} & -\/ Número de dietas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8c_aed0f889b6f84e1900b448901c8b975ad}\label{_debug_8c_aed0f889b6f84e1900b448901c8b975ad} 
+\index{Debug.c@{Debug.c}!DebugMostrarFicheirosUtilizador@{DebugMostrarFicheirosUtilizador}}
+\index{DebugMostrarFicheirosUtilizador@{DebugMostrarFicheirosUtilizador}!Debug.c@{Debug.c}}
+\doxysubsubsection{\texorpdfstring{DebugMostrarFicheirosUtilizador()}{DebugMostrarFicheirosUtilizador()}}
+{\footnotesize\ttfamily void Debug\+Mostrar\+Ficheiros\+Utilizador (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{ficheiro\+Pacientes,  }\item[{char \texorpdfstring{$\ast$}{*}}]{ficheiro\+Dietas,  }\item[{char \texorpdfstring{$\ast$}{*}}]{ficheiro\+Planos,  }\item[{int}]{pacientes\+Tipo,  }\item[{int}]{dietas\+Tipo,  }\item[{int}]{planos\+Tipo }\end{DoxyParamCaption})}
+
+
+
+Apresenta os nomes e tipos de ficheiros que o utilizador deseja importar. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em ficheiro\+Pacientes} & -\/ O nome do ficheiro de pacientes. \\
+\hline
+{\em ficheiro\+Dietas} & -\/ O nome do ficheiro de dietas. \\
+\hline
+{\em ficheiro\+Planos} & -\/ O nome do ficheiro de planos. \\
+\hline
+{\em tipo\+Ficheiro\+Pacientes} & -\/ O tipo do ficheiro de pacientes (txt, bin, tab). \\
+\hline
+{\em tipo\+Ficheiro\+Dietas} & -\/ O tipo do ficheiro de dietas (txt, bin, tab). \\
+\hline
+{\em tipo\+Ficheiro\+Planos} & -\/ O tipo do ficheiro de planos (txt, bin, tab). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8c_a85ff5ec072c08fec791d869356080da6}\label{_debug_8c_a85ff5ec072c08fec791d869356080da6} 
+\index{Debug.c@{Debug.c}!DebugMostrarPacientes@{DebugMostrarPacientes}}
+\index{DebugMostrarPacientes@{DebugMostrarPacientes}!Debug.c@{Debug.c}}
+\doxysubsubsection{\texorpdfstring{DebugMostrarPacientes()}{DebugMostrarPacientes()}}
+{\footnotesize\ttfamily void Debug\+Mostrar\+Pacientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_paciente}{Paciente}}}]{pacientes\mbox{[}\+TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]},  }\item[{int}]{num\+Pacientes }\end{DoxyParamCaption})}
+
+
+
+Apresenta os dados dos pacientes na memória para debugging. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em pacientes} & Array de pacientes. \\
+\hline
+{\em num\+Pacientes} & Número de pacientes. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8c_a914733bfffef90ea9d583d1a6f4bd458}\label{_debug_8c_a914733bfffef90ea9d583d1a6f4bd458} 
+\index{Debug.c@{Debug.c}!DebugMostrarPlanos@{DebugMostrarPlanos}}
+\index{DebugMostrarPlanos@{DebugMostrarPlanos}!Debug.c@{Debug.c}}
+\doxysubsubsection{\texorpdfstring{DebugMostrarPlanos()}{DebugMostrarPlanos()}}
+{\footnotesize\ttfamily void Debug\+Mostrar\+Planos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_plano}{Plano}}}]{planos\mbox{[}\+TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]},  }\item[{int}]{num\+Planos }\end{DoxyParamCaption})}
+
+
+
+Apresenta os dados dos planos na memória para debugging. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em planos} & -\/ Array de planos. \\
+\hline
+{\em num\+Planos} & -\/ Número de planos. \\
+\hline
+\end{DoxyParams}

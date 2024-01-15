@@ -1,0 +1,24 @@
+\begin{thebibliography}{1}
+
+\bibitem{KernighanC89}
+Brian~W. Kernighan and Dennis~M. Ritchie.
+\newblock {\em The C Programming Language}.
+\newblock Prentice Hall, Englewood Cliffs, NJ, 1988.
+
+\bibitem{CProgrammingTutorial}
+GeeksforGeeks.
+\newblock C programming language, 2022.
+
+\bibitem{LearnC}
+Learn-C.org.
+\newblock Learn c - free interactive c tutorial, 2023.
+
+\bibitem{TutorialsPoint}
+tutorialspoint.com.
+\newblock Learn c programming, 2023.
+
+\bibitem{ChatGPT}
+OpenAI.
+\newblock Chatgpt, 2023.
+
+\end{thebibliography}

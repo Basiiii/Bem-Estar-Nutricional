@@ -1,0 +1,15 @@
+0001	01-01-2023	pequeno almoco	pao	100 cal
+0001	01-01-2023	pequeno almoco	banana	120 cal
+0001	02-01-2023	pequeno almoco	pao	100 cal
+0001	02-01-2023	pequeno almoco	maca	180 cal
+0003	14-02-2023	almoco	sopa	120 cal
+0004	15-03-2023	almoco	salada	300 cal
+0003	20-04-2023	pequeno almoco	cereais	150 cal
+0002	23-05-2023	jantar	prato de carne	1200 cal
+0005	10-06-2023	jantar	peixe grelhado	500 cal
+0002	02-08-2023	almoco	frango	800 cal
+0006	03-09-2023	pequeno almoco	iogurte	80 cal
+0007	12-10-2023	jantar	pizza	900 cal
+0008	25-11-2023	almoco	sanduiche	350 cal
+0009	05-12-2023	jantar	hamburguer	700 cal
+0010	15-01-2024	pequeno almoco	muffin	200 cal

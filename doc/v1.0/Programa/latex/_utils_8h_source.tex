@@ -1,0 +1,64 @@
+\doxysection{Utils.\+h}
+\hypertarget{_utils_8h_source}{}\label{_utils_8h_source}\mbox{\hyperlink{_utils_8h}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#ifndef\ UTILS\_H}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ UTILS\_H}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_estrutura_dados_8h}{EstruturaDados.h}}"{}}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_utils_8h_a95a5a4c798fe90f4da46f5ddf0156afd}{CustomSleep}}(\textcolor{keywordtype}{int}\ segundos);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00037\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a74a0084944b9583f7ae76a6020fbf0bd}{LerTecla}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00048\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_utils_8h_a007dcb1e0b52973e50955f53ad7fcd2e}{LimparEcra}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00059\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_utils_8h_ae4aba734171207cf87c8fdb7a7fa5215}{TerminarProgramaComErro}}(\textcolor{keywordtype}{int}\ erro);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00074\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_utils_8h_a537d893cf3eede64bd4e6edcae78d978}{EscreverComCor}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ cor,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ formato,\ ...);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00081\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_utils_8h_ab24e0f13c8c0220f901c4f07a5431f1d}{ApresentarAjuda}}();}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00086\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_utils_8h_aa9ca1ed1755d30a7b2b478cd1fbc7f64}{ApresentarErros}}();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00091\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_utils_8h_a17405dd1d20eff28271d5180fd352b58}{PerguntarUtilizadorIniciarPrograma}}();}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00099\ time\_t\ \mbox{\hyperlink{_utils_8h_a8d0016ed30f0186ff6fed73d35a8d8ed}{ConverterStringParaDatetime}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ dateString);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00106\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{_utils_8h_ac6e2725f3574d97796840e0644781b36}{ConverterDatetimeParaString}}(time\_t\ datetime);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00117\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_utils_8h_a47aa9d2ccdca4a70489a3c0e4c51e3b1}{LibertarMemoria}}(\mbox{\hyperlink{struct_paciente}{Paciente}}**\ pacientes,\ \textcolor{keywordtype}{int}*\ numPacientes,\ \mbox{\hyperlink{struct_dieta}{Dieta}}**\ dietas,\ \textcolor{keywordtype}{int}*\ numDietas,\ \mbox{\hyperlink{struct_plano}{Plano}}**\ planos,\ \textcolor{keywordtype}{int}*\ numPlanos);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00127\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a1b479846ec3a02aaa81b2d0af8977bb5}{CompararPacientePorId}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{void}*\ a,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}*\ b);}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00134\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_utils_8h_aa101e330be6fbd1140cbc490401e2784}{OrganizarPacientesPorId}}(\mbox{\hyperlink{struct_paciente}{Paciente}}\ pacientes[],\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00144\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a837a3dc04e1509cfa04d940e229db35d}{CompararDietaPorId}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{void}*\ a,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}*\ b);}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00155\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a36384601076a4104919113ecda681992}{CompararDietaPorData}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{void}*\ a,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}*\ b);}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00162\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_utils_8h_a4bf493fbc4cda875bec59f9282d51a72}{OrganizarDietasPorId}}(\mbox{\hyperlink{struct_dieta}{Dieta}}\ dietas[],\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00172\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_afbfff05a80fe7b28a4440b9f47e3395d}{CompararPlanoPorId}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{void}*\ a,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}*\ b);}
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00179\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_utils_8h_aff393d81d4e793e760e89e2a633d9d53}{OrganizarPlanosPorId}}(\mbox{\hyperlink{struct_plano}{Plano}}\ planos[],\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00186\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_utils_8h_a1001855114b2b21fc3971bcd064bc930}{ValidarFormatoData}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ dataStr);}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00202\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_abb289dc5e5f8424b92c172c9a310195c}{ProcessarFicheiro}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nomeFicheiro,\ \textcolor{keywordtype}{int}\ tipoDadosFicheiro,\ \textcolor{keywordtype}{int}\ tipoFicheiro,}
+\DoxyCodeLine{00203\ \ \ \ \ \textcolor{keywordtype}{void}*\ dados,\ \textcolor{keywordtype}{size\_t}\ tamanhoRegisto,\ \textcolor{keywordtype}{int}*\ numRegistos);}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00220\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_ae9bd25879ceca843296f26f0371bb847}{ImportarEProcessarFicheiro}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ ficheiro,\ \textcolor{keywordtype}{int}\ tipoDados,\ \textcolor{keywordtype}{int}\ tipoFicheiro,}
+\DoxyCodeLine{00221\ \ \ \ \ \textcolor{keywordtype}{void}*\ dados,\ \textcolor{keywordtype}{size\_t}\ tamanhoRegisto,\ \textcolor{keywordtype}{int}*\ numRegistos);}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00228\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a8324b1f23ec2145344106ff719495dca}{ConverterRefeicaoParaId}}(\textcolor{keywordtype}{char}\ refeicao[TAMANHO\_REFEICAO]);}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00236\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{_utils_8h_ad4e1b24a2e3e4ab16160c9a1437eb303}{ConverterRefeicaoParaTexto}}(\textcolor{keywordtype}{int}\ refeicao);}
+\DoxyCodeLine{00237\ }
+\DoxyCodeLine{00247\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a58ce61b7d6347c6f6e230d471d006f45}{GuardarDados}}(\mbox{\hyperlink{struct_paciente}{Paciente}}\ pacientes[],\ \textcolor{keywordtype}{int}\ numPacientes,\ \mbox{\hyperlink{struct_dieta}{Dieta}}\ dietas[],\ \textcolor{keywordtype}{int}\ numDietas,\ \mbox{\hyperlink{struct_plano}{Plano}}\ planos[],\ \textcolor{keywordtype}{int}\ numPlanos);}
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00249\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

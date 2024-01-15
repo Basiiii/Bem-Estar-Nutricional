@@ -1,0 +1,114 @@
+\doxysection{Referência ao ficheiro main.\+c}
+\hypertarget{main_8c}{}\label{main_8c}\index{main.c@{main.c}}
+
+
+Ponto de entrada principal da aplicação que apoia o bem-\/estar e cuidados nutricionais. Desenvolvido por Enrique Rodrigues na unidade curricular de Programação Imperativa.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$locale.\+h$>$}\newline
+{\ttfamily \#include "{}Constantes.\+h"{}}\newline
+{\ttfamily \#include "{}Estrutura\+Dados.\+h"{}}\newline
+{\ttfamily \#include "{}Utils.\+h"{}}\newline
+{\ttfamily \#include "{}Menu.\+h"{}}\newline
+{\ttfamily \#include "{}Input\+Stdin.\+h"{}}\newline
+{\ttfamily \#include "{}Parametros.\+h"{}}\newline
+{\ttfamily \#include "{}Controlo\+Erros.\+h"{}}\newline
+{\ttfamily \#include "{}Operacoes\+Ficheiros.\+h"{}}\newline
+{\ttfamily \#include "{}../\+Gestor\+Dados\+IO/\+IODados\+API.\+h"{}}\newline
+{\ttfamily \#include "{}Debug.\+h"{}}\newline
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Função principal que controla a execução do programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Ponto de entrada principal da aplicação que apoia o bem-\/estar e cuidados nutricionais. Desenvolvido por Enrique Rodrigues na unidade curricular de Programação Imperativa. 
+
+O programa visa apoiar o bem-\/estar e cuidados nutricionais, abordando o problema do comportamento alimentar saudável. Funcionalidades incluem carregamento de dados de pacientes, dietas e planos nutricionais, apresentação de estatísticas de calorias, listagem de pacientes com comportamento fora do plano nutricional e análises diversas. Desenvolvido com base em métodos rigorosos de análise de problemas e as melhores práticas de programação imperativa em C.
+
+\begin{DoxyAuthor}{Autor}
+Enrique George Rodrigues
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+Criado\+: 16.\+11.\+2023 
+
+Modificado\+: 28.\+12.\+2023
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+© Enrique George Rodrigues, 2023. All right reserved. 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{main_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8c_a0ddf1224851353fc92bfbff6f499fa97} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Função principal que controla a execução do programa. 
+
+Esta função inicia o programa e controla a execução de diferentes blocos de código, incluindo o controlo dos parametros do utlizador, a verificação (e criação) dos ficheiros binários, a importação dos dados para memória do sistema, a apresentação de um menu para interação com o utilizador e a execução das opções escolhidas no menu.
+
+\begin{DoxyWarning}{Aviso}
+Esta função pode interagir com o utilizador para corrigir erros nos dados dos pacientes. 
+
+O utilizador pode apagar todos os dados dos pacientes se chamar o programa com o parámetro "{}-\/-\/apagarbd"{}. 
+
+O menu corre num ciclo infinito até ser escolhido \textquotesingle{}q\textquotesingle{} (terminar e guardar dados) ou \textquotesingle{}f\textquotesingle{} (terminar sem guardar).
+\end{DoxyWarning}
+
+\begin{DoxyParams}[1]{Parâmetros}
+\mbox{\texttt{ in}}  & {\em argc} & O número de argumentos da linha de comandos. \\
+\hline
+\mbox{\texttt{ in}}  & {\em argv} & Um array de strings representando os argumentos da linha de comandos.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+0 -\/ O programa correu sem erros (SUCESSO). 
+
+1 -\/ Não existem os ficheiros binários (ERRO\+\_\+\+NAO\+\_\+\+EXISTEM\+\_\+\+FICHEIROS\+\_\+\+BIN). 
+
+2 -\/ Erro ao criar o ficheiro (ERRO\+\_\+\+CRIAR\+\_\+\+FICHEIRO). 
+
+3 -\/ Erro ao importar dados do texto (ERRO\+\_\+\+IMPORTAR\+\_\+\+DADOS\+\_\+\+TEXTO). 
+
+4 -\/ Erro ao importar dados binários (ERRO\+\_\+\+IMPORTAR\+\_\+\+DADOS\+\_\+\+BIN). 
+
+5 -\/ Erro ao apagar ficheiros binários (ERRO\+\_\+\+APAGAR\+\_\+\+FICHEIROS\+\_\+\+BIN). 
+
+6 -\/ Erro ao alocar memória (ERRO\+\_\+\+ALOCAR\+\_\+\+MEMORIA). 
+
+7 -\/ Ficheiro não encontrado (ERRO\+\_\+\+FICHEIRO\+\_\+\+NAO\+\_\+\+ENCONTRADO). 
+
+8 -\/ Ficheiro vazio (ERRO\+\_\+\+FICHEIRO\+\_\+\+VAZIO). 
+
+9 -\/ Erro durante a leitura do ficheiro (ERRO\+\_\+\+LEITURA\+\_\+\+FICHEIRO). 
+
+10 -\/ Formato inválido (ERRO\+\_\+\+FORMATO\+\_\+\+INVALIDO). 
+
+11 -\/ Erro não definido (ERRO\+\_\+\+NAO\+\_\+\+DEFINIDO). 
+
+12 -\/ Erro ao abrir o ficheiro (ERRO\+\_\+\+ABRIR\+\_\+\+FICHEIRO). 
+
+13 -\/ Erro tamanho array excedido (ERRO\+\_\+\+TAMANHO\+\_\+\+EXCEDIDO). 
+
+14 -\/ Erro conversão data texto para objeto datetime (ERRO\+\_\+\+CONVERSAO\+\_\+\+TEXTO\+\_\+\+DATETIME). 
+
+15 -\/ Erro array de dados nullo (ERRO\+\_\+\+ARRAY\+\_\+\+DADOS\+\_\+\+NULL). 
+
+16 -\/ Erro opção introduzida pelo utilizador desconhecida (ERRO\+\_\+\+OPCAO\+\_\+\+UTILIZADOR\+\_\+\+DESCONHECIDA). 
+
+17 -\/ Erro apagar ficheiros da base de dados (.dat) (ERRO\+\_\+\+APAGAR\+\_\+\+BASE\+\_\+\+DADOS). 
+
+18 -\/ Erro processamento dos ficheiros (ERRO\+\_\+\+PROCESSAMENTO). 
+
+19 -\/ Erro importar dados dos ficheiros (ERRO\+\_\+\+IMPORTAR\+\_\+\+DADOS). 
+\end{DoxyReturn}

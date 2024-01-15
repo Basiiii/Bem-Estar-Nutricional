@@ -1,0 +1,68 @@
+\doxysection{Estrutura\+Dados.\+h}
+\hypertarget{_estrutura_dados_8h_source}{}\label{_estrutura_dados_8h_source}\mbox{\hyperlink{_estrutura_dados_8h}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#ifndef\ ESTRUTURA\_DADOS\_H}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ ESTRUTURA\_DADOS\_H}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <time.h>}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_constantes_8h}{Constantes.h}}"{}}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ Estrutura\ dos\ pacientes}}
+\DoxyCodeLine{00027\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ id;\ \textcolor{comment}{//\ Identificação\ única\ do\ paciente}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{char}\ nome[TAMANHO\_NOME\_PACIENTE];\ \textcolor{comment}{//\ Nome\ do\ paciente}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{long}\ tel;\ \textcolor{comment}{//\ Número\ de\ telefone\ do\ paciente}}
+\DoxyCodeLine{00031\ \}\ \mbox{\hyperlink{struct_paciente}{Paciente}};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{comment}{//\ Estrutura\ das\ dietas}}
+\DoxyCodeLine{00034\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ idPaciente;\ \textcolor{comment}{//\ Identificação\ única\ do\ paciente}}
+\DoxyCodeLine{00036\ \ \ \ \ time\_t\ data;\ \textcolor{comment}{//\ Data\ em\ formato\ timestamp}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ refeicao;\ \textcolor{comment}{//\ Tipo\ de\ refeição\ (PEQUENO\_ALMOCO,\ ALMOCO,\ JANTAR)}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{char}\ comida[TAMANHO\_NOME\_REFEICAO];\ \textcolor{comment}{//\ Nome\ da\ comida}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ calorias;\ \textcolor{comment}{//\ Quantidade\ de\ calorias\ da\ comida}}
+\DoxyCodeLine{00040\ \}\ \mbox{\hyperlink{struct_dieta}{Dieta}};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{comment}{//\ Estrutura\ dos\ planos}}
+\DoxyCodeLine{00043\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{int}\ idPaciente;\ \textcolor{comment}{//\ Identificação\ única\ do\ paciente}}
+\DoxyCodeLine{00045\ \ \ \ \ time\_t\ data;\ \textcolor{comment}{//\ Data\ em\ formato\ timestamp}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{int}\ refeicao;\ \textcolor{comment}{//\ Tipo\ de\ refeição\ (PEQUENO\_ALMOCO,\ ALMOCO,\ JANTAR)}}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{int}\ calorias[NUMERO\_CALORIAS];\ \textcolor{comment}{//\ Intervalo\ de\ calorias.\ Índice\ 0\ =\ cal\ mínimas,\ índice\ 1\ =\ cal\ máximas}}
+\DoxyCodeLine{00048\ \}\ \mbox{\hyperlink{struct_plano}{Plano}};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{comment}{//\ Utilizado\ na\ funcionalidade\ 3}}
+\DoxyCodeLine{00051\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{int}\ idPaciente;\ \textcolor{comment}{//\ Identificação\ única\ do\ paciente}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{char}\ nome[TAMANHO\_NOME\_PACIENTE];\ \textcolor{comment}{//\ Nome\ do\ paciente}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{char}\ refeicao[TAMANHO\_NOME\_REFEICAO];\ \textcolor{comment}{//\ Nome\ da\ refeição}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{int}\ totalCalorias;\ \textcolor{comment}{//\ Valor\ total\ das\ calorias}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{int}\ caloriasMin;\ \textcolor{comment}{//\ Valor\ mínimo\ das\ calorias}}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ caloriasMax;\ \textcolor{comment}{//\ Valor\ máximo\ das\ calorias}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{char}\ data[TAMANHO\_DATA\_TEXTO];\ \textcolor{comment}{//\ Data\ em\ texto}}
+\DoxyCodeLine{00059\ \}\ \mbox{\hyperlink{struct_resultado_processamento_func3}{ResultadoProcessamentoFunc3}};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{comment}{//\ Utilizado\ na\ funcionalidade\ 4}}
+\DoxyCodeLine{00062\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{int}\ idPaciente;\ \textcolor{comment}{//\ Identificação\ única\ do\ paciente}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{char}\ tipoRefeicao[TAMANHO\_REFEICAO];\ \textcolor{comment}{//\ Tipo\ de\ refeição}}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{char}\ data[TAMANHO\_DATA\_TEXTO];\ \textcolor{comment}{//\ Data\ em\ texto}}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ caloriasMin;\ \textcolor{comment}{//\ Calorias\ mínimas}}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{int}\ caloriasMax;\ \textcolor{comment}{//\ Calorias\ máximas}}
+\DoxyCodeLine{00068\ \}\ \mbox{\hyperlink{struct_resultado_processamento_func4}{ResultadoProcessamentoFunc4}};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{comment}{//\ Utilizado\ na\ funcionalidade\ 5}}
+\DoxyCodeLine{00071\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{int}\ idPaciente;\ \textcolor{comment}{//\ Identificação\ única\ do\ paciente}}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{char}\ nomePaciente[TAMANHO\_NOME\_PACIENTE];\ \textcolor{comment}{//\ Nome\ do\ paciente}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{char}\ descricaoRefeicao[TAMANHO\_NOME\_REFEICAO];\ \textcolor{comment}{//\ Refeição\ em\ texto}}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{int}\ totalCalorias;\ \textcolor{comment}{//\ Total\ calorias}}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{int}\ numRefeicoes;\ \textcolor{comment}{//\ Número\ de\ refeições}}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{double}\ mediaCalorias;\ \textcolor{comment}{//\ Média\ das\ calorias\ em\ relação\ ao\ número\ de\ refeições}}
+\DoxyCodeLine{00078\ \}\ \mbox{\hyperlink{struct_resultado_processamento_func5}{ResultadoProcessamentoFunc5}};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

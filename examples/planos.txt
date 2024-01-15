@@ -1,0 +1,13 @@
+0001; 01-01-2023; pequeno almoco; 50 Cal, 100 Cal
+0001; 01-01-2023; jantar; 500 Cal, 800 Cal
+0001; 02-01-2023; jantar; 600 Cal, 800 Cal
+0002; 23-05-2023; jantar; 1000 Cal, 1500 Cal
+0003; 20-04-2023; pequeno almoco; 100 Cal, 200 Cal
+0004; 15-03-2023; almoco; 200 Cal, 400 Cal
+0005; 10-06-2023; jantar; 400 Cal, 600 Cal
+0002; 02-08-2023; almoco; 700 Cal, 1000 Cal
+0006; 03-09-2023; pequeno almoco; 80 Cal, 150 Cal
+0007; 12-10-2023; jantar; 800 Cal, 1200 Cal
+0008; 25-11-2023; almoco; 300 Cal, 500 Cal
+0009; 05-12-2023; jantar; 600 Cal, 900 Cal
+0010; 15-01-2024; pequeno almoco; 150 Cal, 250 Cal

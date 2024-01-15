@@ -1,0 +1,183 @@
+\doxysection{Referência ao ficheiro Importar\+Dados.\+c}
+\hypertarget{_importar_dados_8c}{}\label{_importar_dados_8c}\index{ImportarDados.c@{ImportarDados.c}}
+
+
+Funções para importar dados a partir de ficheiros (binários e de texto).  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include "{}IODados\+API.\+h"{}}\newline
+{\ttfamily \#include "{}../\+LESI\+\_\+\+PI\+\_\+\+TP\+\_\+a28602/\+Constantes.\+h"{}}\newline
+{\ttfamily \#include "{}../\+LESI\+\_\+\+PI\+\_\+\+TP\+\_\+a28602/\+Estrutura\+Dados.\+h"{}}\newline
+{\ttfamily \#include "{}../\+LESI\+\_\+\+PI\+\_\+\+TP\+\_\+a28602/\+Utils.\+h"{}}\newline
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_importar_dados_8c_a4f4dc2d5950f583c1aa3871263a39761}{Importar\+Dados\+Fich\+Binario}} (const char \texorpdfstring{$\ast$}{*}nome\+Ficheiro, void \texorpdfstring{$\ast$}{*}dados, size\+\_\+t tamanho\+Registo, int \texorpdfstring{$\ast$}{*}num\+Registos)
+\begin{DoxyCompactList}\small\item\em Importa os dados a partir do ficheiro binário. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_importar_dados_8c_a34a6a1c47abc0e7d9acef84597e94728}{Importar\+Pacientes\+Fich\+Texto}} (FILE \texorpdfstring{$\ast$}{*}file, const char \texorpdfstring{$\ast$}{*}nome\+Ficheiro, char \texorpdfstring{$\ast$}{*}formato\+Ficheiro, Paciente pacientes\mbox{[}TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]}, int \texorpdfstring{$\ast$}{*}num\+Pacientes)
+\begin{DoxyCompactList}\small\item\em Importa dados de pacientes de um ficheiro de texto e adiciona-\/os aos dados guardados, ignorando os recordes duplicados. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_importar_dados_8c_a919e52a0963f71e6690e8f41be515c95}{Importar\+Dietas\+Fich\+Texto}} (FILE \texorpdfstring{$\ast$}{*}file, const char \texorpdfstring{$\ast$}{*}nome\+Ficheiro, char \texorpdfstring{$\ast$}{*}formato\+Ficheiro, Dieta dietas\mbox{[}TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]}, int \texorpdfstring{$\ast$}{*}num\+Dietas)
+\begin{DoxyCompactList}\small\item\em Importa dados de dietas de um ficheiro de texto e adiciona-\/os aos dados guardados, ignorando os recordes duplicados. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_importar_dados_8c_afcbb994f776efab3a50ff0a0641a0878}{Importar\+Planos\+Fich\+Texto}} (FILE \texorpdfstring{$\ast$}{*}file, const char \texorpdfstring{$\ast$}{*}nome\+Ficheiro, char \texorpdfstring{$\ast$}{*}formato\+Ficheiro, Plano planos\mbox{[}TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]}, int \texorpdfstring{$\ast$}{*}num\+Planos)
+\begin{DoxyCompactList}\small\item\em Importa dados de planos de um ficheiro de texto e adiciona-\/os aos dados guardados, ignorando os recordes duplicados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Funções para importar dados a partir de ficheiros (binários e de texto). 
+
+Este ficheiro contém implementações de funções para importar dados de pacientes, dietas e planos a partir de ficheiros binários e de texto. As funções são projetadas para adicionar novos dados aos dados já existentes, ignorando registros duplicados quando adequado.
+
+\begin{DoxyAuthor}{Autor}
+Enrique George Rodrigues
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+Created\+: 28.\+11.\+2023 
+
+Last modified\+: 18.\+12.\+2023
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+© Enrique George Rodrigues, 2023. Todos os direitos reservados. 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{_importar_dados_8c_a4f4dc2d5950f583c1aa3871263a39761}\label{_importar_dados_8c_a4f4dc2d5950f583c1aa3871263a39761} 
+\index{ImportarDados.c@{ImportarDados.c}!ImportarDadosFichBinario@{ImportarDadosFichBinario}}
+\index{ImportarDadosFichBinario@{ImportarDadosFichBinario}!ImportarDados.c@{ImportarDados.c}}
+\doxysubsubsection{\texorpdfstring{ImportarDadosFichBinario()}{ImportarDadosFichBinario()}}
+{\footnotesize\ttfamily int Importar\+Dados\+Fich\+Binario (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro,  }\item[{void \texorpdfstring{$\ast$}{*}}]{dados,  }\item[{size\+\_\+t}]{tamanho\+Registo,  }\item[{int \texorpdfstring{$\ast$}{*}}]{num\+Registos }\end{DoxyParamCaption})}
+
+
+
+Importa os dados a partir do ficheiro binário. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+Ficheiro} & -\/ O nome do ficheiro binário. \\
+\hline
+{\em dados} & -\/ O array de dados a ser importado. \\
+\hline
+{\em tamanho\+Registo} & -\/ O tamanho de cada registro em bytes. \\
+\hline
+{\em num\+Registos} & -\/ Um apontador para a variável que guarda o número de registros.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em 0} & -\/ Sucesso na execução (SUCESSO). \\
+\hline
+{\em 12} & -\/ Erro ao abrir o ficheiro (ERRO\+\_\+\+ABRIR\+\_\+\+FICHEIRO). \\
+\hline
+{\em 13} & -\/ Erro, tamanho máximo excedido. (ERRO\+\_\+\+TAMANHO\+\_\+\+EXCEDIDO). \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_importar_dados_8c_a919e52a0963f71e6690e8f41be515c95}\label{_importar_dados_8c_a919e52a0963f71e6690e8f41be515c95} 
+\index{ImportarDados.c@{ImportarDados.c}!ImportarDietasFichTexto@{ImportarDietasFichTexto}}
+\index{ImportarDietasFichTexto@{ImportarDietasFichTexto}!ImportarDados.c@{ImportarDados.c}}
+\doxysubsubsection{\texorpdfstring{ImportarDietasFichTexto()}{ImportarDietasFichTexto()}}
+{\footnotesize\ttfamily int Importar\+Dietas\+Fich\+Texto (\begin{DoxyParamCaption}\item[{FILE \texorpdfstring{$\ast$}{*}}]{file,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro,  }\item[{char \texorpdfstring{$\ast$}{*}}]{formato\+Ficheiro,  }\item[{Dieta}]{dietas\mbox{[}\+TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{num\+Dietas }\end{DoxyParamCaption})}
+
+
+
+Importa dados de dietas de um ficheiro de texto e adiciona-\/os aos dados guardados, ignorando os recordes duplicados. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em file} & -\/ Apontador do tipo FILE\texorpdfstring{$\ast$}{*} do ficheiro. Caso não tenha, pode mandar NULL. \\
+\hline
+{\em nome\+Ficheiro} & -\/ O nome do ficheiro de texto. \\
+\hline
+{\em formato} & -\/ O formato dos dados do ficheiro de texto (FORMATO\+\_\+\+DIETAS\+\_\+\+TXT ou FORMATO\+\_\+\+DIETAS\+\_\+\+TAB). \\
+\hline
+{\em dietas} & -\/ O array de dietas. \\
+\hline
+{\em num\+Dietas} & -\/ Um apontador para a variável que guarda o número de dietas.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Só é preciso mandar o nome do ficheiro ou o apontador FILE\texorpdfstring{$\ast$}{*}.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em 0} & -\/ Sucesso na execução (SUCESSO). \\
+\hline
+{\em 10} & -\/ Erro formato ficheiro (ERRO\+\_\+\+FORMATO\+\_\+\+INVALIDO). \\
+\hline
+{\em 12} & -\/ Erro ao abrir o ficheiro (ERRO\+\_\+\+ABRIR\+\_\+\+FICHEIRO). \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_importar_dados_8c_a34a6a1c47abc0e7d9acef84597e94728}\label{_importar_dados_8c_a34a6a1c47abc0e7d9acef84597e94728} 
+\index{ImportarDados.c@{ImportarDados.c}!ImportarPacientesFichTexto@{ImportarPacientesFichTexto}}
+\index{ImportarPacientesFichTexto@{ImportarPacientesFichTexto}!ImportarDados.c@{ImportarDados.c}}
+\doxysubsubsection{\texorpdfstring{ImportarPacientesFichTexto()}{ImportarPacientesFichTexto()}}
+{\footnotesize\ttfamily int Importar\+Pacientes\+Fich\+Texto (\begin{DoxyParamCaption}\item[{FILE \texorpdfstring{$\ast$}{*}}]{file,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro,  }\item[{char \texorpdfstring{$\ast$}{*}}]{formato\+Ficheiro,  }\item[{Paciente}]{pacientes\mbox{[}\+TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{num\+Pacientes }\end{DoxyParamCaption})}
+
+
+
+Importa dados de pacientes de um ficheiro de texto e adiciona-\/os aos dados guardados, ignorando os recordes duplicados. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em file} & -\/ Apontador do tipo FILE\texorpdfstring{$\ast$}{*} do ficheiro. Caso não tenha, pode mandar NULL. \\
+\hline
+{\em nome\+Ficheiro} & -\/ O nome do ficheiro de texto. \\
+\hline
+{\em formato} & -\/ O formato dos dados do ficheiro de texto (FORMATO\+\_\+\+PACIENTES\+\_\+\+TXT ou FORMATO\+\_\+\+PACIENTES\+\_\+\+TAB). \\
+\hline
+{\em pacientes} & -\/ O array de pacientes. \\
+\hline
+{\em num\+Pacientes} & -\/ Um apontador para a variável que guarda o número de pacientes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Só é preciso mandar o nome do ficheiro ou o apontador FILE\texorpdfstring{$\ast$}{*}.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em 0} & -\/ Sucesso na execução (SUCESSO). \\
+\hline
+{\em 10} & -\/ Erro formato ficheiro (ERRO\+\_\+\+FORMATO\+\_\+\+INVALIDO). \\
+\hline
+{\em 12} & -\/ Erro ao abrir o ficheiro (ERRO\+\_\+\+ABRIR\+\_\+\+FICHEIRO). \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_importar_dados_8c_afcbb994f776efab3a50ff0a0641a0878}\label{_importar_dados_8c_afcbb994f776efab3a50ff0a0641a0878} 
+\index{ImportarDados.c@{ImportarDados.c}!ImportarPlanosFichTexto@{ImportarPlanosFichTexto}}
+\index{ImportarPlanosFichTexto@{ImportarPlanosFichTexto}!ImportarDados.c@{ImportarDados.c}}
+\doxysubsubsection{\texorpdfstring{ImportarPlanosFichTexto()}{ImportarPlanosFichTexto()}}
+{\footnotesize\ttfamily int Importar\+Planos\+Fich\+Texto (\begin{DoxyParamCaption}\item[{FILE \texorpdfstring{$\ast$}{*}}]{file,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro,  }\item[{char \texorpdfstring{$\ast$}{*}}]{formato\+Ficheiro,  }\item[{Plano}]{planos\mbox{[}\+TAMANHO\+\_\+\+MAX\+\_\+\+ARRAY\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{num\+Planos }\end{DoxyParamCaption})}
+
+
+
+Importa dados de planos de um ficheiro de texto e adiciona-\/os aos dados guardados, ignorando os recordes duplicados. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em file} & -\/ Apontador do tipo FILE\texorpdfstring{$\ast$}{*} do ficheiro. Caso não tenha, pode mandar NULL. \\
+\hline
+{\em nome\+Ficheiro} & -\/ O nome do ficheiro de texto. \\
+\hline
+{\em planos} & -\/ O array de planos. \\
+\hline
+{\em num\+Planos} & -\/ Um apontador para a variável que guarda o número de planos.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Só é preciso mandar o nome do ficheiro ou o apontador FILE\texorpdfstring{$\ast$}{*}.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em 0} & -\/ Sucesso na execução (SUCESSO). \\
+\hline
+{\em 8} & -\/ Ficheiro vazio (ERRO\+\_\+\+FICHEIRO\+\_\+\+VAZIO). \\
+\hline
+{\em 9} & -\/ Erro na leitura do ficheiro (ERRO\+\_\+\+LEITURA\+\_\+\+FICHEIRO). \\
+\hline
+{\em 12} & -\/ Erro ao abrir o ficheiro (ERRO\+\_\+\+ABRIR\+\_\+\+FICHEIRO). \\
+\hline
+{\em 13} & -\/ Erro, tamanho máximo excedido. (ERRO\+\_\+\+TAMANHO\+\_\+\+EXCEDIDO). \\
+\hline
+\end{DoxyRetVals}

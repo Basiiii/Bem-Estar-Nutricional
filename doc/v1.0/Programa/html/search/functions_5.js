@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['importardadosbasedados_0',['importardadosbasedados',['../_operacoes_ficheiros_8c.html#afca3c43f32ab529560a3a8b5b2548ef0',1,'ImportarDadosBaseDados(const char *caminhoFicheiro, void *dados, size_t tamDados, int *numDados, const char *tipoDados):&#160;OperacoesFicheiros.c'],['../_operacoes_ficheiros_8h.html#afca3c43f32ab529560a3a8b5b2548ef0',1,'ImportarDadosBaseDados(const char *caminhoFicheiro, void *dados, size_t tamDados, int *numDados, const char *tipoDados):&#160;OperacoesFicheiros.c']]],
+  ['importareprocessarficheiro_1',['importareprocessarficheiro',['../_utils_8c.html#ae9bd25879ceca843296f26f0371bb847',1,'ImportarEProcessarFicheiro(const char *ficheiro, int tipoDados, int tipoFicheiro, void *dados, size_t tamanhoRegisto, int *numRegistos):&#160;Utils.c'],['../_utils_8h.html#ae9bd25879ceca843296f26f0371bb847',1,'ImportarEProcessarFicheiro(const char *ficheiro, int tipoDados, int tipoFicheiro, void *dados, size_t tamanhoRegisto, int *numRegistos):&#160;Utils.c']]]
+];

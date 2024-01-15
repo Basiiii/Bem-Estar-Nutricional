@@ -1,0 +1,24 @@
+\indexentry{Biblioteca GestorDadosIO@{Biblioteca GestorDadosIO}|hyperpage}{1}
+\indexentry{ExportarDados.c@{ExportarDados.c}|hyperpage}{5}
+\indexentry{ExportarDados.c@{ExportarDados.c}!ExportarDadosFichBinario@{ExportarDadosFichBinario}|hyperpage}{6}
+\indexentry{ExportarDadosFichBinario@{ExportarDadosFichBinario}!ExportarDados.c@{ExportarDados.c}|hyperpage}{6}
+\indexentry{ImportarDados.c@{ImportarDados.c}|hyperpage}{6}
+\indexentry{ImportarDados.c@{ImportarDados.c}!ImportarDadosFichBinario@{ImportarDadosFichBinario}|hyperpage}{7}
+\indexentry{ImportarDadosFichBinario@{ImportarDadosFichBinario}!ImportarDados.c@{ImportarDados.c}|hyperpage}{7}
+\indexentry{ImportarDados.c@{ImportarDados.c}!ImportarDietasFichTexto@{ImportarDietasFichTexto}|hyperpage}{8}
+\indexentry{ImportarDietasFichTexto@{ImportarDietasFichTexto}!ImportarDados.c@{ImportarDados.c}|hyperpage}{8}
+\indexentry{ImportarDados.c@{ImportarDados.c}!ImportarPacientesFichTexto@{ImportarPacientesFichTexto}|hyperpage}{8}
+\indexentry{ImportarPacientesFichTexto@{ImportarPacientesFichTexto}!ImportarDados.c@{ImportarDados.c}|hyperpage}{8}
+\indexentry{ImportarDados.c@{ImportarDados.c}!ImportarPlanosFichTexto@{ImportarPlanosFichTexto}|hyperpage}{9}
+\indexentry{ImportarPlanosFichTexto@{ImportarPlanosFichTexto}!ImportarDados.c@{ImportarDados.c}|hyperpage}{9}
+\indexentry{IODadosAPI.h@{IODadosAPI.h}|hyperpage}{10}
+\indexentry{IODadosAPI.h@{IODadosAPI.h}!ExportarDadosFichBinario@{ExportarDadosFichBinario}|hyperpage}{10}
+\indexentry{ExportarDadosFichBinario@{ExportarDadosFichBinario}!IODadosAPI.h@{IODadosAPI.h}|hyperpage}{10}
+\indexentry{IODadosAPI.h@{IODadosAPI.h}!ImportarDadosFichBinario@{ImportarDadosFichBinario}|hyperpage}{11}
+\indexentry{ImportarDadosFichBinario@{ImportarDadosFichBinario}!IODadosAPI.h@{IODadosAPI.h}|hyperpage}{11}
+\indexentry{IODadosAPI.h@{IODadosAPI.h}!ImportarDietasFichTexto@{ImportarDietasFichTexto}|hyperpage}{11}
+\indexentry{ImportarDietasFichTexto@{ImportarDietasFichTexto}!IODadosAPI.h@{IODadosAPI.h}|hyperpage}{11}
+\indexentry{IODadosAPI.h@{IODadosAPI.h}!ImportarPacientesFichTexto@{ImportarPacientesFichTexto}|hyperpage}{12}
+\indexentry{ImportarPacientesFichTexto@{ImportarPacientesFichTexto}!IODadosAPI.h@{IODadosAPI.h}|hyperpage}{12}
+\indexentry{IODadosAPI.h@{IODadosAPI.h}!ImportarPlanosFichTexto@{ImportarPlanosFichTexto}|hyperpage}{13}
+\indexentry{ImportarPlanosFichTexto@{ImportarPlanosFichTexto}!IODadosAPI.h@{IODadosAPI.h}|hyperpage}{13}

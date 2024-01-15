@@ -1,0 +1,554 @@
+\doxysection{Referência ao ficheiro Utils.\+h}
+\hypertarget{_utils_8h}{}\label{_utils_8h}\index{Utils.h@{Utils.h}}
+
+
+Ficheiro de cabeçalho para utilitários do programa.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include "{}Estrutura\+Dados.\+h"{}}\newline
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_utils_8h_a95a5a4c798fe90f4da46f5ddf0156afd}{Custom\+Sleep}} (int segundos)
+\begin{DoxyCompactList}\small\item\em Uma função que para o programa durante n segundos. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_utils_8h_a74a0084944b9583f7ae76a6020fbf0bd}{Ler\+Tecla}} ()
+\begin{DoxyCompactList}\small\item\em Uma função que permite ler um carater. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_utils_8h_a007dcb1e0b52973e50955f53ad7fcd2e}{Limpar\+Ecra}} ()
+\begin{DoxyCompactList}\small\item\em Limpa o ecrã do terminal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_utils_8h_ae4aba734171207cf87c8fdb7a7fa5215}{Terminar\+Programa\+Com\+Erro}} (int erro)
+\begin{DoxyCompactList}\small\item\em Termina o programa apresentando uma mensagem de erro e terminando com um código de erro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_utils_8h_a537d893cf3eede64bd4e6edcae78d978}{Escrever\+Com\+Cor}} (const char \texorpdfstring{$\ast$}{*}cor, const char \texorpdfstring{$\ast$}{*}formato,...)
+\begin{DoxyCompactList}\small\item\em Uma função que permite escrever no terminal numa cor definida por códigos ANSI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_utils_8h_ab24e0f13c8c0220f901c4f07a5431f1d}{Apresentar\+Ajuda}} ()
+\begin{DoxyCompactList}\small\item\em Apresenta o manual de ajuda ao utilizador. \end{DoxyCompactList}\item 
+\Hypertarget{_utils_8h_aa9ca1ed1755d30a7b2b478cd1fbc7f64}\label{_utils_8h_aa9ca1ed1755d30a7b2b478cd1fbc7f64} 
+void {\bfseries Apresentar\+Erros} ()
+\begin{DoxyCompactList}\small\item\em Apresenta os possíveis erros na execução do programa. \end{DoxyCompactList}\item 
+\Hypertarget{_utils_8h_a17405dd1d20eff28271d5180fd352b58}\label{_utils_8h_a17405dd1d20eff28271d5180fd352b58} 
+void {\bfseries Perguntar\+Utilizador\+Iniciar\+Programa} ()
+\begin{DoxyCompactList}\small\item\em Pergunta ao utilizador se deseja iniciar o programa ou sair. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{_utils_8h_a8d0016ed30f0186ff6fed73d35a8d8ed}{Converter\+String\+Para\+Datetime}} (const char \texorpdfstring{$\ast$}{*}date\+String)
+\begin{DoxyCompactList}\small\item\em Converte uma data no formato texto {\ttfamily DD-\/\+MM-\/\+AAAA} para um objeto datetime. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_utils_8h_ac6e2725f3574d97796840e0644781b36}{Converter\+Datetime\+Para\+String}} (time\+\_\+t datetime)
+\begin{DoxyCompactList}\small\item\em Converte um objeto datetime para uma data no formato texto {\ttfamily DD-\/\+MM-\/\+AAAA}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_utils_8h_a47aa9d2ccdca4a70489a3c0e4c51e3b1}{Libertar\+Memoria}} (\mbox{\hyperlink{struct_paciente}{Paciente}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}pacientes, int \texorpdfstring{$\ast$}{*}num\+Pacientes, \mbox{\hyperlink{struct_dieta}{Dieta}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}dietas, int \texorpdfstring{$\ast$}{*}num\+Dietas, \mbox{\hyperlink{struct_plano}{Plano}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}planos, int \texorpdfstring{$\ast$}{*}num\+Planos)
+\begin{DoxyCompactList}\small\item\em Liberta toda a memoria alocada aos pacientes, dietas e planos. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_utils_8h_a1b479846ec3a02aaa81b2d0af8977bb5}{Comparar\+Paciente\+Por\+Id}} (const void \texorpdfstring{$\ast$}{*}a, const void \texorpdfstring{$\ast$}{*}b)
+\begin{DoxyCompactList}\small\item\em Compara dois elementos do tipo \doxylink{struct_paciente}{Paciente} por ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_utils_8h_aa101e330be6fbd1140cbc490401e2784}{Organizar\+Pacientes\+Por\+Id}} (\mbox{\hyperlink{struct_paciente}{Paciente}} pacientes\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Organiza um array de \doxylink{struct_paciente}{Paciente} por ID usando o algoritmo de ordenação qsort. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_utils_8h_a837a3dc04e1509cfa04d940e229db35d}{Comparar\+Dieta\+Por\+Id}} (const void \texorpdfstring{$\ast$}{*}a, const void \texorpdfstring{$\ast$}{*}b)
+\begin{DoxyCompactList}\small\item\em Compara dois elementos do tipo \doxylink{struct_dieta}{Dieta} por ID do paciente associado. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_utils_8h_a36384601076a4104919113ecda681992}{Comparar\+Dieta\+Por\+Data}} (const void \texorpdfstring{$\ast$}{*}a, const void \texorpdfstring{$\ast$}{*}b)
+\begin{DoxyCompactList}\small\item\em Compara dois elementos do tipo \doxylink{struct_dieta}{Dieta} por data em ordem decrescente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_utils_8h_a4bf493fbc4cda875bec59f9282d51a72}{Organizar\+Dietas\+Por\+Id}} (\mbox{\hyperlink{struct_dieta}{Dieta}} dietas\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Organiza um array de \doxylink{struct_dieta}{Dieta} por ID do paciente associado usando o algoritmo de ordenação qsort. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_utils_8h_afbfff05a80fe7b28a4440b9f47e3395d}{Comparar\+Plano\+Por\+Id}} (const void \texorpdfstring{$\ast$}{*}a, const void \texorpdfstring{$\ast$}{*}b)
+\begin{DoxyCompactList}\small\item\em Compara dois elementos do tipo \doxylink{struct_plano}{Plano} por ID do paciente associado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_utils_8h_aff393d81d4e793e760e89e2a633d9d53}{Organizar\+Planos\+Por\+Id}} (\mbox{\hyperlink{struct_plano}{Plano}} planos\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Organiza um array de \doxylink{struct_plano}{Plano} por ID do paciente associado usando o algoritmo de ordenação qsort. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_utils_8h_a1001855114b2b21fc3971bcd064bc930}{Validar\+Formato\+Data}} (const char \texorpdfstring{$\ast$}{*}data\+Str)
+\begin{DoxyCompactList}\small\item\em Verifica se uma string está no formato de data DD-\/\+MM-\/\+AAAA. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_utils_8h_abb289dc5e5f8424b92c172c9a310195c}{Processar\+Ficheiro}} (const char \texorpdfstring{$\ast$}{*}nome\+Ficheiro, int tipo\+Dados\+Ficheiro, int tipo\+Ficheiro, void \texorpdfstring{$\ast$}{*}dados, size\+\_\+t tamanho\+Registo, int \texorpdfstring{$\ast$}{*}num\+Registos)
+\begin{DoxyCompactList}\small\item\em Processa um ficheiro, importando dados de acordo com o tipo de ficheiro e tipo de dados especificados. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_utils_8h_ae9bd25879ceca843296f26f0371bb847}{Importar\+EProcessar\+Ficheiro}} (const char \texorpdfstring{$\ast$}{*}ficheiro, int tipo\+Dados, int tipo\+Ficheiro, void \texorpdfstring{$\ast$}{*}dados, size\+\_\+t tamanho\+Registo, int \texorpdfstring{$\ast$}{*}num\+Registos)
+\begin{DoxyCompactList}\small\item\em Importa e processa um ficheiro, apresentando informações e lidando com o resultado. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_utils_8h_a8324b1f23ec2145344106ff719495dca}{Converter\+Refeicao\+Para\+Id}} (char refeicao\mbox{[}TAMANHO\+\_\+\+REFEICAO\mbox{]})
+\begin{DoxyCompactList}\small\item\em Converte uma string de refeição para o ID (PEQUENO\+\_\+\+ALMOCO\+\_\+\+ID, ALMOCO\+\_\+\+ID, JANTAR\+\_\+\+ID). \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_utils_8h_ad4e1b24a2e3e4ab16160c9a1437eb303}{Converter\+Refeicao\+Para\+Texto}} (int refeicao)
+\begin{DoxyCompactList}\small\item\em Converte uma string de refeição para o ID (PEQUENO\+\_\+\+ALMOCO\+\_\+\+ID, ALMOCO\+\_\+\+ID, JANTAR\+\_\+\+ID). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_utils_8h_a58ce61b7d6347c6f6e230d471d006f45}{Guardar\+Dados}} (\mbox{\hyperlink{struct_paciente}{Paciente}} pacientes\mbox{[}$\,$\mbox{]}, int num\+Pacientes, \mbox{\hyperlink{struct_dieta}{Dieta}} dietas\mbox{[}$\,$\mbox{]}, int num\+Dietas, \mbox{\hyperlink{struct_plano}{Plano}} planos\mbox{[}$\,$\mbox{]}, int num\+Planos)
+\begin{DoxyCompactList}\small\item\em Guarda os dados para os ficheiros binários. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Ficheiro de cabeçalho para utilitários do programa. 
+
+Este ficheiro contém declarações para funções utilitárias do programa.
+
+\begin{DoxyAuthor}{Autor}
+Enrique George Rodrigues
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+Criado\+: 18.\+11.\+2023 
+
+Modificado\+: 28.\+12.\+2023
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+© Enrique George Rodrigues, 2023. Todos os direitos reservados. 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{_utils_8h_ab24e0f13c8c0220f901c4f07a5431f1d}\label{_utils_8h_ab24e0f13c8c0220f901c4f07a5431f1d} 
+\index{Utils.h@{Utils.h}!ApresentarAjuda@{ApresentarAjuda}}
+\index{ApresentarAjuda@{ApresentarAjuda}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{ApresentarAjuda()}{ApresentarAjuda()}}
+{\footnotesize\ttfamily void Apresentar\+Ajuda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Apresenta o manual de ajuda ao utilizador. 
+
+Esta função demonstra como utilizar o programa. \Hypertarget{_utils_8h_a36384601076a4104919113ecda681992}\label{_utils_8h_a36384601076a4104919113ecda681992} 
+\index{Utils.h@{Utils.h}!CompararDietaPorData@{CompararDietaPorData}}
+\index{CompararDietaPorData@{CompararDietaPorData}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{CompararDietaPorData()}{CompararDietaPorData()}}
+{\footnotesize\ttfamily int Comparar\+Dieta\+Por\+Data (\begin{DoxyParamCaption}\item[{const void \texorpdfstring{$\ast$}{*}}]{a,  }\item[{const void \texorpdfstring{$\ast$}{*}}]{b }\end{DoxyParamCaption})}
+
+
+
+Compara dois elementos do tipo \doxylink{struct_dieta}{Dieta} por data em ordem decrescente. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em a} & -\/ Um apontador para o primeiro elemento \doxylink{struct_dieta}{Dieta}. \\
+\hline
+{\em b} & -\/ Um apontador para o segundo elemento \doxylink{struct_dieta}{Dieta}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em Um} & número negativo se a data de \textquotesingle{}a\textquotesingle{} é mais recente que a data de \textquotesingle{}b\textquotesingle{}, um número positivo se a data de \textquotesingle{}a\textquotesingle{} é mais antiga que a data de \textquotesingle{}b\textquotesingle{}, e 0 se as datas são iguais. \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_utils_8h_a837a3dc04e1509cfa04d940e229db35d}\label{_utils_8h_a837a3dc04e1509cfa04d940e229db35d} 
+\index{Utils.h@{Utils.h}!CompararDietaPorId@{CompararDietaPorId}}
+\index{CompararDietaPorId@{CompararDietaPorId}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{CompararDietaPorId()}{CompararDietaPorId()}}
+{\footnotesize\ttfamily int Comparar\+Dieta\+Por\+Id (\begin{DoxyParamCaption}\item[{const void \texorpdfstring{$\ast$}{*}}]{a,  }\item[{const void \texorpdfstring{$\ast$}{*}}]{b }\end{DoxyParamCaption})}
+
+
+
+Compara dois elementos do tipo \doxylink{struct_dieta}{Dieta} por ID do paciente associado. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em a} & -\/ Apontador para o primeiro elemento \doxylink{struct_dieta}{Dieta}. \\
+\hline
+{\em b} & -\/ Apontador para o segundo elemento \doxylink{struct_dieta}{Dieta}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Um número negativo se o ID do paciente associado de \textquotesingle{}a\textquotesingle{} é menor que o ID do paciente associado de \textquotesingle{}b\textquotesingle{}, um número positivo se o ID do paciente associado de \textquotesingle{}a\textquotesingle{} é maior que o ID do paciente associado de \textquotesingle{}b\textquotesingle{} e 0 se os IDs do paciente associado são iguais. 
+\end{DoxyReturn}
+\Hypertarget{_utils_8h_a1b479846ec3a02aaa81b2d0af8977bb5}\label{_utils_8h_a1b479846ec3a02aaa81b2d0af8977bb5} 
+\index{Utils.h@{Utils.h}!CompararPacientePorId@{CompararPacientePorId}}
+\index{CompararPacientePorId@{CompararPacientePorId}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{CompararPacientePorId()}{CompararPacientePorId()}}
+{\footnotesize\ttfamily int Comparar\+Paciente\+Por\+Id (\begin{DoxyParamCaption}\item[{const void \texorpdfstring{$\ast$}{*}}]{a,  }\item[{const void \texorpdfstring{$\ast$}{*}}]{b }\end{DoxyParamCaption})}
+
+
+
+Compara dois elementos do tipo \doxylink{struct_paciente}{Paciente} por ID. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em a} & -\/ Apontador para o primeiro elemento \doxylink{struct_paciente}{Paciente}. \\
+\hline
+{\em b} & -\/ Apontador para o segundo elemento \doxylink{struct_paciente}{Paciente}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Um número negativo se o ID de \textquotesingle{}a\textquotesingle{} é menor que o ID de \textquotesingle{}b\textquotesingle{}, um número positivo se o ID de \textquotesingle{}a\textquotesingle{} é maior que o ID de \textquotesingle{}b\textquotesingle{} e 0 se os IDs são iguais. 
+\end{DoxyReturn}
+\Hypertarget{_utils_8h_afbfff05a80fe7b28a4440b9f47e3395d}\label{_utils_8h_afbfff05a80fe7b28a4440b9f47e3395d} 
+\index{Utils.h@{Utils.h}!CompararPlanoPorId@{CompararPlanoPorId}}
+\index{CompararPlanoPorId@{CompararPlanoPorId}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{CompararPlanoPorId()}{CompararPlanoPorId()}}
+{\footnotesize\ttfamily int Comparar\+Plano\+Por\+Id (\begin{DoxyParamCaption}\item[{const void \texorpdfstring{$\ast$}{*}}]{a,  }\item[{const void \texorpdfstring{$\ast$}{*}}]{b }\end{DoxyParamCaption})}
+
+
+
+Compara dois elementos do tipo \doxylink{struct_plano}{Plano} por ID do paciente associado. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em a} & -\/ Apontador para o primeiro elemento \doxylink{struct_plano}{Plano}. \\
+\hline
+{\em b} & -\/ Apontador para o segundo elemento \doxylink{struct_plano}{Plano}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Um número negativo se o ID do paciente associado de \textquotesingle{}a\textquotesingle{} é menor que o ID do paciente associado de \textquotesingle{}b\textquotesingle{}, um número positivo se o ID do paciente associado de \textquotesingle{}a\textquotesingle{} é maior que o ID do paciente associado de \textquotesingle{}b\textquotesingle{} e 0 se os IDs do paciente associado são iguais. 
+\end{DoxyReturn}
+\Hypertarget{_utils_8h_ac6e2725f3574d97796840e0644781b36}\label{_utils_8h_ac6e2725f3574d97796840e0644781b36} 
+\index{Utils.h@{Utils.h}!ConverterDatetimeParaString@{ConverterDatetimeParaString}}
+\index{ConverterDatetimeParaString@{ConverterDatetimeParaString}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{ConverterDatetimeParaString()}{ConverterDatetimeParaString()}}
+{\footnotesize\ttfamily const char \texorpdfstring{$\ast$}{*} Converter\+Datetime\+Para\+String (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{datetime }\end{DoxyParamCaption})}
+
+
+
+Converte um objeto datetime para uma data no formato texto {\ttfamily DD-\/\+MM-\/\+AAAA}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em datetime} & -\/ O objeto datetime. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em -\/} & A string formatada "{}\+DD-\/\+MM-\/\+AAAA"{}. \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_utils_8h_a8324b1f23ec2145344106ff719495dca}\label{_utils_8h_a8324b1f23ec2145344106ff719495dca} 
+\index{Utils.h@{Utils.h}!ConverterRefeicaoParaId@{ConverterRefeicaoParaId}}
+\index{ConverterRefeicaoParaId@{ConverterRefeicaoParaId}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{ConverterRefeicaoParaId()}{ConverterRefeicaoParaId()}}
+{\footnotesize\ttfamily int Converter\+Refeicao\+Para\+Id (\begin{DoxyParamCaption}\item[{char}]{refeicao\mbox{[}\+TAMANHO\+\_\+\+REFEICAO\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Converte uma string de refeição para o ID (PEQUENO\+\_\+\+ALMOCO\+\_\+\+ID, ALMOCO\+\_\+\+ID, JANTAR\+\_\+\+ID). 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em refeicao} & -\/ A string da refeição. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em -\/} & O ID da refeição.\\
+\hline
+\end{DoxyRetVals}
+
+\begin{DoxyParams}{Parâmetros}
+{\em refeicao} & -\/ A string da refeição. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em -\/} & O ID da refeição ou ERRO\+\_\+\+REFEICAO\+\_\+\+ID (-\/1) em caso de erro. \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_utils_8h_ad4e1b24a2e3e4ab16160c9a1437eb303}\label{_utils_8h_ad4e1b24a2e3e4ab16160c9a1437eb303} 
+\index{Utils.h@{Utils.h}!ConverterRefeicaoParaTexto@{ConverterRefeicaoParaTexto}}
+\index{ConverterRefeicaoParaTexto@{ConverterRefeicaoParaTexto}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{ConverterRefeicaoParaTexto()}{ConverterRefeicaoParaTexto()}}
+{\footnotesize\ttfamily const char \texorpdfstring{$\ast$}{*} Converter\+Refeicao\+Para\+Texto (\begin{DoxyParamCaption}\item[{int}]{refeicao }\end{DoxyParamCaption})}
+
+
+
+Converte uma string de refeição para o ID (PEQUENO\+\_\+\+ALMOCO\+\_\+\+ID, ALMOCO\+\_\+\+ID, JANTAR\+\_\+\+ID). 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em refeicao} & -\/ O ID da refeição. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em -\/} & A string da refeição. \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_utils_8h_a8d0016ed30f0186ff6fed73d35a8d8ed}\label{_utils_8h_a8d0016ed30f0186ff6fed73d35a8d8ed} 
+\index{Utils.h@{Utils.h}!ConverterStringParaDatetime@{ConverterStringParaDatetime}}
+\index{ConverterStringParaDatetime@{ConverterStringParaDatetime}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{ConverterStringParaDatetime()}{ConverterStringParaDatetime()}}
+{\footnotesize\ttfamily time\+\_\+t Converter\+String\+Para\+Datetime (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{date\+String }\end{DoxyParamCaption})}
+
+
+
+Converte uma data no formato texto {\ttfamily DD-\/\+MM-\/\+AAAA} para um objeto datetime. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em date\+String} & -\/ A data em formato texto. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em -\/} & O objeto datetime. \\
+\hline
+{\em -\/} & 14 -\/ Erro na conversão (ERRO\+\_\+\+CONVERSAO\+\_\+\+TEXTO\+\_\+\+DATETIME). \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_utils_8h_a95a5a4c798fe90f4da46f5ddf0156afd}\label{_utils_8h_a95a5a4c798fe90f4da46f5ddf0156afd} 
+\index{Utils.h@{Utils.h}!CustomSleep@{CustomSleep}}
+\index{CustomSleep@{CustomSleep}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{CustomSleep()}{CustomSleep()}}
+{\footnotesize\ttfamily void Custom\+Sleep (\begin{DoxyParamCaption}\item[{int}]{segundos }\end{DoxyParamCaption})}
+
+
+
+Uma função que para o programa durante n segundos. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em segundos} & -\/ O número de segundos que o programa deve parar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+-\/ A função usa o "{}\+Sleep()"{} para Windows e "{}sleep()"{} para sistemas Unix. 
+\end{DoxyNote}
+\Hypertarget{_utils_8h_a537d893cf3eede64bd4e6edcae78d978}\label{_utils_8h_a537d893cf3eede64bd4e6edcae78d978} 
+\index{Utils.h@{Utils.h}!EscreverComCor@{EscreverComCor}}
+\index{EscreverComCor@{EscreverComCor}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{EscreverComCor()}{EscreverComCor()}}
+{\footnotesize\ttfamily void Escrever\+Com\+Cor (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{cor,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{formato,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Uma função que permite escrever no terminal numa cor definida por códigos ANSI. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em cor} & -\/ O código ANSI ou modo pré-\/definido (ex. ANSI\+\_\+\+INFO ou ANSI\+\_\+\+ERROR). \\
+\hline
+{\em formato} & -\/ O texto a ser apresentado no terminal com suporte para parâmetros (ex. d). \\
+\hline
+{\em ...} & -\/ Os parâmetros opcionais para apresentar valores de variáveis (ex. d).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+-\/ Esta função é uma função variádica que suporta {\ttfamily n} parâmetros adicionais para escrever valores de variáveis.
+\end{DoxyNote}
+Exemplo de uso\+: {\ttfamily Escrever\+Com\+Cor(ANSI\+\_\+\+INFO, "{}Isto e uma mensagem de info! d, \&variavel\+Tipo\+Int);} \Hypertarget{_utils_8h_a58ce61b7d6347c6f6e230d471d006f45}\label{_utils_8h_a58ce61b7d6347c6f6e230d471d006f45} 
+\index{Utils.h@{Utils.h}!GuardarDados@{GuardarDados}}
+\index{GuardarDados@{GuardarDados}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{GuardarDados()}{GuardarDados()}}
+{\footnotesize\ttfamily int Guardar\+Dados (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_paciente}{Paciente}}}]{pacientes\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Pacientes,  }\item[{\mbox{\hyperlink{struct_dieta}{Dieta}}}]{dietas\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Dietas,  }\item[{\mbox{\hyperlink{struct_plano}{Plano}}}]{planos\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Planos }\end{DoxyParamCaption})}
+
+
+
+Guarda os dados para os ficheiros binários. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em pacientes} & Array de pacientes a serem guardados. \\
+\hline
+{\em num\+Pacientes} & Número de elementos no array de pacientes. \\
+\hline
+{\em dietas} & Array de dietas a serem guardadas. \\
+\hline
+{\em num\+Dietas} & Número de elementos no array de dietas. \\
+\hline
+{\em planos} & Array de planos a serem guardados. \\
+\hline
+{\em num\+Planos} & Número de elementos no array de planos. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_utils_8h_ae9bd25879ceca843296f26f0371bb847}\label{_utils_8h_ae9bd25879ceca843296f26f0371bb847} 
+\index{Utils.h@{Utils.h}!ImportarEProcessarFicheiro@{ImportarEProcessarFicheiro}}
+\index{ImportarEProcessarFicheiro@{ImportarEProcessarFicheiro}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{ImportarEProcessarFicheiro()}{ImportarEProcessarFicheiro()}}
+{\footnotesize\ttfamily int Importar\+EProcessar\+Ficheiro (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{ficheiro,  }\item[{int}]{tipo\+Dados,  }\item[{int}]{tipo\+Ficheiro,  }\item[{void \texorpdfstring{$\ast$}{*}}]{dados,  }\item[{size\+\_\+t}]{tamanho\+Registo,  }\item[{int \texorpdfstring{$\ast$}{*}}]{num\+Registos }\end{DoxyParamCaption})}
+
+
+
+Importa e processa um ficheiro, apresentando informações e lidando com o resultado. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em ficheiro} & -\/ O nome do ficheiro a ser importado. \\
+\hline
+{\em tipo\+Dados} & -\/ O tipo de dados a ser importado (TIPO\+\_\+\+DADOS\+\_\+\+PACIENTES, TIPO\+\_\+\+DADOS\+\_\+\+DIETAS, TIPO\+\_\+\+DADOS\+\_\+\+PLANOS). \\
+\hline
+{\em tipo\+Ficheiro} & -\/ O tipo de ficheiro a ser importado (TIPO\+\_\+\+FICHEIRO\+\_\+\+TXT, TIPO\+\_\+\+FICHEIRO\+\_\+\+BIN, TIPO\+\_\+\+FICHEIRO\+\_\+\+TAB). \\
+\hline
+{\em dados} & -\/ Um apontador para a estrutura de dados onde os dados serão guardados. \\
+\hline
+{\em tamanho\+Registo} & -\/ O tamanho de cada registo dos dados. \\
+\hline
+{\em num\+Registos} & -\/ Um apontador para a variável que vai guardar o número de registos importados.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Esta função é utilizada para simplificar o processo de importação, apresentação de informações e manipulação do resultado.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em -\/} & 0 se o programa correu sem erros (SUCESSO). \\
+\hline
+{\em -\/} & 24 se o ficheiro introduzido é NULLO (ERRO\+\_\+\+FICHEIRO\+\_\+\+NULLO). \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_utils_8h_a74a0084944b9583f7ae76a6020fbf0bd}\label{_utils_8h_a74a0084944b9583f7ae76a6020fbf0bd} 
+\index{Utils.h@{Utils.h}!LerTecla@{LerTecla}}
+\index{LerTecla@{LerTecla}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{LerTecla()}{LerTecla()}}
+{\footnotesize\ttfamily int Ler\+Tecla (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Uma função que permite ler um carater. 
+
+\begin{DoxyNote}{Nota}
+-\/ A função usa o "{}\+\_\+getch()"{} para Windows e um processo especial para sistemas Unix. 
+\end{DoxyNote}
+\Hypertarget{_utils_8h_a47aa9d2ccdca4a70489a3c0e4c51e3b1}\label{_utils_8h_a47aa9d2ccdca4a70489a3c0e4c51e3b1} 
+\index{Utils.h@{Utils.h}!LibertarMemoria@{LibertarMemoria}}
+\index{LibertarMemoria@{LibertarMemoria}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{LibertarMemoria()}{LibertarMemoria()}}
+{\footnotesize\ttfamily void Libertar\+Memoria (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_paciente}{Paciente}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{pacientes,  }\item[{int \texorpdfstring{$\ast$}{*}}]{num\+Pacientes,  }\item[{\mbox{\hyperlink{struct_dieta}{Dieta}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{dietas,  }\item[{int \texorpdfstring{$\ast$}{*}}]{num\+Dietas,  }\item[{\mbox{\hyperlink{struct_plano}{Plano}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{planos,  }\item[{int \texorpdfstring{$\ast$}{*}}]{num\+Planos }\end{DoxyParamCaption})}
+
+
+
+Liberta toda a memoria alocada aos pacientes, dietas e planos. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em pacientes} & -\/ Array pacientes. \\
+\hline
+{\em num\+Pacientes} & -\/ Pointer para o número de pacientes. \\
+\hline
+{\em dietas} & -\/ Array dietas. \\
+\hline
+{\em num\+Dietas} & -\/ Pointer para o número de dietas. \\
+\hline
+{\em planos} & -\/ Array planos. \\
+\hline
+{\em num\+Planos} & -\/ Pointer para o número de planos.\\
+\hline
+{\em pacientes} & -\/ Array pacientes. \\
+\hline
+{\em num\+Pacientes} & -\/ Apontador para o número de pacientes. \\
+\hline
+{\em dietas} & -\/ Array dietas. \\
+\hline
+{\em num\+Dietas} & -\/ Apontador para o número de dietas. \\
+\hline
+{\em planos} & -\/ Array planos. \\
+\hline
+{\em num\+Planos} & -\/ Apontador para o número de planos.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+-\/ Esta função não está a ser utilizada neste momento devido à migração para arrays de tamanho constante. Mas numa implentação futura, pode-\/se alocar a memória dinamicamente, colocando os dados no heap em vez do stack. 
+\end{DoxyNote}
+\Hypertarget{_utils_8h_a007dcb1e0b52973e50955f53ad7fcd2e}\label{_utils_8h_a007dcb1e0b52973e50955f53ad7fcd2e} 
+\index{Utils.h@{Utils.h}!LimparEcra@{LimparEcra}}
+\index{LimparEcra@{LimparEcra}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{LimparEcra()}{LimparEcra()}}
+{\footnotesize\ttfamily void Limpar\+Ecra (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Limpa o ecrã do terminal. 
+
+Esta função utiliza a função \textquotesingle{}system()\textquotesingle{} para chamar o comando adequado para limpar o ecrã do terminal. Suporta sistemas Windows e Unix.
+
+\begin{DoxyNote}{Nota}
+A função suporta sistemas Windows (utiliza "{}cls"{}) e sistemas Unix (utiliza "{}clear"{}). 
+\end{DoxyNote}
+\Hypertarget{_utils_8h_a4bf493fbc4cda875bec59f9282d51a72}\label{_utils_8h_a4bf493fbc4cda875bec59f9282d51a72} 
+\index{Utils.h@{Utils.h}!OrganizarDietasPorId@{OrganizarDietasPorId}}
+\index{OrganizarDietasPorId@{OrganizarDietasPorId}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{OrganizarDietasPorId()}{OrganizarDietasPorId()}}
+{\footnotesize\ttfamily void Organizar\+Dietas\+Por\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_dieta}{Dieta}}}]{dietas\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Organiza um array de \doxylink{struct_dieta}{Dieta} por ID do paciente associado usando o algoritmo de ordenação qsort. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em dietas} & -\/ Array de \doxylink{struct_dieta}{Dieta}. \\
+\hline
+{\em tamanho} & -\/ Número de elementos no array. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_utils_8h_aa101e330be6fbd1140cbc490401e2784}\label{_utils_8h_aa101e330be6fbd1140cbc490401e2784} 
+\index{Utils.h@{Utils.h}!OrganizarPacientesPorId@{OrganizarPacientesPorId}}
+\index{OrganizarPacientesPorId@{OrganizarPacientesPorId}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{OrganizarPacientesPorId()}{OrganizarPacientesPorId()}}
+{\footnotesize\ttfamily void Organizar\+Pacientes\+Por\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_paciente}{Paciente}}}]{pacientes\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Organiza um array de \doxylink{struct_paciente}{Paciente} por ID usando o algoritmo de ordenação qsort. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em pacientes} & -\/ Array de \doxylink{struct_paciente}{Paciente}. \\
+\hline
+{\em tamanho} & -\/ Número de elementos no array. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_utils_8h_aff393d81d4e793e760e89e2a633d9d53}\label{_utils_8h_aff393d81d4e793e760e89e2a633d9d53} 
+\index{Utils.h@{Utils.h}!OrganizarPlanosPorId@{OrganizarPlanosPorId}}
+\index{OrganizarPlanosPorId@{OrganizarPlanosPorId}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{OrganizarPlanosPorId()}{OrganizarPlanosPorId()}}
+{\footnotesize\ttfamily void Organizar\+Planos\+Por\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_plano}{Plano}}}]{planos\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Organiza um array de \doxylink{struct_plano}{Plano} por ID do paciente associado usando o algoritmo de ordenação qsort. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em planos} & -\/ Array de \doxylink{struct_plano}{Plano}. \\
+\hline
+{\em tamanho} & -\/ Número de elementos no array. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_utils_8h_abb289dc5e5f8424b92c172c9a310195c}\label{_utils_8h_abb289dc5e5f8424b92c172c9a310195c} 
+\index{Utils.h@{Utils.h}!ProcessarFicheiro@{ProcessarFicheiro}}
+\index{ProcessarFicheiro@{ProcessarFicheiro}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{ProcessarFicheiro()}{ProcessarFicheiro()}}
+{\footnotesize\ttfamily int Processar\+Ficheiro (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro,  }\item[{int}]{tipo\+Dados\+Ficheiro,  }\item[{int}]{tipo\+Ficheiro,  }\item[{void \texorpdfstring{$\ast$}{*}}]{dados,  }\item[{size\+\_\+t}]{tamanho\+Registo,  }\item[{int \texorpdfstring{$\ast$}{*}}]{num\+Registos }\end{DoxyParamCaption})}
+
+
+
+Processa um ficheiro, importando dados de acordo com o tipo de ficheiro e tipo de dados especificados. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+Ficheiro} & -\/ O nome do ficheiro a ser processado. \\
+\hline
+{\em tipo\+Dados\+Ficheiro} & -\/ O tipo de dados a ser importado (TIPO\+\_\+\+DADOS\+\_\+\+PACIENTES, TIPO\+\_\+\+DADOS\+\_\+\+DIETAS, TIPO\+\_\+\+DADOS\+\_\+\+PLANOS). \\
+\hline
+{\em tipo\+Ficheiro} & -\/ O tipo de ficheiro a ser processado (TIPO\+\_\+\+FICHEIRO\+\_\+\+TXT, TIPO\+\_\+\+FICHEIRO\+\_\+\+BIN, TIPO\+\_\+\+FICHEIRO\+\_\+\+TAB). \\
+\hline
+{\em dados} & -\/ Um apontador para a estrutura de dados onde os dados serão guardados. \\
+\hline
+{\em tamanho\+Registo} & -\/ O tamanho de cada registo dos dados. \\
+\hline
+{\em num\+Registos} & -\/ Um apontador para a variável que vai guardar o número de registos importados.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Esta função é responsável por chamar funções específicas de importação de acordo com os tipos especificados.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em resultado} & -\/ O código de resultado da operação. \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_utils_8h_ae4aba734171207cf87c8fdb7a7fa5215}\label{_utils_8h_ae4aba734171207cf87c8fdb7a7fa5215} 
+\index{Utils.h@{Utils.h}!TerminarProgramaComErro@{TerminarProgramaComErro}}
+\index{TerminarProgramaComErro@{TerminarProgramaComErro}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{TerminarProgramaComErro()}{TerminarProgramaComErro()}}
+{\footnotesize\ttfamily void Terminar\+Programa\+Com\+Erro (\begin{DoxyParamCaption}\item[{int}]{codigo\+Erro }\end{DoxyParamCaption})}
+
+
+
+Termina o programa apresentando uma mensagem de erro e terminando com um código de erro. 
+
+Esta função imprime uma mensagem de erro no standard error (stderr) seguida pelo código de erro especificado. A seguir, termina o programa utilizando \textquotesingle{}exit()\textquotesingle{} com o código de erro "{}codigo\+Erro"{}.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em codigo\+Erro} & -\/ O código de erro a ser apresentado e utilizado para encerrar o programa. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_utils_8h_a1001855114b2b21fc3971bcd064bc930}\label{_utils_8h_a1001855114b2b21fc3971bcd064bc930} 
+\index{Utils.h@{Utils.h}!ValidarFormatoData@{ValidarFormatoData}}
+\index{ValidarFormatoData@{ValidarFormatoData}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{ValidarFormatoData()}{ValidarFormatoData()}}
+{\footnotesize\ttfamily bool Validar\+Formato\+Data (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{data\+Str }\end{DoxyParamCaption})}
+
+
+
+Verifica se uma string está no formato de data DD-\/\+MM-\/\+AAAA. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em data\+Str} & -\/ String de data para verificação. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se estiver no formato correto, false caso contrário. 
+\end{DoxyReturn}

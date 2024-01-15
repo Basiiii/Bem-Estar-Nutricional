@@ -1,0 +1,196 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {portuges}{}\relax 
+\contentsline {chapter}{\numberline {1}Trabalho Prático G14}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Trabalho Prático}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Descrição}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Índice}{1}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Grupo}{1}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Hierarquia de Ficheiros}{2}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Compilação}{3}{subsection.1.1.5}%
+\contentsline {subsubsection}{\numberline {1.1.5.1}Usando Visual Studio IDE no Windows}{3}{subsubsection.1.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.1.5.2}Usando Make\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File no Linux}{3}{subsubsection.1.1.5.2}%
+\contentsline {subsection}{\numberline {1.1.6}Como Executar o Programa Bem Estar}{3}{subsection.1.1.6}%
+\contentsline {subsubsection}{\numberline {1.1.6.1}Exemplos de Utilização\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:}{3}{subsubsection.1.1.6.1}%
+\contentsline {subsection}{\numberline {1.1.7}Estado Atual dos Testes}{4}{subsection.1.1.7}%
+\contentsline {subsubsection}{\numberline {1.1.7.1}Teste de Compilação}{4}{subsubsection.1.1.7.1}%
+\contentsline {subsubsection}{\numberline {1.1.7.2}Teste de Importação de Dados}{4}{subsubsection.1.1.7.2}%
+\contentsline {paragraph}{Importação de Pacientes}{4}{section*.1}%
+\contentsline {paragraph}{Importação de Dietas}{4}{section*.2}%
+\contentsline {paragraph}{Importação de Planos}{4}{section*.3}%
+\contentsline {subsubsection}{\numberline {1.1.7.3}Parâmetros e Menu}{4}{subsubsection.1.1.7.3}%
+\contentsline {subsection}{\numberline {1.1.8}Exemplos Detalhados de Testes}{5}{subsection.1.1.8}%
+\contentsline {subsubsection}{\numberline {1.1.8.1}Teste de compilação da biblioteca/programa -\/ Windows}{5}{subsubsection.1.1.8.1}%
+\contentsline {subsubsection}{\numberline {1.1.8.2}Teste de compilação da biblioteca/programa -\/ Linux}{5}{subsubsection.1.1.8.2}%
+\contentsline {subsubsection}{\numberline {1.1.8.3}Teste do parâmetro $<$tt$>$ajuda$<$/tt$>$ -\/ Detalhes}{5}{subsubsection.1.1.8.3}%
+\contentsline {subsubsection}{\numberline {1.1.8.4}Importação de Pacientes de Ficheiro Texto}{5}{subsubsection.1.1.8.4}%
+\contentsline {subsubsection}{\numberline {1.1.8.5}Importação de Dietas de Ficheiro Tab}{6}{subsubsection.1.1.8.5}%
+\contentsline {subsubsection}{\numberline {1.1.8.6}Importação de Planos de Ficheiro Binário}{6}{subsubsection.1.1.8.6}%
+\contentsline {subsection}{\numberline {1.1.9}Documentação La\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TeX}{6}{subsection.1.1.9}%
+\contentsline {subsection}{\numberline {1.1.10}Utilização do Repositório}{8}{subsection.1.1.10}%
+\contentsline {subsection}{\numberline {1.1.11}Changelog e Versões}{8}{subsection.1.1.11}%
+\contentsline {chapter}{\numberline {2}Índice das estruturas de dados}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Estruturas de dados}{9}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Índice dos ficheiros}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Lista de ficheiros}{11}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Documentação da estruturas de dados}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Referência à estrutura Dieta}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Referência à estrutura Paciente}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Referência à estrutura Plano}{13}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Referência à estrutura Resultado\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Processamento\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Func3}{13}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Referência à estrutura Resultado\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Processamento\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Func4}{14}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Referência à estrutura Resultado\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Processamento\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Func5}{14}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Documentação do ficheiro}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Referência ao ficheiro Constantes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{15}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Descrição detalhada}{17}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Constantes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{17}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Referência ao ficheiro Controlo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Erros.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{19}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Descrição detalhada}{19}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Documentação das funções}{20}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}LidarErroGerarTabelaRefeicoes()}{20}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {5.3.2.2}LidarErroGuardarDados()}{20}{subsubsection.5.3.2.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.3}LidarErroListarMediasCaloriasPorRefeicao()}{20}{subsubsection.5.3.2.3}%
+\contentsline {subsubsection}{\numberline {5.3.2.4}LidarErroListarPlanoNutricional()}{20}{subsubsection.5.3.2.4}%
+\contentsline {subsubsection}{\numberline {5.3.2.5}LidarErroPacientesForaPlano()}{20}{subsubsection.5.3.2.5}%
+\contentsline {subsubsection}{\numberline {5.3.2.6}LidarErroPacientesUltrapassamCalorias()}{21}{subsubsection.5.3.2.6}%
+\contentsline {subsubsection}{\numberline {5.3.2.7}LidarErrosImportacaoDados()}{21}{subsubsection.5.3.2.7}%
+\contentsline {subsubsection}{\numberline {5.3.2.8}LidarErroVerificacaoFicheiroBinario()}{21}{subsubsection.5.3.2.8}%
+\contentsline {section}{\numberline {5.4}Referência ao ficheiro Controlo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Erros.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{21}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Descrição detalhada}{22}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Documentação das funções}{22}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}LidarErroGerarTabelaRefeicoes()}{22}{subsubsection.5.4.2.1}%
+\contentsline {subsubsection}{\numberline {5.4.2.2}LidarErroGuardarDados()}{22}{subsubsection.5.4.2.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.3}LidarErroListarMediasCaloriasPorRefeicao()}{22}{subsubsection.5.4.2.3}%
+\contentsline {subsubsection}{\numberline {5.4.2.4}LidarErroListarPlanoNutricional()}{23}{subsubsection.5.4.2.4}%
+\contentsline {subsubsection}{\numberline {5.4.2.5}LidarErroPacientesForaPlano()}{23}{subsubsection.5.4.2.5}%
+\contentsline {subsubsection}{\numberline {5.4.2.6}LidarErroPacientesUltrapassamCalorias()}{23}{subsubsection.5.4.2.6}%
+\contentsline {subsubsection}{\numberline {5.4.2.7}LidarErrosImportacaoDados()}{23}{subsubsection.5.4.2.7}%
+\contentsline {subsubsection}{\numberline {5.4.2.8}LidarErroVerificacaoFicheiroBinario()}{23}{subsubsection.5.4.2.8}%
+\contentsline {section}{\numberline {5.5}Controlo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Erros.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{24}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Referência ao ficheiro Debug.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{24}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Descrição detalhada}{24}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Documentação das funções}{25}{subsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.1}DebugMostrarDadosMemoria()}{25}{subsubsection.5.6.2.1}%
+\contentsline {subsubsection}{\numberline {5.6.2.2}DebugMostrarDietas()}{25}{subsubsection.5.6.2.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.3}DebugMostrarFicheirosUtilizador()}{25}{subsubsection.5.6.2.3}%
+\contentsline {subsubsection}{\numberline {5.6.2.4}DebugMostrarPacientes()}{26}{subsubsection.5.6.2.4}%
+\contentsline {subsubsection}{\numberline {5.6.2.5}DebugMostrarPlanos()}{26}{subsubsection.5.6.2.5}%
+\contentsline {section}{\numberline {5.7}Referência ao ficheiro Debug.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{26}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Descrição detalhada}{26}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Documentação das funções}{27}{subsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.1}DebugMostrarDadosMemoria()}{27}{subsubsection.5.7.2.1}%
+\contentsline {subsubsection}{\numberline {5.7.2.2}DebugMostrarDietas()}{27}{subsubsection.5.7.2.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.3}DebugMostrarFicheirosUtilizador()}{27}{subsubsection.5.7.2.3}%
+\contentsline {subsubsection}{\numberline {5.7.2.4}DebugMostrarPacientes()}{28}{subsubsection.5.7.2.4}%
+\contentsline {subsubsection}{\numberline {5.7.2.5}DebugMostrarPlanos()}{28}{subsubsection.5.7.2.5}%
+\contentsline {section}{\numberline {5.8}Debug.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{28}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Referência ao ficheiro Estrutura\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dados.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{29}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Descrição detalhada}{29}{subsection.5.9.1}%
+\contentsline {section}{\numberline {5.10}Estrutura\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dados.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{29}{section.5.10}%
+\contentsline {section}{\numberline {5.11}Referência ao ficheiro Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stdin.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{30}{section.5.11}%
+\contentsline {subsection}{\numberline {5.11.1}Descrição detalhada}{30}{subsection.5.11.1}%
+\contentsline {section}{\numberline {5.12}Referência ao ficheiro Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stdin.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{31}{section.5.12}%
+\contentsline {subsection}{\numberline {5.12.1}Descrição detalhada}{31}{subsection.5.12.1}%
+\contentsline {section}{\numberline {5.13}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stdin.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{31}{section.5.13}%
+\contentsline {section}{\numberline {5.14}Referência ao ficheiro main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{31}{section.5.14}%
+\contentsline {subsection}{\numberline {5.14.1}Descrição detalhada}{32}{subsection.5.14.1}%
+\contentsline {subsection}{\numberline {5.14.2}Documentação das funções}{32}{subsection.5.14.2}%
+\contentsline {subsubsection}{\numberline {5.14.2.1}main()}{32}{subsubsection.5.14.2.1}%
+\contentsline {section}{\numberline {5.15}Referência ao ficheiro Menu.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{33}{section.5.15}%
+\contentsline {subsection}{\numberline {5.15.1}Descrição detalhada}{34}{subsection.5.15.1}%
+\contentsline {subsection}{\numberline {5.15.2}Documentação das funções}{34}{subsection.5.15.2}%
+\contentsline {subsubsection}{\numberline {5.15.2.1}ApresentarMenu()}{34}{subsubsection.5.15.2.1}%
+\contentsline {subsubsection}{\numberline {5.15.2.2}GerarTabelaRefeicoes()}{34}{subsubsection.5.15.2.2}%
+\contentsline {subsubsection}{\numberline {5.15.2.3}LerData()}{35}{subsubsection.5.15.2.3}%
+\contentsline {subsubsection}{\numberline {5.15.2.4}ListarMediasCaloriasPorRefeicao()}{35}{subsubsection.5.15.2.4}%
+\contentsline {subsubsection}{\numberline {5.15.2.5}ListarPlanoNutricional()}{35}{subsubsection.5.15.2.5}%
+\contentsline {subsubsection}{\numberline {5.15.2.6}PacientesForaPlano()}{36}{subsubsection.5.15.2.6}%
+\contentsline {subsubsection}{\numberline {5.15.2.7}PacientesUltrapassaramCalorias()}{36}{subsubsection.5.15.2.7}%
+\contentsline {section}{\numberline {5.16}Referência ao ficheiro Menu.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{37}{section.5.16}%
+\contentsline {subsection}{\numberline {5.16.1}Descrição detalhada}{37}{subsection.5.16.1}%
+\contentsline {subsection}{\numberline {5.16.2}Documentação das funções}{37}{subsection.5.16.2}%
+\contentsline {subsubsection}{\numberline {5.16.2.1}ApresentarMenu()}{37}{subsubsection.5.16.2.1}%
+\contentsline {subsubsection}{\numberline {5.16.2.2}GerarTabelaRefeicoes()}{38}{subsubsection.5.16.2.2}%
+\contentsline {subsubsection}{\numberline {5.16.2.3}LerData()}{38}{subsubsection.5.16.2.3}%
+\contentsline {subsubsection}{\numberline {5.16.2.4}ListarMediasCaloriasPorRefeicao()}{39}{subsubsection.5.16.2.4}%
+\contentsline {subsubsection}{\numberline {5.16.2.5}ListarPlanoNutricional()}{39}{subsubsection.5.16.2.5}%
+\contentsline {subsubsection}{\numberline {5.16.2.6}PacientesForaPlano()}{40}{subsubsection.5.16.2.6}%
+\contentsline {subsubsection}{\numberline {5.16.2.7}PacientesUltrapassaramCalorias()}{40}{subsubsection.5.16.2.7}%
+\contentsline {section}{\numberline {5.17}Menu.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{41}{section.5.17}%
+\contentsline {section}{\numberline {5.18}Referência ao ficheiro Operacoes\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ficheiros.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{41}{section.5.18}%
+\contentsline {subsection}{\numberline {5.18.1}Descrição detalhada}{42}{subsection.5.18.1}%
+\contentsline {subsection}{\numberline {5.18.2}Documentação das funções}{42}{subsection.5.18.2}%
+\contentsline {subsubsection}{\numberline {5.18.2.1}ApagarBaseDados()}{42}{subsubsection.5.18.2.1}%
+\contentsline {subsubsection}{\numberline {5.18.2.2}ExisteFicheiroBinario()}{42}{subsubsection.5.18.2.2}%
+\contentsline {subsubsection}{\numberline {5.18.2.3}ImportarDadosBaseDados()}{42}{subsubsection.5.18.2.3}%
+\contentsline {subsubsection}{\numberline {5.18.2.4}VerificarEAtualizarFicheiroBinario()}{43}{subsubsection.5.18.2.4}%
+\contentsline {section}{\numberline {5.19}Referência ao ficheiro Operacoes\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ficheiros.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{43}{section.5.19}%
+\contentsline {subsection}{\numberline {5.19.1}Descrição detalhada}{44}{subsection.5.19.1}%
+\contentsline {subsection}{\numberline {5.19.2}Documentação das funções}{44}{subsection.5.19.2}%
+\contentsline {subsubsection}{\numberline {5.19.2.1}ApagarBaseDados()}{44}{subsubsection.5.19.2.1}%
+\contentsline {subsubsection}{\numberline {5.19.2.2}ExisteFicheiroBinario()}{44}{subsubsection.5.19.2.2}%
+\contentsline {subsubsection}{\numberline {5.19.2.3}ImportarDadosBaseDados()}{44}{subsubsection.5.19.2.3}%
+\contentsline {subsubsection}{\numberline {5.19.2.4}VerificarEAtualizarFicheiroBinario()}{45}{subsubsection.5.19.2.4}%
+\contentsline {section}{\numberline {5.20}Operacoes\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ficheiros.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{45}{section.5.20}%
+\contentsline {section}{\numberline {5.21}Referência ao ficheiro Parametros.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{45}{section.5.21}%
+\contentsline {subsection}{\numberline {5.21.1}Descrição detalhada}{46}{subsection.5.21.1}%
+\contentsline {subsection}{\numberline {5.21.2}Documentação das funções}{46}{subsection.5.21.2}%
+\contentsline {subsubsection}{\numberline {5.21.2.1}ManipularParametrosOpcionais()}{46}{subsubsection.5.21.2.1}%
+\contentsline {section}{\numberline {5.22}Referência ao ficheiro Parametros.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{46}{section.5.22}%
+\contentsline {subsection}{\numberline {5.22.1}Descrição detalhada}{47}{subsection.5.22.1}%
+\contentsline {subsection}{\numberline {5.22.2}Documentação das funções}{47}{subsection.5.22.2}%
+\contentsline {subsubsection}{\numberline {5.22.2.1}ManipularParametrosOpcionais()}{47}{subsubsection.5.22.2.1}%
+\contentsline {section}{\numberline {5.23}Parametros.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{47}{section.5.23}%
+\contentsline {section}{\numberline {5.24}Referência ao ficheiro Utils.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{48}{section.5.24}%
+\contentsline {subsection}{\numberline {5.24.1}Descrição detalhada}{49}{subsection.5.24.1}%
+\contentsline {subsection}{\numberline {5.24.2}Documentação das funções}{49}{subsection.5.24.2}%
+\contentsline {subsubsection}{\numberline {5.24.2.1}ApresentarAjuda()}{49}{subsubsection.5.24.2.1}%
+\contentsline {subsubsection}{\numberline {5.24.2.2}CompararDietaPorData()}{49}{subsubsection.5.24.2.2}%
+\contentsline {subsubsection}{\numberline {5.24.2.3}CompararDietaPorId()}{50}{subsubsection.5.24.2.3}%
+\contentsline {subsubsection}{\numberline {5.24.2.4}CompararPacientePorId()}{50}{subsubsection.5.24.2.4}%
+\contentsline {subsubsection}{\numberline {5.24.2.5}CompararPlanoPorId()}{50}{subsubsection.5.24.2.5}%
+\contentsline {subsubsection}{\numberline {5.24.2.6}ConverterDatetimeParaString()}{51}{subsubsection.5.24.2.6}%
+\contentsline {subsubsection}{\numberline {5.24.2.7}ConverterRefeicaoParaId()}{51}{subsubsection.5.24.2.7}%
+\contentsline {subsubsection}{\numberline {5.24.2.8}ConverterRefeicaoParaTexto()}{51}{subsubsection.5.24.2.8}%
+\contentsline {subsubsection}{\numberline {5.24.2.9}ConverterStringParaDatetime()}{52}{subsubsection.5.24.2.9}%
+\contentsline {subsubsection}{\numberline {5.24.2.10}CustomSleep()}{52}{subsubsection.5.24.2.10}%
+\contentsline {subsubsection}{\numberline {5.24.2.11}EscreverComCor()}{52}{subsubsection.5.24.2.11}%
+\contentsline {subsubsection}{\numberline {5.24.2.12}GuardarDados()}{52}{subsubsection.5.24.2.12}%
+\contentsline {subsubsection}{\numberline {5.24.2.13}ImportarEProcessarFicheiro()}{53}{subsubsection.5.24.2.13}%
+\contentsline {subsubsection}{\numberline {5.24.2.14}LerTecla()}{53}{subsubsection.5.24.2.14}%
+\contentsline {subsubsection}{\numberline {5.24.2.15}LibertarMemoria()}{54}{subsubsection.5.24.2.15}%
+\contentsline {subsubsection}{\numberline {5.24.2.16}LimparEcra()}{54}{subsubsection.5.24.2.16}%
+\contentsline {subsubsection}{\numberline {5.24.2.17}OrganizarDietasPorId()}{54}{subsubsection.5.24.2.17}%
+\contentsline {subsubsection}{\numberline {5.24.2.18}OrganizarPacientesPorId()}{54}{subsubsection.5.24.2.18}%
+\contentsline {subsubsection}{\numberline {5.24.2.19}OrganizarPlanosPorId()}{55}{subsubsection.5.24.2.19}%
+\contentsline {subsubsection}{\numberline {5.24.2.20}ProcessarFicheiro()}{55}{subsubsection.5.24.2.20}%
+\contentsline {subsubsection}{\numberline {5.24.2.21}TerminarProgramaComErro()}{56}{subsubsection.5.24.2.21}%
+\contentsline {subsubsection}{\numberline {5.24.2.22}ValidarFormatoData()}{56}{subsubsection.5.24.2.22}%
+\contentsline {section}{\numberline {5.25}Referência ao ficheiro Utils.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{56}{section.5.25}%
+\contentsline {subsection}{\numberline {5.25.1}Descrição detalhada}{57}{subsection.5.25.1}%
+\contentsline {subsection}{\numberline {5.25.2}Documentação das funções}{58}{subsection.5.25.2}%
+\contentsline {subsubsection}{\numberline {5.25.2.1}ApresentarAjuda()}{58}{subsubsection.5.25.2.1}%
+\contentsline {subsubsection}{\numberline {5.25.2.2}CompararDietaPorData()}{58}{subsubsection.5.25.2.2}%
+\contentsline {subsubsection}{\numberline {5.25.2.3}CompararDietaPorId()}{58}{subsubsection.5.25.2.3}%
+\contentsline {subsubsection}{\numberline {5.25.2.4}CompararPacientePorId()}{58}{subsubsection.5.25.2.4}%
+\contentsline {subsubsection}{\numberline {5.25.2.5}CompararPlanoPorId()}{59}{subsubsection.5.25.2.5}%
+\contentsline {subsubsection}{\numberline {5.25.2.6}ConverterDatetimeParaString()}{59}{subsubsection.5.25.2.6}%
+\contentsline {subsubsection}{\numberline {5.25.2.7}ConverterRefeicaoParaId()}{59}{subsubsection.5.25.2.7}%
+\contentsline {subsubsection}{\numberline {5.25.2.8}ConverterRefeicaoParaTexto()}{60}{subsubsection.5.25.2.8}%
+\contentsline {subsubsection}{\numberline {5.25.2.9}ConverterStringParaDatetime()}{60}{subsubsection.5.25.2.9}%
+\contentsline {subsubsection}{\numberline {5.25.2.10}CustomSleep()}{60}{subsubsection.5.25.2.10}%
+\contentsline {subsubsection}{\numberline {5.25.2.11}EscreverComCor()}{61}{subsubsection.5.25.2.11}%
+\contentsline {subsubsection}{\numberline {5.25.2.12}GuardarDados()}{61}{subsubsection.5.25.2.12}%
+\contentsline {subsubsection}{\numberline {5.25.2.13}ImportarEProcessarFicheiro()}{61}{subsubsection.5.25.2.13}%
+\contentsline {subsubsection}{\numberline {5.25.2.14}LerTecla()}{62}{subsubsection.5.25.2.14}%
+\contentsline {subsubsection}{\numberline {5.25.2.15}LibertarMemoria()}{62}{subsubsection.5.25.2.15}%
+\contentsline {subsubsection}{\numberline {5.25.2.16}LimparEcra()}{63}{subsubsection.5.25.2.16}%
+\contentsline {subsubsection}{\numberline {5.25.2.17}OrganizarDietasPorId()}{63}{subsubsection.5.25.2.17}%
+\contentsline {subsubsection}{\numberline {5.25.2.18}OrganizarPacientesPorId()}{63}{subsubsection.5.25.2.18}%
+\contentsline {subsubsection}{\numberline {5.25.2.19}OrganizarPlanosPorId()}{63}{subsubsection.5.25.2.19}%
+\contentsline {subsubsection}{\numberline {5.25.2.20}ProcessarFicheiro()}{64}{subsubsection.5.25.2.20}%
+\contentsline {subsubsection}{\numberline {5.25.2.21}TerminarProgramaComErro()}{64}{subsubsection.5.25.2.21}%
+\contentsline {subsubsection}{\numberline {5.25.2.22}ValidarFormatoData()}{64}{subsubsection.5.25.2.22}%
+\contentsline {section}{\numberline {5.26}Utils.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{66}{section.5.26}%
+\contentsline {section}{Hierarquia de Ficheiros}{67}{section.5.26}%
+\contentsline {chapter}{Conclusão}{68}{section*.28}%
+\contentsline {chapter}{Bibliografia}{69}{section*.30}%

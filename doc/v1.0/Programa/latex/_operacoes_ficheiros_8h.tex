@@ -1,0 +1,124 @@
+\doxysection{Referência ao ficheiro Operacoes\+Ficheiros.\+h}
+\hypertarget{_operacoes_ficheiros_8h}{}\label{_operacoes_ficheiros_8h}\index{OperacoesFicheiros.h@{OperacoesFicheiros.h}}
+
+
+Funções para operações relacionadas a ficheiros.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_operacoes_ficheiros_8h_a43df7efae4b8c7dc1cd3e826a12ccc09}{Existe\+Ficheiro\+Binario}} (const char \texorpdfstring{$\ast$}{*}nome\+Ficheiro)
+\begin{DoxyCompactList}\small\item\em Verifica se existe um dado ficheiro binário através do nome do ficheiro. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_operacoes_ficheiros_8h_a1f70fe88f666ceeda9da225e2737306f}{Verificar\+EAtualizar\+Ficheiro\+Binario}} (const char \texorpdfstring{$\ast$}{*}nome\+Ficheiro)
+\begin{DoxyCompactList}\small\item\em Função que verifica se exite um ficheiro binário. Se não existir, pergunta ao utilizador se quer criá-\/lo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_operacoes_ficheiros_8h_a1da99542cc018d7dfd9b6faa42809b8a}{Apagar\+Base\+Dados}} ()
+\begin{DoxyCompactList}\small\item\em Lida com o pedido de apagar a base de dados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_operacoes_ficheiros_8h_afca3c43f32ab529560a3a8b5b2548ef0}{Importar\+Dados\+Base\+Dados}} (const char \texorpdfstring{$\ast$}{*}caminho\+Ficheiro, void \texorpdfstring{$\ast$}{*}dados, size\+\_\+t tam\+Dados, int \texorpdfstring{$\ast$}{*}num\+Dados, const char \texorpdfstring{$\ast$}{*}tipo\+Dados)
+\begin{DoxyCompactList}\small\item\em Importa os dados de um ficheiro específico da base de dados (ficheiro .dat). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Funções para operações relacionadas a ficheiros. 
+
+Este ficheiro contém declarações de funções que realizam operações diversas relacionadas a ficheiros.
+
+\begin{DoxyAuthor}{Autor}
+Enrique George Rodrigues
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+Criado\+: 28.\+11.\+2023 
+
+Modificado\+: 28.\+12.\+2023
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+© Enrique George Rodrigues, 2023. Todos os direitos reservados. 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{_operacoes_ficheiros_8h_a1da99542cc018d7dfd9b6faa42809b8a}\label{_operacoes_ficheiros_8h_a1da99542cc018d7dfd9b6faa42809b8a} 
+\index{OperacoesFicheiros.h@{OperacoesFicheiros.h}!ApagarBaseDados@{ApagarBaseDados}}
+\index{ApagarBaseDados@{ApagarBaseDados}!OperacoesFicheiros.h@{OperacoesFicheiros.h}}
+\doxysubsubsection{\texorpdfstring{ApagarBaseDados()}{ApagarBaseDados()}}
+{\footnotesize\ttfamily void Apagar\+Base\+Dados (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lida com o pedido de apagar a base de dados. 
+
+Lida com o pedido de apagar a base de dados. \Hypertarget{_operacoes_ficheiros_8h_a43df7efae4b8c7dc1cd3e826a12ccc09}\label{_operacoes_ficheiros_8h_a43df7efae4b8c7dc1cd3e826a12ccc09} 
+\index{OperacoesFicheiros.h@{OperacoesFicheiros.h}!ExisteFicheiroBinario@{ExisteFicheiroBinario}}
+\index{ExisteFicheiroBinario@{ExisteFicheiroBinario}!OperacoesFicheiros.h@{OperacoesFicheiros.h}}
+\doxysubsubsection{\texorpdfstring{ExisteFicheiroBinario()}{ExisteFicheiroBinario()}}
+{\footnotesize\ttfamily bool Existe\+Ficheiro\+Binario (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro }\end{DoxyParamCaption})}
+
+
+
+Verifica se existe um dado ficheiro binário através do nome do ficheiro. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+Ficheiro} & -\/ O nome do ficheiro binário \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em -\/} & true (ficheiro existe) \\
+\hline
+{\em -\/} & false (ficheiro não existe) \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_operacoes_ficheiros_8h_afca3c43f32ab529560a3a8b5b2548ef0}\label{_operacoes_ficheiros_8h_afca3c43f32ab529560a3a8b5b2548ef0} 
+\index{OperacoesFicheiros.h@{OperacoesFicheiros.h}!ImportarDadosBaseDados@{ImportarDadosBaseDados}}
+\index{ImportarDadosBaseDados@{ImportarDadosBaseDados}!OperacoesFicheiros.h@{OperacoesFicheiros.h}}
+\doxysubsubsection{\texorpdfstring{ImportarDadosBaseDados()}{ImportarDadosBaseDados()}}
+{\footnotesize\ttfamily void Importar\+Dados\+Base\+Dados (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{caminho\+Ficheiro,  }\item[{void \texorpdfstring{$\ast$}{*}}]{dados,  }\item[{size\+\_\+t}]{tam\+Dados,  }\item[{int \texorpdfstring{$\ast$}{*}}]{num\+Dados,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{tipo\+Dados }\end{DoxyParamCaption})}
+
+
+
+Importa os dados de um ficheiro específico da base de dados (ficheiro .dat). 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em caminho\+Ficheiro} & -\/ Caminho do arquivo binário a ser importado. \\
+\hline
+{\em dados} & -\/ Array de estruturas para guardar os dados importados. \\
+\hline
+{\em tam\+Dados} & -\/ Tamanho de cada elemento do array de dados. \\
+\hline
+{\em num\+Dados} & -\/ O tamanho do array. \\
+\hline
+{\em tipo\+Dados} & -\/ Nome do tipo de dados sendo importado (para a mensagem de log). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_operacoes_ficheiros_8h_a1f70fe88f666ceeda9da225e2737306f}\label{_operacoes_ficheiros_8h_a1f70fe88f666ceeda9da225e2737306f} 
+\index{OperacoesFicheiros.h@{OperacoesFicheiros.h}!VerificarEAtualizarFicheiroBinario@{VerificarEAtualizarFicheiroBinario}}
+\index{VerificarEAtualizarFicheiroBinario@{VerificarEAtualizarFicheiroBinario}!OperacoesFicheiros.h@{OperacoesFicheiros.h}}
+\doxysubsubsection{\texorpdfstring{VerificarEAtualizarFicheiroBinario()}{VerificarEAtualizarFicheiroBinario()}}
+{\footnotesize\ttfamily int Verificar\+EAtualizar\+Ficheiro\+Binario (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro }\end{DoxyParamCaption})}
+
+
+
+Função que verifica se exite um ficheiro binário. Se não existir, pergunta ao utilizador se quer criá-\/lo. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+Ficheiro} & -\/ O nome do ficheiro binário.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Esta função está a ser utilizada nas verificações iniciais do programa para garantir que todos os ficheiros binários necessários existem antes de executar o programa.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Valores retornados}
+{\em 0} & -\/ Ficheiro criado com sucesso. \\
+\hline
+{\em 1} & -\/ Ficheiro existe (FICHEIRO\+\_\+\+EXISTE). \\
+\hline
+{\em 2} & -\/ Erro criar ficheiro (ERRO\+\_\+\+CRIAR\+\_\+\+FICHEIRO). \\
+\hline
+{\em 25} & -\/ Utilizador não deu permissão para criar o ficheiro. (ERRO\+\_\+\+UTILIZADOR\+\_\+\+NAO\+\_\+\+DEU\+\_\+\+PERMISSAO). \\
+\hline
+\end{DoxyRetVals}

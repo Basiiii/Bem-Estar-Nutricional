@@ -1,0 +1,39 @@
+\begin{theindex}
+
+  \item {Biblioteca GestorDadosIO}, \hyperpage{1}
+
+  \indexspace
+
+  \item {ExportarDados.c}, \hyperpage{5}
+    \subitem {ExportarDadosFichBinario}, \hyperpage{6}
+  \item {ExportarDadosFichBinario}
+    \subitem {ExportarDados.c}, \hyperpage{6}
+    \subitem {IODadosAPI.h}, \hyperpage{10}
+
+  \indexspace
+
+  \item {ImportarDados.c}, \hyperpage{6}
+    \subitem {ImportarDadosFichBinario}, \hyperpage{7}
+    \subitem {ImportarDietasFichTexto}, \hyperpage{8}
+    \subitem {ImportarPacientesFichTexto}, \hyperpage{8}
+    \subitem {ImportarPlanosFichTexto}, \hyperpage{9}
+  \item {ImportarDadosFichBinario}
+    \subitem {ImportarDados.c}, \hyperpage{7}
+    \subitem {IODadosAPI.h}, \hyperpage{11}
+  \item {ImportarDietasFichTexto}
+    \subitem {ImportarDados.c}, \hyperpage{8}
+    \subitem {IODadosAPI.h}, \hyperpage{11}
+  \item {ImportarPacientesFichTexto}
+    \subitem {ImportarDados.c}, \hyperpage{8}
+    \subitem {IODadosAPI.h}, \hyperpage{12}
+  \item {ImportarPlanosFichTexto}
+    \subitem {ImportarDados.c}, \hyperpage{9}
+    \subitem {IODadosAPI.h}, \hyperpage{13}
+  \item {IODadosAPI.h}, \hyperpage{10}
+    \subitem {ExportarDadosFichBinario}, \hyperpage{10}
+    \subitem {ImportarDadosFichBinario}, \hyperpage{11}
+    \subitem {ImportarDietasFichTexto}, \hyperpage{11}
+    \subitem {ImportarPacientesFichTexto}, \hyperpage{12}
+    \subitem {ImportarPlanosFichTexto}, \hyperpage{13}
+
+\end{theindex}

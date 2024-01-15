@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Biblioteca Gestor Dados Trabalho Prático G14: Código-Fonte de IODadosAPI.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Biblioteca Gestor Dados Trabalho Prático G14<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Trabalho Prático LESI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_i_o_dados_a_p_i_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">IODadosAPI.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_i_o_dados_a_p_i_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef IO_DADOS_API_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define IO_DADOS_API_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;../LESI_PI_TP_a28602/Constantes.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;../LESI_PI_TP_a28602/EstruturaDados.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;../LESI_PI_TP_a28602/Utils.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Verificar se está a ser compilado no Windows</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="comment">// Definir anotações de importar e exportar</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifdef IO_DADOS_EXPORTS</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define IO_DADOS_API __declspec(dllexport)</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define IO_DADOS_API __declspec(dllimport)</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// Se não for Windows (Linux)</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#define IO_DADOS_API </span><span class="comment">// Definir macro como macro vazio</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>IO_DADOS_API <span class="keywordtype">int</span> <a class="code hl_function" href="_i_o_dados_a_p_i_8h.html#ae2a3c6e76e5175874ca0ed12bb66c72f">ExportarDadosFichBinario</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* nomeFicheiro, <span class="keywordtype">void</span>* dados, <span class="keywordtype">int</span> tamanho, <span class="keywordtype">size_t</span> tamanhoElemento);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>IO_DADOS_API <span class="keywordtype">int</span> <a class="code hl_function" href="_i_o_dados_a_p_i_8h.html#abc9846b659607b75dbbd3f696065f8c4">ImportarDadosFichBinario</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* nomeFicheiro, <span class="keywordtype">void</span>* dados, <span class="keywordtype">size_t</span> tamanhoRegisto, <span class="keywordtype">int</span>* numRegistos);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>IO_DADOS_API <span class="keywordtype">int</span> <a class="code hl_function" href="_i_o_dados_a_p_i_8h.html#a814de11c559bbe566ba5192ef376dcac">ImportarPacientesFichTexto</a>(FILE* file, <span class="keyword">const</span> <span class="keywordtype">char</span>* nomeFicheiro, <span class="keywordtype">char</span>* formatoFicheiro, Paciente pacientes[TAMANHO_MAX_ARRAY], <span class="keywordtype">int</span>* numPacientes);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>IO_DADOS_API <span class="keywordtype">int</span> <a class="code hl_function" href="_i_o_dados_a_p_i_8h.html#ad513952c7685c0a802dbc6cae71ddec8">ImportarDietasFichTexto</a>(FILE* file, <span class="keyword">const</span> <span class="keywordtype">char</span>* nomeFicheiro, <span class="keywordtype">char</span>* formatoFicheiro, Dieta dietas[TAMANHO_MAX_ARRAY], <span class="keywordtype">int</span>* numDietas);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>IO_DADOS_API <span class="keywordtype">int</span> <a class="code hl_function" href="_i_o_dados_a_p_i_8h.html#a155af24a77b9388554ae8b5bb0e3cdfc">ImportarPlanosFichTexto</a>(FILE* file, <span class="keyword">const</span> <span class="keywordtype">char</span>* nomeFicheiro, <span class="keywordtype">char</span>* formatoFicheiro, Plano planos[TAMANHO_MAX_ARRAY], <span class="keywordtype">int</span>* numPlanos);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">#endif </span><span class="comment">// IO_DADOS_API_H</span></div>
+<div class="ttc" id="a_i_o_dados_a_p_i_8h_html_a155af24a77b9388554ae8b5bb0e3cdfc"><div class="ttname"><a href="_i_o_dados_a_p_i_8h.html#a155af24a77b9388554ae8b5bb0e3cdfc">ImportarPlanosFichTexto</a></div><div class="ttdeci">IO_DADOS_API int ImportarPlanosFichTexto(FILE *file, const char *nomeFicheiro, char *formatoFicheiro, Plano planos[TAMANHO_MAX_ARRAY], int *numPlanos)</div><div class="ttdoc">Importa dados de planos de um ficheiro de texto e adiciona-os aos dados guardados,...</div><div class="ttdef"><b>Definição</b> ImportarDados.c:217</div></div>
+<div class="ttc" id="a_i_o_dados_a_p_i_8h_html_a814de11c559bbe566ba5192ef376dcac"><div class="ttname"><a href="_i_o_dados_a_p_i_8h.html#a814de11c559bbe566ba5192ef376dcac">ImportarPacientesFichTexto</a></div><div class="ttdeci">IO_DADOS_API int ImportarPacientesFichTexto(FILE *file, const char *nomeFicheiro, char *formatoFicheiro, Paciente pacientes[TAMANHO_MAX_ARRAY], int *numPacientes)</div><div class="ttdoc">Importa dados de pacientes de um ficheiro de texto e adiciona-os aos dados guardados,...</div><div class="ttdef"><b>Definição</b> ImportarDados.c:87</div></div>
+<div class="ttc" id="a_i_o_dados_a_p_i_8h_html_abc9846b659607b75dbbd3f696065f8c4"><div class="ttname"><a href="_i_o_dados_a_p_i_8h.html#abc9846b659607b75dbbd3f696065f8c4">ImportarDadosFichBinario</a></div><div class="ttdeci">IO_DADOS_API int ImportarDadosFichBinario(const char *nomeFicheiro, void *dados, size_t tamanhoRegisto, int *numRegistos)</div><div class="ttdoc">Importa os dados a partir do ficheiro binário.</div><div class="ttdef"><b>Definição</b> ImportarDados.c:42</div></div>
+<div class="ttc" id="a_i_o_dados_a_p_i_8h_html_ad513952c7685c0a802dbc6cae71ddec8"><div class="ttname"><a href="_i_o_dados_a_p_i_8h.html#ad513952c7685c0a802dbc6cae71ddec8">ImportarDietasFichTexto</a></div><div class="ttdeci">IO_DADOS_API int ImportarDietasFichTexto(FILE *file, const char *nomeFicheiro, char *formatoFicheiro, Dieta dietas[TAMANHO_MAX_ARRAY], int *numDietas)</div><div class="ttdoc">Importa dados de dietas de um ficheiro de texto e adiciona-os aos dados guardados,...</div><div class="ttdef"><b>Definição</b> ImportarDados.c:152</div></div>
+<div class="ttc" id="a_i_o_dados_a_p_i_8h_html_ae2a3c6e76e5175874ca0ed12bb66c72f"><div class="ttname"><a href="_i_o_dados_a_p_i_8h.html#ae2a3c6e76e5175874ca0ed12bb66c72f">ExportarDadosFichBinario</a></div><div class="ttdeci">IO_DADOS_API int ExportarDadosFichBinario(const char *nomeFicheiro, void *dados, int tamanho, size_t tamanhoElemento)</div><div class="ttdoc">Exporta os dados para o ficheiro binário.</div><div class="ttdef"><b>Definição</b> ExportarDados.c:37</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_i_o_dados_a_p_i_8h.html">IODadosAPI.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

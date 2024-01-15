@@ -1,0 +1,152 @@
+\doxysection{Constantes.\+h}
+\hypertarget{_constantes_8h_source}{}\label{_constantes_8h_source}\mbox{\hyperlink{_constantes_8h}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#ifndef\ CONSTANTES\_H}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ CONSTANTES\_H}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{comment}{//\ Modo\ Debug}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ MODO\_DEBUG\ 1}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ Tamanhos\ pré-\/defenidos}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ TAMANHO\_NOME\_PACIENTE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 50\ }\textcolor{comment}{//\ Tamanho\ máximo\ de\ um\ nome\ de\ paciente}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ TAMANHO\_NOME\_REFEICAO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 50\ }\textcolor{comment}{//\ Tamanho\ máximo\ de\ um\ nome\ de\ uma\ refeição}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ TAMANHO\_MAX\_ARRAY\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 15\ }\textcolor{comment}{//\ Tamanho\ máximo\ de\ arrays\ de\ pacientes/dietas/planos}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ TAMANHO\_DATA\_TEXTO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 11\ }\textcolor{comment}{//\ Tamanho\ de\ uma\ data\ no\ formato\ \`{}\`{}DD-\/MM-\/AAAA``\ com\ '\(\backslash\)0'\ no\ fim.}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ TAMANHO\_REFEICAO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 20\ }\textcolor{comment}{//\ Tamanho\ máximo\ de\ uma\ refeição}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ LIMITE\_MAX\_CALORIAS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 99999\ }\textcolor{comment}{//\ Limite\ máximo\ de\ calorias}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ LIMITE\_MAX\_INPUT\_ID\_PACIENTE\ \ \ \ \ \ \ \ 9999\ }\textcolor{comment}{//\ Número\ máximo\ do\ input\ possível\ para\ o\ ID\ paciente}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ LIMITE\_MIN\_INPUT\_TIPOS\_REFEICAO\ \ \ \ \ 1\ }\textcolor{comment}{//\ A\ primeira\ refeição\ começa\ com\ o\ valor\ de\ 1}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ LIMITE\_MAX\_INPUT\_TIPOS\_REFEICAO\ \ \ \ \ 3\ }\textcolor{comment}{//\ Só\ temos\ 3\ tipos\ de\ refeiçoes}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ LIMITE\_MIN\_INPUT\_TIPOS\_FICHEIRO\ \ \ \ \ 1\ }\textcolor{comment}{//\ O\ ficheiro\ de\ tipo\ pacientes\ tem\ o\ valor\ de\ 1,\ logo\ não\ pode\ ser\ inferior\ a\ 1}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ LIMITE\_MAX\_INPUT\_TIPOS\_FICHEIRO\ \ \ \ \ 6\ }\textcolor{comment}{//\ 3\ tipos\ de\ ficheiros\ (pacientes,\ dietas,\ planos)\ e\ dois\ formatos\ para\ cada\ (txt\ ou\ tab)}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ NUMERO\_CALORIAS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 2\ }\textcolor{comment}{//\ Calorias\ mínimas\ e\ máximas,\ array\ de\ tamanho\ 2}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ TAMANHO\_MAX\_BUFFER\_INPUT\ \ \ \ \ \ \ \ \ \ \ \ 1000\ }\textcolor{comment}{//\ Tamanho\ máximo\ para\ o\ buffer\ de\ input\ de\ uma\ linha\ quando\ importamos\ do\ stdin}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ TAMANHO\_MAX\_BUFFER\_FICHEIRO\ \ \ \ \ \ \ \ \ 5000\ }\textcolor{comment}{//\ Tamanho\ máximo\ do\ buffer\ para\ o\ ficheiro\ todo\ quando\ importamos\ do\ stdin}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{comment}{//\ Nomes\ de\ ficheiros\ binários}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ FICHEIRO\_BIN\_PACIENTES\ \ \ \ \ \ \ \ \ \ "{}pacientes.dat"{}}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ FICHEIRO\_BIN\_DIETAS\ \ \ \ \ \ \ \ \ \ \ \ \ "{}dietas\_pacientes.dat"{}}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ FICHEIRO\_BIN\_PLANOS\ \ \ \ \ \ \ \ \ \ \ \ \ "{}planos\_pacientes.dat"{}}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{comment}{//\ Códigos\ de\ cor\ ANSI}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ ANSI\_COR\_PRETO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}\(\backslash\)x1b[30m"{}}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ ANSI\_COR\_VERMELHO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}\(\backslash\)x1b[31m"{}}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ ANSI\_COR\_VERMELHO\_MAIS\ \ \ \ \ \ \ \ \ \ "{}\(\backslash\)033[1;37;41m"{}}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#define\ ANSI\_COR\_VERDE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}\(\backslash\)x1b[32m"{}}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ ANSI\_COR\_AMARELO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}\(\backslash\)x1b[33m"{}}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#define\ ANSI\_COR\_AZUL\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}\(\backslash\)x1b[34m"{}}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ ANSI\_COR\_MAGENTA\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}\(\backslash\)x1b[35m"{}}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ ANSI\_COR\_CYAN\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}\(\backslash\)x1b[36m"{}}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ ANSI\_COR\_BRANCO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}\(\backslash\)x1b[37m"{}}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{comment}{//\ Respostas\ de\ confirmação}}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#define\ CONFIRMAR\_SIM\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 'y'}}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#define\ CONFIRMAR\_NAO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 'n'}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{comment}{//\ Tipos\ de\ mensagens}}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#define\ ANSI\_INFO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ANSI\_COR\_AZUL}}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#define\ ANSI\_ERRO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ANSI\_COR\_VERMELHO}}
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#define\ ANSI\_SUCESSO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ANSI\_COR\_VERDE}}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#define\ ANSI\_ALERTA\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ANSI\_COR\_AMARELO}}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#define\ ANSI\_DEBUG\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ANSI\_COR\_MAGENTA}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#define\ ANSI\_RESET\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}\(\backslash\)x1b[0m"{}}}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#define\ ANSI\_TITULO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}\(\backslash\)033[4;1m"{}}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{comment}{//\ Tipos\ de\ ficheiros}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#define\ TIPO\_FICHEIRO\_TXT\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#define\ TIPO\_FICHEIRO\_BIN\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 2}}
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#define\ TIPO\_FICHEIRO\_TAB\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 3}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{comment}{//\ Tipos\ de\ Dados\ de\ ficheiros}}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#define\ TIPO\_DADOS\_PACIENTES\ \ \ \ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#define\ TIPO\_DADOS\_DIETAS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 2}}
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#define\ TIPO\_DADOS\_PLANOS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 3}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{comment}{//\ Leitura\ do\ stdin}}
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#define\ FICHEIRO\_PACIENTES\_TXT\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#define\ FICHEIRO\_PACIENTES\_TAB\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 2}}
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#define\ FICHEIRO\_DIETAS\_TXT\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 3}}
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#define\ FICHEIRO\_DIETAS\_TAB\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 4}}
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#define\ FICHEIRO\_PLANOS\_TXT\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 5}}
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#define\ FICHEIRO\_PLANOS\_TAB\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 6}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{comment}{//\ Tipos\ de\ refeicoes}}
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#define\ ERRO\_REFEICAO\_ID\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/1}}
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#define\ PEQUENO\_ALMOCO\_ID\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#define\ ALMOCO\_ID\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 2}}
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#define\ JANTAR\_ID\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 3}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{comment}{//\ Nomes\ de\ refeicoes}}
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#define\ PEQUENO\_ALMOCO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}pequeno\ almoco"{}}}
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\#define\ ALMOCO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}almoco"{}}}
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\#define\ JANTAR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}jantar"{}}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{comment}{//\ Código\ de\ sucesso}}
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#define\ SUCESSO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \textcolor{comment}{//\ Códigos\ de\ existência\ de\ ficheiros}}
+\DoxyCodeLine{00102\ \textcolor{preprocessor}{\#define\ FICHEIRO\_EXISTE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#define\ FICHEIRO\_NAO\_EXISTE\ \ \ \ \ \ \ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \textcolor{comment}{//\ Erros\ de\ Operações\ de\ Ficheiros}}
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#define\ ERRO\_NAO\_EXISTEM\_FICHEIROS\_BIN\ \ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#define\ ERRO\_CRIAR\_FICHEIRO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 2}}
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#define\ ERRO\_IMPORTAR\_DADOS\_TEXTO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 3}}
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#define\ ERRO\_IMPORTAR\_DADOS\_BIN\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 4}}
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#define\ ERRO\_APAGAR\_FICHEIROS\_BIN\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 5}}
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#define\ ERRO\_FICHEIRO\_NAO\_ENCONTRADO\ \ \ \ \ \ \ \ \ \ \ \ 7}}
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\#define\ ERRO\_FICHEIRO\_VAZIO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 8}}
+\DoxyCodeLine{00113\ \textcolor{preprocessor}{\#define\ ERRO\_LEITURA\_FICHEIRO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 9}}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \textcolor{comment}{//\ Erros\ de\ Gestão\ de\ Memória}}
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#define\ ERRO\_ALOCAR\_MEMORIA\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 6}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \textcolor{comment}{//\ Erros\ de\ Formato\ de\ Ficheiro\ e\ Análise}}
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\#define\ ERRO\_FORMATO\_INVALIDO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 10}}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \textcolor{comment}{//\ Erros\ Gerais}}
+\DoxyCodeLine{00122\ \textcolor{preprocessor}{\#define\ ERRO\_NAO\_DEFINIDO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 11}}
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\#define\ ERRO\_ABRIR\_FICHEIRO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 12}}
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#define\ ERRO\_FICHEIRO\_NULLO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 24}}
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\#define\ ERRO\_UTILIZADOR\_NAO\_DEU\_PERMISSAO\ \ \ \ \ \ \ 25}}
+\DoxyCodeLine{00126\ \textcolor{preprocessor}{\#define\ ERRO\_VALOR\_NULLO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 26}}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \textcolor{comment}{//\ Erros\ de\ Tamanho\ e\ Limites}}
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#define\ ERRO\_TAMANHO\_EXCEDIDO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 13}}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \textcolor{comment}{//\ Erros\ de\ Conversão\ de\ Dados}}
+\DoxyCodeLine{00132\ \textcolor{preprocessor}{\#define\ ERRO\_CONVERSAO\_TEXTO\_DATETIME\ \ \ \ \ \ \ \ \ \ \ 14}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \textcolor{comment}{//\ Erros\ de\ Processamento\ de\ Dados}}
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\#define\ ERRO\_ARRAY\_DADOS\_NULL\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 15}}
+\DoxyCodeLine{00136\ \textcolor{preprocessor}{\#define\ ERRO\_OPCAO\_UTILIZADOR\_DESCONHECIDA\ \ \ \ \ \ 16}}
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\#define\ ERRO\_APAGAR\_BASE\_DADOS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 17}}
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#define\ ERRO\_PROCESSAMENTO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 18}}
+\DoxyCodeLine{00139\ \textcolor{preprocessor}{\#define\ ERRO\_IMPORTAR\_DADOS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 19}}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \textcolor{comment}{//\ Erros\ de\ Manipulação\ de\ Inputs}}
+\DoxyCodeLine{00142\ \textcolor{preprocessor}{\#define\ ERRO\_LEITURA\_DATA\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 20}}
+\DoxyCodeLine{00143\ \textcolor{preprocessor}{\#define\ ERRO\_LEITURA\_LIMITE\_CALORIAS\ \ \ \ \ \ \ \ \ \ \ \ 21}}
+\DoxyCodeLine{00144\ \textcolor{preprocessor}{\#define\ ERRO\_LEITURA\_ID\_PACIENTE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 22}}
+\DoxyCodeLine{00145\ \textcolor{preprocessor}{\#define\ ERRO\_LEITURA\_TIPO\_REFEICAO\ \ \ \ \ \ \ \ \ \ \ \ \ \ 23}}
+\DoxyCodeLine{00146\ \textcolor{preprocessor}{\#define\ ERRO\_LEITURA\_TIPO\_FICHEIRO\ \ \ \ \ \ \ \ \ \ \ \ \ \ 27}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \textcolor{comment}{//\ Formato\ dos\ ficheiros\ de\ texto}}
+\DoxyCodeLine{00149\ \textcolor{preprocessor}{\#define\ FORMATO\_PACIENTES\_TXT\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}\%d;\%49[\string^;];\%ld"{}}}
+\DoxyCodeLine{00150\ \textcolor{preprocessor}{\#define\ FORMATO\_PACIENTES\_TAB\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}\%d\(\backslash\)t\%49[\string^\(\backslash\)t]\(\backslash\)t\%ld"{}}}
+\DoxyCodeLine{00151\ \textcolor{preprocessor}{\#define\ FORMATO\_DIETAS\_TXT\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}\%d;\ \%10[\string^;];\ \%19[\string^;];\ \%49[\string^;];\ \%d\ cal"{}}}
+\DoxyCodeLine{00152\ \textcolor{preprocessor}{\#define\ FORMATO\_DIETAS\_TAB\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}\%d\(\backslash\)t\ \%10[\string^\(\backslash\)t]\(\backslash\)t\ \%19[\string^\(\backslash\)t]\(\backslash\)t\ \%49[\string^\(\backslash\)t]\(\backslash\)t\ \%d\ cal"{}}}
+\DoxyCodeLine{00153\ \textcolor{preprocessor}{\#define\ FORMATO\_PLANOS\_TXT\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}\%d;\ \%10[\string^;];\ \%19[\string^;];\ \%d\ Cal,\ \%d\ Cal"{}}}
+\DoxyCodeLine{00154\ \textcolor{preprocessor}{\#define\ FORMATO\_PLANOS\_TAB\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}\%d\(\backslash\)t\ \%10[\string^\(\backslash\)t]\(\backslash\)t\ \%19[\string^\(\backslash\)t]\(\backslash\)t\ \%d\ Cal,\ \%d\ Cal"{}}}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ \textcolor{comment}{//\ Constantes\ de\ formato\ de\ output}}
+\DoxyCodeLine{00157\ \textcolor{preprocessor}{\#define\ OUTPUT\_FORMATO\_DEBUG\_PACIENTES\_MEMORIA\ \ \ \ \ \ \ \ \ \ "{}PID:\ \%d,\ Nome:\ \%s,\ Tel:\ \%ld\(\backslash\)n"{}}}
+\DoxyCodeLine{00158\ \textcolor{preprocessor}{\#define\ OUTPUT\_FORMATO\_DEBUG\_DIETAS\_MEMORIA\_WIN\ \ \ \ \ \ \ \ \ "{}PID:\ \%d,\ Data:\ \%s\ (\%lld),\ Refeicao:\ \%s\ (tipo:\ \%d),\ Comida:\ \%s,\ Calorias:\ \%d\(\backslash\)n"{}}}
+\DoxyCodeLine{00159\ \textcolor{preprocessor}{\#define\ OUTPUT\_FORMATO\_DEBUG\_DIETAS\_MEMORIA\_LINUX\ \ \ \ \ \ \ "{}PID:\ \%d,\ Data:\ \%s\ (\%ld),\ Refeicao:\ \%s\ (tipo:\ \%d),\ Comida:\ \%s,\ Calorias:\ \%d\(\backslash\)n"{}}}
+\DoxyCodeLine{00160\ \textcolor{preprocessor}{\#define\ OUTPUT\_FORMATO\_DEBUG\_PLANOS\_MEMORIA\_WIN\ \ \ \ \ \ \ \ \ "{}PID:\ \%d,\ Data:\ \%s\ (\%lld),\ Refeicao:\ \%s\ (tipo:\ \%d),\ Calorias\ entre:\ \%d\ e\ \%d\(\backslash\)n"{}}}
+\DoxyCodeLine{00161\ \textcolor{preprocessor}{\#define\ OUTPUT\_FORMATO\_DEBUG\_PLANOS\_MEMORIA\_LINUX\ \ \ \ \ \ \ "{}PID:\ \%d,\ Data:\ \%s\ (\%ld),\ Refeicao:\ \%s\ (tipo:\ \%d),\ Calorias\ entre:\ \%d\ e\ \%d\(\backslash\)n"{}}}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CONSTANTES\_H}}
+
+\end{DoxyCode}
